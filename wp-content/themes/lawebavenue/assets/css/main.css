@@ -1,3 +1,4 @@
+/* Général */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -10,10 +11,40 @@
     border: 0;
   }
 
+  ul, li , a{
+    list-style-type: none;
+    text-decoration: none;
+  }
 
-
-
+  /******* Header ********/
 .header__link{
     display: block;
     width: 200px;
+}
+
+/* nav menu */
+#menu-main-menu, 
+#menu-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item{
+  margin: 0px 10px 0px 10px;
+}
+
+
+ul#sub-menu-120.sub-menu,
+ul#sub-menu-128.sub-menu {
+  visibility: hidden;
+}
+
+.toggle-button{
+  border: none;
+  background-color: transparent;
+}
+
+.toggle-button-img{
+  height: 15px;
+  margin: 0px 5px 0px 10px;
 }

@@ -1,7 +1,6 @@
 <?php
 // rendre le menu accessible et transformer le lien personnalisé en button. 
 
-
 class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 
     public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
@@ -33,6 +32,7 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 
             // Attributs ARIA si l'élément a un sous-menu
             if ($has_children) {
+                $attributes .= 'class="toggle-button"';
                 $attributes .= ' aria-expanded="false"';
                 $attributes .= ' aria-controls="' . esc_attr($submenu_id) . '"'; // Lier au sous-menu avec l'ID
             }
@@ -43,11 +43,12 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 
             // Ajouter le toggle visuel
             if ($has_children) {
-                $item_output .= '<span class="menu-toggle" aria-hidden="true">';
-                $item_output .= '<img class="menu-toggle-img" src="' . get_template_directory_uri() . '/assets/img/down-arrow.png" alt="Toggle submenu" aria-hidden="true">';
+                $item_output .= '<span class="toggle-button-container-img" aria-hidden="true">';
+                $item_output .= '<img class="toggle-button-img" src="' . get_template_directory_uri() . '/assets/img/down-arrow.png" alt="Toggle submenu" aria-hidden="true">';
                 $item_output .= '</span>';
                 $item_output .= '<span class="sr-only">' . __('Ouvrir le sous-menu', 'text-domain') . '</span>';
             }
+
             $item_output .= '</button>';
 
         } else {
