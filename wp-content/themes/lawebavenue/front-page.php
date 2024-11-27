@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<h1>FRONT PAGE</h1>
     <main>
         <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
         

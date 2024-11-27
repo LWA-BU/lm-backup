@@ -15,6 +15,11 @@
             <img class="header_link-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/LM_Menuisier.svg" alt="Logo"  >
         </a> 
 
+        <div class="header__btn" type="button" aria-label="Afficher ou masquer la navigation" aria-controls="menu" aria-expanded="false" aria-pressed="false" tabindex="0">
+            <span class="header__btn-ligne"></span>
+            <span class="visuallyhidden">Afficher ou masquer le menu de navigation</span>
+        </div>
+
         <?php get_template_part('parts/nav_header'); ?>
 
         <div class="header__contact">
@@ -30,4 +35,5 @@
                 </svg>
             </a>
         </div>
+
     </header>

@@ -1,50 +1,237 @@
 /* Général */
+@import url('fonts.css');
+
+:root {
+  font-size: 16px;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+}
+
+.sr-only, .visuallyhidden{
+  position: absolute;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .sr-only {
-    position: absolute;
-    width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+  }
+
+  .visuallyhidden, hr {
+    border: 0;
+    height: 1px;
+    padding: 0;
   }
 
   ul, li , a{
     list-style-type: none;
     text-decoration: none;
+    color: black;
+    padding: 10px;
   }
 
-  /******* Header ********/
+  /********************************************/
+  /****************** Header ******************/
+  /********************************************/
+
 .header__link{
     display: block;
     width: 200px;
 }
 
-/* nav menu */
+.header__btn{
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  padding: 20px;
+  border-radius: 50%;
+  background: #965634;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.header__btn-ligne{
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  background:#fff;
+  transform: translate(-50%, -50%);
+}
+
+.header__btn-ligne::before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 7px;
+  border-radius: 5px;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__btn-ligne::after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 7px;
+  border-radius: 5px;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__btn.active .header__btn-ligne {
+  background: transparent; /* Masque la barre centrale*/
+}
+
+.header__btn.active .header__btn-ligne::before {
+  top:0px;
+  transform: rotate(45deg);
+}
+
+.header__btn.active .header__btn-ligne::after{
+  bottom:0px;
+  transform: rotate(-45deg);
+}
+
+  /****************** Nav menu ******************/
+
+/* Menu caché par défaut */
+
+nav.header__menu {
+  visibility: hidden;         
+  opacity: 0;                 
+  transition: all 0.3s ease-in-out;
+}
+
+/* Menu visible */
+nav.header__menu.active {
+  visibility: visible;    
+  margin-top: 50px;    
+  opacity: 1;      
+  transition: all 0.3s ease-in-out;        
+}
+
 #menu-main-menu, 
 #menu-footer{
   display: flex;
   flex-direction: column;
 }
 
-.menu-item{
-  margin: 0px 10px 0px 10px;
+#menu-main-menu a:hover, 
+#menu-footer a:hover, 
+.toggle-button:hover {
+  color: #965634;
+  position: relative; /* Nécessaire pour positionner l'élément ::after */
 }
 
+#menu-main-menu a:hover::after,
+.header__menu .toggle-button:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%; /* Le soulignement prendra toute la largeur du lien au survol */
+  height: 2px; /* Épaisseur du soulignement */
+  background: #965634; /* Couleur du soulignement */
+  bottom: 0; /* Soulignement sous le texte */
+  left: 0; /* Le soulignement commence à gauche */
+  transition: width 0.3s ease-in-out; /* Transition fluide du soulignement */
+}
+
+.header__menu .current-menu-item a, .header__menu .toggle-button {
+  position: relative;
+}
+
+.header__menu .toggle-button::after {
+  content: '';
+  position: absolute;
+  width: 0; /* Le soulignement commence à 0 */
+  height: 2px; /* Épaisseur du soulignement */
+  background: #965634; /* Couleur du soulignement */
+  bottom: 0; /* Distance sous le texte */
+  left: 0; /* Le soulignement commence à gauche */
+  transition: width 0.3s ease-in-out; /* Animation du soulignement */
+}
+
+.header__menu .current-menu-item a::after {
+  content: '';
+  position: absolute;
+  width: 100%; /* Le soulignement prend toute la largeur du lien actif */
+  height: 2px; /* Épaisseur du soulignement */
+  background: #965634; /* Couleur du soulignement */
+  bottom: 0; /* Distance sous le texte */
+  left: 0; /* Commence à la gauche */
+  transition: none; /* Pas de transition pour le lien actif */
+}
+
+/* Soulignement au survol des liens */
+.header__menu a:hover::after {
+  width: 100%; /* Le soulignement prend toute la largeur au survol */
+}
+
+.header__menu a {
+  position: relative; /* Nécessaire pour le pseudo-élément ::after */
+}
+
+.header__menu a::after {
+  content: '';
+  position: absolute;
+  width: 0; /* Le soulignement commence à 0 au départ */
+  height: 2px; /* Épaisseur du soulignement */
+  background: #965634; /* Couleur du soulignement */
+  bottom: 0; /* Distance sous le texte */
+  left: 0; /* Le soulignement commence à gauche */
+  transition: width 0.3s ease-in-out; /* Animation du soulignement */
+}
+
+#menu-item-120,
+#menu-item-128,
+ul#sub-menu-120.sub-menu,
+ul#sub-menu-128.sub-menu{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+}
 
 ul#sub-menu-120.sub-menu,
 ul#sub-menu-128.sub-menu {
   visibility: hidden;
+  height: 10px;
+  margin-left: 20px;
 }
 
 .toggle-button{
   border: none;
   background-color: transparent;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
 }
 
 .toggle-button-img{
   height: 15px;
-  margin: 0px 5px 0px 10px;
+  margin: 0px 5px -3px 10px;
 }
+
