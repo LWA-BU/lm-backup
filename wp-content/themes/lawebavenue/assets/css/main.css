@@ -1,23 +1,48 @@
 /* Général */
 @import url('fonts.css');
-
+  
 :root {
-  font-size: 16px;
+
+  --bg-border: #C7714A;
+  --bg-color-beige: #CDC6BE;
+  --bg-color-blue: #172733;
+  --bg-color-grey: #F6F6F6;
+  --bg-color-light: rgba(255, 255, 255, 1);
+  --bg-color-sombre: #37372F;
+
+ 
+  --color-decorative: #965634;
+  --color-decorative-secondary:#CDC6BE;
+  --color-h2:#161616;
+  --color-text: #2C2C2C;
+  --color-p-light: #505050;
+
+
+
+  --font-main:  'Open Sans', Arial, sans-serif;
+  --font-title: 'Poppins', Arial, sans-serif;
+  --font-subtitle: 'Cormorant Garamond';
+
+  --font-size-main: 16px;
+
 }
 
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: medium;
-  font-size: 16px;
+  font-family: var(--font-main);
+  font-weight: 400;
+  letter-spacing: 0.062rem;
+  line-height: 1.6rem;
 }
 
 body{
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: medium;
-  font-size: 16px;
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: var(--font-size-main);
+  /* letter-spacing: 0.125rem;
+  line-height: 1.6rem; */
 }
 
 .sr-only, .visuallyhidden{
@@ -28,42 +53,55 @@ body{
   clip: rect(0 0 0 0);
 }
 
-.sr-only {
-    height: 1px;
-    padding: 0;
-    white-space: nowrap;
-    border: 0;
-  }
+.sr-only,
+.visuallyhidden, 
+hr{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+  white-space: nowrap;
+}
 
-  .visuallyhidden, hr {
-    border: 0;
-    height: 1px;
-    padding: 0;
-  }
 
-  ul, li , a{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-  }
+ul, li , a{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
 
-  /********************************************/
-  /****************** Header ******************/
-  /********************************************/
+/* ============================================
+                  Header
+============================================ */
+
+.header__navbar{
+  width: 100%;
+  height: 100px;
+  
+}
 
 .header__link{
     display: block;
     width: 200px;
+   
+}
+
+.header__link-logo{
+  width: 200px;
+  min-width: 180px;
 }
 
 .header__btn{
-  position: fixed;
+  position: absolute;
   width: 36px;
   height: 36px;
   padding: 20px;
   border-radius: 50%;
-  background: #965634;
+  background: var(--color-h2);
   top: 25px;
   right: 25px;
   cursor: pointer;
@@ -119,18 +157,22 @@ body{
 
   /****************** Nav menu ******************/
 
-/* Menu caché par défaut */
-
 nav.header__menu {
+  position: relative;
   visibility: hidden;         
-  opacity: 0;                 
+  opacity: 0;      
+  background-color: var(--bg-color-light);           
   transition: all 0.3s ease-in-out;
+  z-index: 10;
 }
 
-/* Menu visible */
+
 nav.header__menu.active {
   visibility: visible;    
-  margin-top: 50px;    
+  height: 655px;
+  margin-top: -10px;  
+  padding: 75px 0px 75px 30px;
+  color: var(--color-decorative, #965634);
   opacity: 1;      
   transition: all 0.3s ease-in-out;        
 }
@@ -144,7 +186,7 @@ nav.header__menu.active {
 #menu-main-menu a:hover, 
 #menu-footer a:hover, 
 .toggle-button:hover {
-  color: #965634;
+  color: var(--color-decorative, #965634);
   position: relative; /* Nécessaire pour positionner l'élément ::after */
 }
 
@@ -153,8 +195,8 @@ nav.header__menu.active {
   content: '';
   position: absolute;
   width: 100%; /* Le soulignement prendra toute la largeur du lien au survol */
-  height: 2px; /* Épaisseur du soulignement */
-  background: #965634; /* Couleur du soulignement */
+  height: 1px; /* Épaisseur du soulignement */
+  background: var(--color-decorative, #965634); /* Couleur du soulignement */
   bottom: 0; /* Soulignement sous le texte */
   left: 0; /* Le soulignement commence à gauche */
   transition: width 0.3s ease-in-out; /* Transition fluide du soulignement */
@@ -168,19 +210,23 @@ nav.header__menu.active {
   content: '';
   position: absolute;
   width: 0; /* Le soulignement commence à 0 */
-  height: 2px; /* Épaisseur du soulignement */
-  background: #965634; /* Couleur du soulignement */
+  height: 1px; /* Épaisseur du soulignement */
+  background: var(--color-decorative, #965634); /* Couleur du soulignement */
   bottom: 0; /* Distance sous le texte */
   left: 0; /* Le soulignement commence à gauche */
   transition: width 0.3s ease-in-out; /* Animation du soulignement */
+}
+
+.header__menu .current-menu-item a{
+  color:var(--color-decorative, #965634);;
 }
 
 .header__menu .current-menu-item a::after {
   content: '';
   position: absolute;
   width: 100%; /* Le soulignement prend toute la largeur du lien actif */
-  height: 2px; /* Épaisseur du soulignement */
-  background: #965634; /* Couleur du soulignement */
+  height: 1px; /* Épaisseur du soulignement */
+  background: var(--color-decorative, #965634);; /* Couleur du soulignement */
   bottom: 0; /* Distance sous le texte */
   left: 0; /* Commence à la gauche */
   transition: none; /* Pas de transition pour le lien actif */
@@ -199,8 +245,8 @@ nav.header__menu.active {
   content: '';
   position: absolute;
   width: 0; /* Le soulignement commence à 0 au départ */
-  height: 2px; /* Épaisseur du soulignement */
-  background: #965634; /* Couleur du soulignement */
+  height: 1px; /* Épaisseur du soulignement */
+  background: var(--color-decorative, #965634); /* Couleur du soulignement */
   bottom: 0; /* Distance sous le texte */
   left: 0; /* Le soulignement commence à gauche */
   transition: width 0.3s ease-in-out; /* Animation du soulignement */
@@ -228,6 +274,7 @@ ul#sub-menu-128.sub-menu {
   padding-left: 10px;
   padding-bottom: 10px;
   margin-bottom: -10px;
+  font-size: var(--main-font-size);
 }
 
 .toggle-button-img{
@@ -235,3 +282,186 @@ ul#sub-menu-128.sub-menu {
   margin: 0px 5px -3px 10px;
 }
 
+
+ /****************** Header banner ******************/
+.header__banner{
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-image: url('./../img/menuisier_artisan_createur_xs.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__banner-title{
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  max-width: 360px;
+  padding: 25px 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-title);
+  font-size: 1.175rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.header__banner-subtitle{
+  display: block;
+  font-family: var(--font-subtitle);
+  text-transform: lowercase;
+  font-size: 22px;
+}
+
+
+  /****************** Header contact ******************/
+
+.header__contact{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 22%;
+  /* width: 50px; */
+  width: 35px;
+  /* height: 170px; */
+  height: 150px;
+  background-color: var(--bg-color-light, #FFF);
+  z-index: 9;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.header__contact svg{
+  width: 25px;
+  height: 25px;
+
+  /* width: 32px;
+  height: 32px; */
+}
+
+
+a.header__contact-email:hover, 
+a.header__contact-whatsapp:hover, 
+a.header__contact-phone:hover{
+  background-color: var(--bg-color-beige);
+  border-radius: 5px 0px 0px 5px;
+}
+
+
+/* ============================================
+                  FOOTER
+============================================ */
+
+.footer{
+  position: relative;
+  background-color: var(--color-h2);
+}
+
+.footer ul, .footer li, .footer a, button[aria-controls='sub-menu-128']{
+  padding: 0px 0px 20px 0px;
+}
+
+#sub-menu-128 {
+  margin-top: 10px;
+}
+
+.sub-menu-128 a {
+  padding : 10px;
+}
+
+.footer__menu a, .footer__menu button{
+  /* letter-spacing: 1.1px; */
+}
+
+
+.footer p, .footer__menu a, .footer__menu button
+{
+  color: var(--bg-color-light);
+}
+
+.footer__contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 18px;
+  border-bottom: 8px solid var(--color-text);
+}
+
+.footer__contact ul{
+  margin: 20px 8px;
+}
+
+.footer__contact li{
+  padding: 15px 10px;
+}
+
+.footer__contact a{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-weight: 300;
+  color: var(--bg-color-light);
+  padding: 0px;
+}
+
+.footer__contact svg{
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+.footer__main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-color-light);
+  margin: 50px 0px;
+  width: 100%;
+}
+
+.footer__main-presentation{
+  position: relative;
+  margin: 50px 0px;
+}
+
+.footer__link-logo{
+  width: 205px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.footer__main h1{
+  width: 310px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--bg-color-light);
+}
+
+.footer__img-deco{
+  position: absolute;
+  top: 10px;
+  right: 280px;
+  width: 100px;
+  height: 140px;
+  opacity: .05;
+}
+
+.nav-navigation, .hurly{
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.footer__main-nav, .footer__main-hurly{
+  width: 300px;
+}

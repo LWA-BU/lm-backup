@@ -7,6 +7,8 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'title-tag' );
 
 
+
+
 function lwa_register_assets() {
     
     // Déclarer le JS
@@ -26,6 +28,7 @@ function lwa_register_assets() {
     //     array(), 
     //     '1.0'
     // );
+
   	
     // Déclarer le fichier CSS à un autre emplacement
     wp_enqueue_style( 
