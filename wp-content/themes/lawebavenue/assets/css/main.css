@@ -84,9 +84,10 @@ ul, li , a{
 }
 
 .header__link{
-    display: block;
-    width: 200px;
-   
+  display: block;
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .header__link-logo{
@@ -101,7 +102,7 @@ ul, li , a{
   padding: 20px;
   border-radius: 50%;
   background: var(--color-h2);
-  top: 25px;
+  top: 30px;
   right: 25px;
   cursor: pointer;
   z-index: 10;
@@ -165,14 +166,10 @@ nav.header__menu {
   z-index: 10;
 }
 
-/* nav.header__menu li {
-  margin: 10px;
-} */
-
 
 nav.header__menu.active {
   visibility: visible;    
-  height: 655px;
+  height: 664px;
   margin-top: -10px;  
   padding: 75px 0px 75px 30px;
   color: var(--color-decorative, #965634);
@@ -209,9 +206,16 @@ nav.header__menu.active {
   position: relative;
 }
 
-.header__menu .toggle-button::after {
+.header__menu .toggle-button::after,
+.header__menu .current-menu-item a::after,
+.header__menu a::after {
   content: '';
   position: absolute;
+}
+
+.header__menu .toggle-button::after {
+  /* content: '';
+  position: absolute; */
   width: 0; /* Le soulignement commence à 0 */
   height: 1px; /* Épaisseur du soulignement */
   background: var(--color-decorative, #965634); /* Couleur du soulignement */
@@ -225,8 +229,8 @@ nav.header__menu.active {
 }
 
 .header__menu .current-menu-item a::after {
-  content: '';
-  position: absolute;
+  /* content: '';
+  position: absolute; */
   width: 100%; /* Le soulignement prend toute la largeur du lien actif */
   height: 1px; /* Épaisseur du soulignement */
   background: var(--color-decorative, #965634);; /* Couleur du soulignement */
@@ -245,8 +249,8 @@ nav.header__menu.active {
 }
 
 .header__menu a::after {
-  content: '';
-  position: absolute;
+  /* content: '';
+  position: absolute; */
   width: 0; /* Le soulignement commence à 0 au départ */
   height: 1px; /* Épaisseur du soulignement */
   background: var(--color-decorative, #965634); /* Couleur du soulignement */
@@ -269,7 +273,7 @@ ul#sub-menu-128.sub-menu {
   visibility: hidden;
   height: 0px;
   margin-left: 20px;
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 #menu-main-menu li,
@@ -329,7 +333,7 @@ li#menu-item-128{
   display: block;
   font-family: var(--font-subtitle);
   text-transform: lowercase;
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 
@@ -356,6 +360,7 @@ li#menu-item-128{
 .header__contact svg{
   width: 25px;
   height: 25px;
+  margin: 10px;
 
   /* width: 32px;
   height: 32px; */
@@ -379,7 +384,7 @@ a.header__contact-phone:hover{
   background-color: var(--color-h2);
 }
 
-.footer ul, .footer li, .footer a, button[aria-controls='sub-menu-128']{
+.footer ul, .footer li, button[aria-controls='sub-menu-128']{
   padding: 0px 0px 20px 0px;
 }
 
@@ -391,21 +396,27 @@ a.header__contact-phone:hover{
   padding : 10px;
 }
 
-.footer__menu a, .footer__menu button{
-  /* letter-spacing: 1.1px; */
+.footer p{
+  letter-spacing: 0.125rem;
 }
-
 
 .footer p, .footer__menu a, .footer__menu button
 {
   color: var(--bg-color-light);
 }
 
+.footer__contact{
+  display: flex;
+  flex-direction: column; /* Les éléments sont alignés en colonne */
+  /* justify-content: center;  */
+  align-items: center; /* Centre les éléments horizontalement */
+
+}
+
 .footer__contact ul{
   width: 360px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   align-content: flex-start;
   justify-content: flex-start;
   padding: 20px 18px;
@@ -446,6 +457,10 @@ a.header__contact-phone:hover{
   width: 100%;
 }
 
+.footer__main-nav, .footer__main-hurly{
+  width: 300px;
+}
+
 .footer__main-presentation{
   position: relative;
   margin: 50px 0px;
@@ -476,10 +491,69 @@ a.header__contact-phone:hover{
 }
 
 .nav-navigation, .hurly{
-  text-transform: uppercase;
   margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.footer__main-nav, .footer__main-hurly{
-  width: 300px;
+.hurly-day{
+  margin-bottom: 10px;
 }
+
+.footer__socialMedia,
+.legalNotices,
+.footer__legalNotices a{
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.footer__socialMedia{
+  display: block;
+  width: 50px;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease-in-out;        
+}
+
+.footer__socialMedia:hover{
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+.footer__legalNotices{
+  display: flex;
+  background-color: var(--bg-color-light);
+}
+
+.legalNotices{
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  padding-top: 25px;
+}
+
+ .footer__legalNotices a{
+  display: block;
+  width: 340px;
+  color: var(--color-text);
+  font-size: 0.75rem;
+}
+
+.footer__legalNotices a:hover{
+  color: var(--color-decorative);
+}
+
+.legalNotice-creator{
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.legalNotice-iconeLux{
+  position: absolute;
+  top:25px;
+  /* left: 410px; */
+  left: 310px;
+  width: 45px;
+  height: 45px;
+}
+

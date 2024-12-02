@@ -42,7 +42,7 @@
                     <h1>
                         Agencement intérieur sur mesure pour professionnels et particuliers au Luxembourg. 
                     </h1>
-                    <img class="footer__img-deco" src="<?php echo get_template_directory_uri(); ?>/assets/img/Arbre_logo.png" alt="image decorative"/>
+                    <img class="footer__img-deco" src="<?php echo get_template_directory_uri(); ?>/assets/img/Arbre_logo.png" alt=""/>
                 </div>
 
                 <div class="footer__main-nav">
@@ -57,10 +57,18 @@
                 </div>
             </div>
 
-            <a href="https://www.facebook.com/profile.php?id=100091860574053"  aria-label="Consulter notre page Facebook">
+            <a class="footer__socialMedia" href="https://www.facebook.com/profile.php?id=100091860574053"  aria-label="Consulter notre page Facebook">
                 <span class="sr-only">Cliquez pour consulter notre page Facebook</span>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook-lm-menuisier.svg" alt="icone Facebook"/>
             </a>
+
+            <div class="footer__legalNotices">
+                <div class="legalNotices">
+                    <a href="https://lawebavenue.fr/" class="legalNotice-creator">© 2024 - Création La Web Avenue -</a>
+                    <a href="" class="legalNotice-Mentions">Mentions légales & politique de confidentialité</a>
+                    <img class="legalNotice-iconeLux" src="<?php echo get_template_directory_uri(); ?>/assets/img/embleme_lux.png" alt=""/>
+                </div>
+            </div>
                  
         </div>
         

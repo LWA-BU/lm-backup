@@ -98,8 +98,7 @@ function toggleButtonSubMenu(){
                 subMenu.style.visibility= 'visible';
                 subMenu.style.opacity= '1';
                 subMenu.style.transition="all 0.3s ease-in-out";
-                // subMenu.style.height="auto";
-                subMenu.style.height=`${subMenu.scrollHeight}px`;
+                subMenu.style.height="218px";
                 // subMenuHeader.style.height = "40";
                 // subMenuFooter.style.height = "40";
             }
