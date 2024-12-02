@@ -53,7 +53,8 @@ function toggleButtonSubMenu(){
    * @param {any}         value
    */
   const menuItems = Array.from( document.querySelectorAll( 'li.menu-item-has-children' ) );
-  // const iconeMenu = document.querySelector('img.toggle-button-img');
+  // const subMenuHeader = document.querySelector('li#menu-item-120');
+  // const subMenuFooter = document.querySelector('li#menu-item-128');
 
   const setAttr = ( el, attr, value ) => el.setAttribute( attr, value );
 
@@ -77,13 +78,13 @@ function toggleButtonSubMenu(){
             parent.classList.remove( 'open' );
             setAttr( parent.querySelector( 'button' ), 'aria-expanded', 'false');
             iconeMenu.src = 'http://localhost:8888/lm-menuisier/wp-content/themes/lawebavenue/assets/img/down-arrow.png';
-
-
-
             subMenu.style.visibility= 'hidden';
             subMenu.style.opacity= '0';
             subMenu.style.transition="all 0.3s ease-in-out";
             subMenu.style.height="10px";
+            // subMenuHeader.style.height = "auto";
+            // subMenuFooter.style.height = "auto";
+
             } else if ( parent ) {
               /**
                * Si le sous-menu est fermé :
@@ -99,6 +100,8 @@ function toggleButtonSubMenu(){
                 subMenu.style.transition="all 0.3s ease-in-out";
                 // subMenu.style.height="auto";
                 subMenu.style.height=`${subMenu.scrollHeight}px`;
+                // subMenuHeader.style.height = "40";
+                // subMenuFooter.style.height = "40";
             }
     
               event.preventDefault();

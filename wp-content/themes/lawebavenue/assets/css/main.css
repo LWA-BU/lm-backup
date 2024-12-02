@@ -71,7 +71,6 @@ ul, li , a{
   list-style-type: none;
   text-decoration: none;
   color: black;
-  padding: 10px;
 }
 
 /* ============================================
@@ -165,6 +164,10 @@ nav.header__menu {
   transition: all 0.3s ease-in-out;
   z-index: 10;
 }
+
+/* nav.header__menu li {
+  margin: 10px;
+} */
 
 
 nav.header__menu.active {
@@ -264,16 +267,29 @@ ul#sub-menu-128.sub-menu{
 ul#sub-menu-120.sub-menu,
 ul#sub-menu-128.sub-menu {
   visibility: hidden;
-  height: 10px;
+  height: 0px;
   margin-left: 20px;
+  padding-top: 20px;
+}
+
+#menu-main-menu li,
+#menu-footer li,
+#menu-item-120 li,
+#menu-item-128 li,
+ul#sub-menu-120.sub-menu li,
+ul#sub-menu-128.sub-menu li {
+  height: 40px;
+}
+
+li#menu-item-120,
+li#menu-item-128{
+  height: auto;
 }
 
 .toggle-button{
   border: none;
   background-color: transparent;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-bottom: -10px;
+  margin-bottom: -30px;
   font-size: var(--main-font-size);
 }
 
@@ -385,11 +401,13 @@ a.header__contact-phone:hover{
   color: var(--bg-color-light);
 }
 
-.footer__contact{
+.footer__contact ul{
+  width: 360px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  align-content: flex-start;
+  justify-content: flex-start;
   padding: 20px 18px;
   border-bottom: 8px solid var(--color-text);
 }
