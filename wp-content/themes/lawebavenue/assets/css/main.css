@@ -1,6 +1,4 @@
 /* Général */
-@import url('fonts.css');
-  
 :root {
 
   --bg-border: #C7714A;
@@ -80,7 +78,6 @@ ul, li , a{
 .header__navbar{
   width: 100%;
   height: 100px;
-  
 }
 
 .header__link{
@@ -165,7 +162,6 @@ nav.header__menu {
   transition: all 0.3s ease-in-out;
   z-index: 10;
 }
-
 
 nav.header__menu.active {
   visibility: visible;    
@@ -316,7 +312,7 @@ li#menu-item-128{
 
 .header__banner-title{
   position: absolute;
-  bottom: 70px;
+  bottom: 250px;
   width: 100%;
   max-width: 360px;
   padding: 25px 40px;
@@ -334,6 +330,39 @@ li#menu-item-128{
   font-family: var(--font-subtitle);
   text-transform: lowercase;
   font-size: 1.5rem;
+}
+
+.header__cta{
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  align-content: center;
+  gap: 20px; 
+  width: 100%;
+}
+
+button.header__cta-link{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  align-content: center;
+  gap: 10px; 
+  width: 186px;
+  height: 44px;
+  padding: 10px 20px;
+  font-size: 1rem; 
+  background-color: var(--bg-color-blue);
+  color: var(--bg-color-light, #FFF); 
+  border: 1px solid var(--bg-color-light); 
+  border-radius: 30px; 
+}
+
+button.header__cta-link img{
+  width: 32px;
+  height: 32px;
+  margin-right: -14px;
 }
 
 
@@ -408,24 +437,23 @@ a.header__contact-phone:hover{
 .footer__contact{
   display: flex;
   flex-direction: column; /* Les éléments sont alignés en colonne */
-  /* justify-content: center;  */
   align-items: center; /* Centre les éléments horizontalement */
-
-}
-
-.footer__contact ul{
-  width: 360px;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  justify-content: flex-start;
-  padding: 20px 18px;
   border-bottom: 8px solid var(--color-text);
 }
 
 .footer__contact ul{
+  width: 360px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: flex-start;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
   margin: 20px 8px;
+  padding: 20px 18px;
+
 }
+
+
 
 .footer__contact li{
   padding: 15px 10px;

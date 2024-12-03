@@ -62,6 +62,23 @@
 
                 </div>
 
+                <div class="header__cta">
+                    <button class="header__cta-link header__cta-link-cuisines">
+                        <span>Cuisines</span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
+                    </button>
+
+                    <button class="header__cta-link header__cta-link-sdb">
+                        <span>Salles de bain</span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
+                    </button>
+
+                    <button class="header__cta-link header__cta-link-dressings">
+                        <span>Dressings</span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
+                    </button>
+                </div>
+
             </div>
 
         <?php } ?>
