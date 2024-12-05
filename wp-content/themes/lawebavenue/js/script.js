@@ -40,7 +40,7 @@ function displayHeaderMainMenu() {
       headerMenu.style.visibility = 'hidden';
       burgerMenu.setAttribute('aria-expanded', 'false');
       burgerMenu.setAttribute('aria-pressed', 'false');
-      burgerMenu.style.background= '#161616';
+      burgerMenu.style.background= '#37372F';
     }
   }
 }

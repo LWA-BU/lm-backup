@@ -210,8 +210,6 @@ nav.header__menu.active {
 }
 
 .header__menu .toggle-button::after {
-  /* content: '';
-  position: absolute; */
   width: 0; /* Le soulignement commence à 0 */
   height: 1px; /* Épaisseur du soulignement */
   background: var(--color-decorative, #965634); /* Couleur du soulignement */
@@ -225,11 +223,9 @@ nav.header__menu.active {
 }
 
 .header__menu .current-menu-item a::after {
-  /* content: '';
-  position: absolute; */
   width: 100%; /* Le soulignement prend toute la largeur du lien actif */
   height: 1px; /* Épaisseur du soulignement */
-  background: var(--color-decorative, #965634);; /* Couleur du soulignement */
+  background: var(--color-decorative, #965634); /* Couleur du soulignement */
   bottom: 0; /* Distance sous le texte */
   left: 0; /* Commence à la gauche */
   transition: none; /* Pas de transition pour le lien actif */
@@ -245,14 +241,12 @@ nav.header__menu.active {
 }
 
 .header__menu a::after {
-  /* content: '';
-  position: absolute; */
   width: 0; /* Le soulignement commence à 0 au départ */
   height: 1px; /* Épaisseur du soulignement */
   background: var(--color-decorative, #965634); /* Couleur du soulignement */
   bottom: 0; /* Distance sous le texte */
   left: 0; /* Le soulignement commence à gauche */
-  transition: width 0.3s ease-in-out; /* Animation du soulignement */
+  transition: width 0.3s ease-in-out; 
 }
 
 #menu-item-120,
@@ -304,15 +298,15 @@ li#menu-item-128{
   position: relative;
   width: 100%;
   height: 650px;
-  background-image: url('./../img/menuisier_artisan_createur_xs.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: no-repeat url('./../img/accueil/menuisier_artisan_createur_xs.jpg');
+  background-size: cover; /* L'image couvre la div sans se déformer */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Éviter les répétitions */
 }
 
 .header__banner-title{
   position: absolute;
-  bottom: 250px;
+  bottom: 240px;
   width: 100%;
   max-width: 360px;
   padding: 25px 40px;
@@ -351,13 +345,19 @@ button.header__cta-link{
   gap: 10px; 
   width: 186px;
   height: 44px;
+  font-size: 0.9rem; 
+  letter-spacing: 0.13rem;
   padding: 10px 20px;
-  font-size: 1rem; 
-  background-color: var(--bg-color-blue);
+  background-color: var(--bg-color-sombre);
   color: var(--bg-color-light, #FFF); 
   border: 1px solid var(--bg-color-light); 
   border-radius: 30px; 
 }
+
+button.header__cta-link:hover{
+  background-color: var(--color-decorative, #965634)
+}
+
 
 button.header__cta-link img{
   width: 32px;
@@ -366,43 +366,11 @@ button.header__cta-link img{
 }
 
 
-  /****************** Header contact ******************/
+/****************** Header contact ******************/
 
 .header__contact{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 0;
-  top: 22%;
-  /* width: 50px; */
-  width: 35px;
-  /* height: 170px; */
-  height: 150px;
-  background-color: var(--bg-color-light, #FFF);
-  z-index: 9;
-  border-radius: 5px 0px 0px 5px;
+  display: none;
 }
-
-.header__contact svg{
-  width: 25px;
-  height: 25px;
-  margin: 10px;
-
-  /* width: 32px;
-  height: 32px; */
-}
-
-
-a.header__contact-email:hover, 
-a.header__contact-whatsapp:hover, 
-a.header__contact-phone:hover{
-  background-color: var(--bg-color-beige);
-  border-radius: 5px 0px 0px 5px;
-}
-
 
 /* ============================================
                   FOOTER
@@ -441,19 +409,18 @@ a.header__contact-phone:hover{
   border-bottom: 8px solid var(--color-text);
 }
 
+span.trait{
+  display: none;
+}
+
 .footer__contact ul{
   width: 360px;
-  /* width: 100%; */
   display: flex;
   justify-content: flex-start;
-  /* justify-content: space-around; */
   flex-wrap: wrap;
   margin: 20px 8px;
   padding: 20px 18px;
-
 }
-
-
 
 .footer__contact li{
   padding: 15px 10px;
@@ -583,5 +550,154 @@ a.header__contact-phone:hover{
   left: 310px;
   width: 45px;
   height: 45px;
+}
+
+
+
+/* ================================================================
+                          MEDIAS QUERIES
+=================================================================== */
+
+
+@media (min-width: 768px) {
+
+  /* ============================================
+                    Header
+  ============================================ */
+
+  /****************** Header banner ******************/
+
+  .header__banner{
+    background-image: url('./../img/accueil/menuisier_artisan_createur_S.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+  .header__banner-title{
+    bottom: 250px;
+    padding: 25px 40px;
+  }
+
+  .header__cta{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+    /****************** Header contact ******************/
+
+  .header__contact{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 250px;
+    width: 35px;
+    height: 150px;
+    background-color: var(--bg-color-light, #FFF);
+    z-index: 9;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .header__contact svg{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+  }
+
+
+  a.header__contact-email:hover, 
+  a.header__contact-whatsapp:hover, 
+  a.header__contact-phone:hover{
+    background-color: var(--bg-color-beige);
+    border-radius: 5px 0px 0px 5px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  body {
+      font-size: 1.125rem;
+  }
+
+  /* ============================================
+                    Header
+  ============================================ */
+    /****************** Header banner ******************/
+  .header__banner{
+    background: no-repeat url('./../img/accueil/menuisier_artisan_createur_M.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+
+  /* ============================================
+                    Footer
+  ============================================ */
+
+  .footer__contact{
+    height: 90px;
+  }
+
+  .footer__contact ul{
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer__contact li {
+    padding: 0px 0px;
+  }
+
+  span.trait{
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin: auto 25px;
+    background-color: var(--bg-color-beige);
+    transform: rotate(90deg);
+  }
+}
+
+
+@media (min-width: 1440px) {
+
+  /* ============================================
+                    Header
+  ============================================ */
+    /****************** Header banner ******************/
+  .header__banner{
+    background: no-repeat url('./../img/accueil/menuisier_artisan_createur_L.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+
+  /* ============================================
+                    Footer
+  ============================================ */
+
+  span.trait{
+    margin: auto 70px;
+  }
+
+}
+
+
+@media (min-width: 1668px) {
+
+  /* ============================================
+                    Footer
+  ============================================ */
+
+  span.trait{
+    margin: auto 90px;
+  }
+
 }
 

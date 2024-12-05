@@ -11,6 +11,7 @@
                             +352-661-346-837 
                         </a>
                     </li>
+                    <span class="trait"></span>
                     <li>
                         <a class="footer__contact-email" href="mailto:contact@lm-menuisier.com?subject=Demande d'information&body=Bonjour%20!%20Je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20services." 
                             target="_blank" 
@@ -21,6 +22,7 @@
                             contact@lm-menuisier.com
                         </a>
                     </li>
+                    <span class="trait"></span>
                     <li>
                         <a class="footer__contact-whatsapp" href="https://wa.me/+352661346837?text=Bonjour%20!%20Je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20services." 
                             target="_blank" 
