@@ -156,7 +156,7 @@ ul, li , a{
 
 nav.header__menu {
   position: relative;
-  visibility: hidden;         
+  visibility: visible;         
   opacity: 0;      
   background-color: var(--bg-color-light);           
   transition: all 0.3s ease-in-out;
@@ -165,7 +165,7 @@ nav.header__menu {
 
 nav.header__menu.active {
   visibility: visible;    
-  height: 664px;
+  height: 730px;
   margin-top: -10px;  
   padding: 75px 0px 75px 30px;
   color: var(--color-decorative, #965634);
@@ -350,7 +350,8 @@ button.header__cta-link{
   padding: 10px 20px;
   background-color: var(--bg-color-sombre);
   color: var(--bg-color-light, #FFF); 
-  border: 1px solid var(--bg-color-light); 
+  /* border: 1px solid var(--bg-color-light);  */
+  border: none;
   border-radius: 30px; 
 }
 
@@ -550,13 +551,12 @@ span.trait{
 /* ================================================================
                           MEDIAS QUERIES
 =================================================================== */
-@media (min-width: 472px) {
 
+@media (min-width: 472px) {
   .footer__img-deco {
     width: 200px;
     height: 280px;
   }
-
 }
 
 
@@ -610,7 +610,6 @@ span.trait{
     margin: 10px;
   }
 
-
   a.header__contact-email:hover, 
   a.header__contact-whatsapp:hover, 
   a.header__contact-phone:hover{
@@ -625,6 +624,56 @@ span.trait{
   /* ============================================
                     Header
   ============================================ */
+
+  .header__link{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header_link-logo{
+    position: relative;
+    z-index: 50;
+  }
+
+  nav.header__menu {
+    opacity: 1;
+    bottom: 15px;
+  }
+
+  #menu-main-menu{
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 120px;
+  }
+
+  #menu-item-120{
+    width: 190px;
+  }
+
+  .header__menu .toggle-button{
+    margin-left: 20px;
+  }
+
+  #menu-item-118{
+    margin-right: 260px;
+  }
+
+  #menu-item-113{
+    margin-left: -73px;
+  }
+
+  ul#sub-menu-120.sub-menu {
+    margin-left: 60px;
+  }
+
+  .header__btn{
+    display: none;
+  }
+
     /****************** Header banner ******************/
   .header__banner{
     height: 655px;
@@ -634,6 +683,9 @@ span.trait{
     background-repeat: no-repeat; 
   }
 
+  .header__banner-title{
+    background-color: rgba(255, 255, 255, 0.9);
+  }
 
   /* ============================================
                     Footer
@@ -691,7 +743,7 @@ span.trait{
     width: 250px;
     height: 350px;
   }
- 
+
 }
 
 
@@ -700,6 +752,29 @@ span.trait{
   /* ============================================
                     Header
   ============================================ */
+
+    /****************** nav menu ******************/
+
+  #menu-main-menu{
+    gap: 120px;
+  }
+
+  #menu-item-120{
+    width: 190px;
+  }
+
+  .header__menu .toggle-button{
+    margin-left: 40px;
+  }
+
+  #menu-item-118{
+    margin-right: 260px;
+  }
+
+  #menu-item-113{
+    margin-left: -60px;
+  }
+
     /****************** Header banner ******************/
     .header__banner{
       height:688px;
@@ -709,8 +784,7 @@ span.trait{
       background-repeat: no-repeat; 
     }
 
-
-
+  
   /* ============================================
                     Footer
   ============================================ */
@@ -743,7 +817,6 @@ span.trait{
   span.trait{
     margin: auto 90px;
   }
-
 }
 
 
@@ -754,13 +827,12 @@ span.trait{
   ============================================ */
     /****************** Header banner ******************/
     .header__banner{
-      height:937px;
+      height:837px;
       background: no-repeat url('./../img/accueil/menuisier_artisan_createur_XL.jpg');
       background-size: cover; 
       background-position: center; 
       background-repeat: no-repeat; 
     }
-
 
 }
 
