@@ -44,7 +44,6 @@
                     <h1>
                         Agencement intérieur sur mesure pour professionnels et particuliers au Luxembourg. 
                     </h1>
-                    <img class="footer__img-deco" src="<?php echo get_template_directory_uri(); ?>/assets/img/Arbre_logo.png" alt=""/>
                 </div>
 
                 <div class="footer__main-nav">
@@ -57,6 +56,8 @@
                     <p class="hurly-day">Du Lundi au Vendredi</p>
                     <p class="hurly-hour">8H30 - 18H00</p>
                 </div>
+
+                <img class="footer__img-deco" src="<?php echo get_template_directory_uri(); ?>/assets/img/Arbre_logo.png" alt=""/>
             </div>
 
             <a class="footer__socialMedia" href="https://www.facebook.com/profile.php?id=100091860574053"  aria-label="Consulter notre page Facebook">

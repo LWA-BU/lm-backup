@@ -451,15 +451,6 @@ span.trait{
   width: 100%;
 }
 
-.footer__main-nav, .footer__main-hurly{
-  width: 300px;
-}
-
-.footer__main-presentation{
-  position: relative;
-  margin: 50px 0px;
-}
-
 .footer__link-logo{
   width: 205px;
   height: auto;
@@ -478,10 +469,14 @@ span.trait{
 .footer__img-deco{
   position: absolute;
   top: 10px;
-  right: 280px;
+  left: 0px;
   width: 100px;
   height: 140px;
   opacity: .05;
+}
+
+.footer__main-nav{
+  margin-top: 30px;
 }
 
 .nav-navigation, .hurly{
@@ -545,7 +540,6 @@ span.trait{
 .legalNotice-iconeLux{
   position: absolute;
   top:25px;
-  /* left: 410px; */
   left: 310px;
   width: 45px;
   height: 45px;
@@ -556,6 +550,14 @@ span.trait{
 /* ================================================================
                           MEDIAS QUERIES
 =================================================================== */
+@media (min-width: 472px) {
+
+  .footer__img-deco {
+    width: 200px;
+    height: 280px;
+  }
+
+}
 
 
 @media (min-width: 768px) {
@@ -619,9 +621,6 @@ span.trait{
 }
 
 @media (min-width: 1024px) {
-  body {
-      font-size: 1.125rem;
-  }
 
   /* ============================================
                     Header
@@ -640,12 +639,15 @@ span.trait{
                     Footer
   ============================================ */
 
+  /********** contact **********/
+
   .footer__contact{
     height: 90px;
   }
 
   .footer__contact ul{
     justify-content: center;
+    align-content: center;
     width: 100%;
     margin: 10px 0;
   }
@@ -662,6 +664,34 @@ span.trait{
     background-color: var(--bg-color-beige);
     transform: rotate(90deg);
   }
+
+  /********** Main **********/
+
+  .footer__main{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .footer__main-presentation{
+    margin-top: 50px
+  }
+
+  .footer__main-nav, 
+  .footer__main-hurly{
+    margin-top: 90px;
+  }
+
+  .footer__img-deco {
+    top: 88px;
+    left: 0;
+    width: 250px;
+    height: 350px;
+  }
+ 
 }
 
 
