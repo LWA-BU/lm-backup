@@ -25,14 +25,11 @@
   } */
 
 
-main{
-    margin: 12px;
-}
-
 .section-about{
   position: relative;
   width: 100%;
   height: auto;
+  padding: 12px;
 }
 
 .section-about__img{
@@ -60,7 +57,36 @@ main{
     text-transform: uppercase;
 }
 
+.section-interiorDesign__img{
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  /* background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat;  */
+}
+
+.section-interiorDesign__img-decorative{
+  position: absolute;
+  z-index:-1;
+  width: 100%;
+  height: 160px;
+  top: -50px;
+  left: 0;
+}
+
 .section-about__content{
   width: 96%;
+  margin-bottom: 100px;
 }
+
+.section-subtitle, .section-title{
+  margin-left: 15px;
+}
+
+.section-interiorDesign{
+  position:relative;
+}
+
+
 

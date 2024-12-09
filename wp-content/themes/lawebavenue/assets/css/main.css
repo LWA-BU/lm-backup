@@ -9,6 +9,7 @@
   --bg-color-grey: #F6F6F6;
   --bg-color-light: rgba(255, 255, 255, 1);
   --bg-color-sombre: #37372F;
+  --bg-color-green: #564E1F;
   --bg-linear-gradient:  linear-gradient(to top, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.3) 17%, rgba(0, 0, 0, 0) 75%);
 
 
@@ -59,7 +60,8 @@ a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige{
 }
 
 a.btn-transparent-black, a.btn-transparent-beige{
-  width: auto;
+  width: 260px;
+  margin: 30px auto 50px auto;
 }
 
 a.header__cta-link{

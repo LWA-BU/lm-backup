@@ -4,7 +4,7 @@
             <span class="section-about__img" aria-hidden="true"></span>
             <p class="section-about__artisanat">artisanat</p>
             <div class="section-about__content">
-                <p class="section-about__txt subtitle section-subtitle">L'excellence, reflet de notre société</p>
+                <p class="section-about__txt section-subtitle">L'excellence, reflet de notre société</p>
                 <h1 class="section-about__title section-title">Qui sommes-nous ?</h1>
                 <p class="section-about__p paragraphe">
                     Mickaël, fondateur de la société, est un artisan issu des Compagnons du Devoir. <br>
@@ -18,21 +18,23 @@
             </div>
         </section>
 
-        <section class="section-interioDesign">
-            <img src="" alt="" class="section-interiorDesign__decorative-img" aria-hidden="true">
-            <img src="" alt="" class="section-interiorDesign__img">
-            <p class="section-interiorDesign__txt section-subtitle">Pour professionnels et particuliers</p>
-            <h1 class="section-interiorDesign__title section-title">Agencement intérieur</h1>
-            <p class="section-interiorDesign__p paragraphe">
-                « Nous proposons des solutions d’agencement intérieur sur mesure, adaptées aussi bien aux professionnels qu’aux particuliers. <br>
-                Que ce soit pour l’aménagement de bureaux, de boutiques, ou la création de mobiliers et rangements  pour votre maison, chaque projet est réalisé avec soin,
-                dans le respect des matériaux et des finitions. Notre expertise  nous permet de répondre à vos besoins spécifiques, 
-                alliant esthétisme, fonctionnalité et durabilité pour des espaces optimisés et harmonieux. »
-            </p>
-            <a class="section-interiorDesign__link btn-transparent-beige">
-                <span>voir nos prestations</span>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right-beige.svg" alt="">
-            </a>
+        <section class="section-interiorDesign">
+            <img class= "section-interiorDesign__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/accueil/interior-design-xs.jpg" alt="" aria-hidden="true">
+            <img class="section-interiorDesign__img-decorative"src="<?php echo get_template_directory_uri(); ?>/assets/img/accueil/img-deco.png" alt="" aria-hidden="true">
+            <div class="section-interiorDesign__content">
+                <p class="section-interiorDesign__txt section-subtitle">Pour professionnels et particuliers</p>
+                <h1 class="section-interiorDesign__title section-title">Agencement intérieur</h1>
+                <p class="section-interiorDesign__p paragraphe">
+                    « Nous proposons des solutions d’agencement intérieur sur mesure, adaptées aussi bien aux professionnels qu’aux particuliers. <br>
+                    Que ce soit pour l’aménagement de bureaux, de boutiques, ou la création de mobiliers et rangements  pour votre maison, chaque projet est réalisé avec soin,
+                    dans le respect des matériaux et des finitions. Notre expertise  nous permet de répondre à vos besoins spécifiques, 
+                    alliant esthétisme, fonctionnalité et durabilité pour des espaces optimisés et harmonieux. »
+                </p>
+                <a class="section-interiorDesign__link btn-transparent-beige"  href="votre-lien.html" aria-label="Voir nos prestations">
+                    <span>voir nos prestations</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right-beige.svg" alt="">
+                </a>
+            </div>
         </section>
 
         <section class="section-customMade">
@@ -68,7 +70,7 @@
                 <li class="section-concept__list-item list-conception"></li>
                 <li class="section-concept__list-item list-finition"></li>
             </ul>
-            <a class="section-concept__button btn-transparent-black">
+            <a class="section-concept__button btn-transparent-black"  href="votre-lien.html" aria-label="Voir nos inspirations">
                 <span>voir nos inspirations</span>
                 <img class="section-concept__button-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right-black.svg" alt="">
             </a>
