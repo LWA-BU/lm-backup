@@ -17,7 +17,7 @@
                 <img class="header_link-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/LM_Menuisier.svg" alt="Logo"  >
             </a> 
 
-            <div class="header__btn" type="button" aria-label="Afficher ou masquer la navigation" aria-controls="menu" aria-expanded="false" aria-pressed="false" tabindex="0">
+            <div class="header__btn" type="a" aria-label="Afficher ou masquer la navigation" aria-controls="menu" aria-expanded="false" aria-pressed="false" tabindex="0">
                 <span class="header__btn-ligne"></span>
                 <span class="visuallyhidden">Afficher ou masquer le menu de navigation</span>
             </div>
@@ -27,31 +27,30 @@
         </div>
    
 
-        
         <?php if(is_front_page()){ ?>
 
             <div class="header__banner">
-                
+
                 <h1 class="header__banner-title">artisan créateur d'espaces intérieurs <span class="header__banner-subtitle">sur mesure</span> </h1>
 
                 <?php get_template_part('parts/contact_banner'); ?>
 
                 <div class="header__cta">
-                    <button class="header__cta-link header__cta-link-cuisines">
+                    <a class="header__cta-link header__cta-link-cuisines btn-transparent">
                         <span>Cuisines</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </button>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="" >
+                    </a>
 
-                    <button class="header__cta-link header__cta-link-sdb">
+                    <a class="header__cta-link header__cta-link-sdb btn-transparent">
                         <span>Salles de bain</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </button>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="" >
+                    </a>
 
-                    <button class="header__cta-link header__cta-link-dressings">
+                    <a class="header__cta-link header__cta-link-dressings btn-transparent">
                         <span>Dressings</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </button>
-                </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="" >
+                    </a>
+                </div>     
 
             </div>
 
@@ -67,20 +66,20 @@
                 <?php get_template_part('parts/contact_banner'); ?>
 
                 <div class="headerPrestationsr__cta-">
-                    <button class="header__cta-link header__cta-link">
+                    <a class="header__cta-link header__cta-link">
                         <span></span>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </button>
+                    </a>
 
-                    <button class="headerPrestations__cta-link header__cta-link">
+                    <a class="headerPrestations__cta-link header__cta-link">
                         <span></span>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </button>
+                    </a>
 
-                    <button class="headerPrestations__cta-link header__cta-link">
+                    <a class="headerPrestations__cta-link header__cta-link">
                         <span></span>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </button>
+                    </a>
                 </div>
 
             </div>

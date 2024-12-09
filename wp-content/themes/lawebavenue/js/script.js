@@ -82,8 +82,6 @@ function toggleButtonSubMenu(){
             subMenu.style.opacity= '0';
             subMenu.style.transition="all 0.3s ease-in-out";
             subMenu.style.height="10px";
-            // subMenuHeader.style.height = "auto";
-            // subMenuFooter.style.height = "auto";
 
             } else if ( parent ) {
               /**
@@ -99,8 +97,6 @@ function toggleButtonSubMenu(){
                 subMenu.style.opacity= '1';
                 subMenu.style.transition="all 0.3s ease-in-out";
                 subMenu.style.height="218px";
-                // subMenuHeader.style.height = "40";
-                // subMenuFooter.style.height = "40";
             }
     
               event.preventDefault();

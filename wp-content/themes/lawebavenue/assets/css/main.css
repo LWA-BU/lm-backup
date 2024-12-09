@@ -1,4 +1,6 @@
-/* Général */
+/* ============================================
+                  GENERAL
+============================================ */
 :root {
 
   --bg-border: #C7714A;
@@ -7,15 +9,14 @@
   --bg-color-grey: #F6F6F6;
   --bg-color-light: rgba(255, 255, 255, 1);
   --bg-color-sombre: #37372F;
+  --bg-linear-gradient:  linear-gradient(to top, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.3) 17%, rgba(0, 0, 0, 0) 75%);
 
- 
+
   --color-decorative: #965634;
   --color-decorative-secondary:#CDC6BE;
   --color-h2:#161616;
   --color-text: #2C2C2C;
   --color-p-light: #505050;
-
-
 
   --font-main:  'Open Sans', Arial, sans-serif;
   --font-title: 'Poppins', Arial, sans-serif;
@@ -39,8 +40,57 @@ body{
   font-family: var(--font-main);
   font-weight: 400;
   font-size: var(--font-size-main);
-  /* letter-spacing: 0.125rem;
-  line-height: 1.6rem; */
+}
+
+a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  align-content: center;
+  gap: 10px; 
+  width: 186px;
+  height: 44px;
+  padding: 10px 20px;
+  font-size: 0.9rem; 
+  letter-spacing: 0.13rem;
+  text-transform: uppercase;
+  border-radius: 30px; 
+  background-color: transparent;
+}
+
+a.btn-transparent-black, a.btn-transparent-beige{
+  width: auto;
+}
+
+a.header__cta-link{
+  text-transform: lowercase;
+}
+
+a.btn-transparent-black{
+  color: var(--bg-color-sombre, #37372F); 
+  border: 1px solid var(--bg-color-sombre); 
+}
+
+a.btn-transparent-beige{
+  color: var(--color-decorative, #965634); 
+  border: 1px solid var(--color-decorative); 
+}
+
+a.header__cta-link:hover {
+  background-color: var(--color-decorative, #965634);
+}
+
+a.btn-transparent-black:hover, 
+a.btn-transparent-beige:hover {
+  background-color: var(--bg-color-beige, #CDC6BE);
+}
+
+a.header__cta-link img, 
+a.btn-transparent-black img, 
+a.btn-transparent-beige img{
+  width: 32px;
+  height: 32px;
+  margin-right: -14px;
 }
 
 .sr-only, .visuallyhidden{
@@ -69,6 +119,28 @@ ul, li , a{
   list-style-type: none;
   text-decoration: none;
   color: black;
+}
+
+.section-subtitle{
+  font-family: var(--font-subtitle);
+  font-weight: 400;
+  letter-spacing: 0.06rem;
+  padding-bottom: 0.05rem;
+}
+
+.section-title{
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.090rem;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.paragraphe{
+  font-family: var(--font-main);
+  font-weight: 400;
+  color: var(--color-p-light);
 }
 
 /* ============================================
@@ -186,6 +258,10 @@ nav.header__menu.active {
   position: relative; /* Nécessaire pour positionner l'élément ::after */
 }
 
+.header__menu .toggle-button {
+  text-transform: uppercase;
+}
+
 #menu-main-menu a:hover::after,
 .header__menu .toggle-button:hover::after {
   content: '';
@@ -238,6 +314,7 @@ nav.header__menu.active {
 
 .header__menu a {
   position: relative; /* Nécessaire pour le pseudo-élément ::after */
+  text-transform: uppercase;
 }
 
 .header__menu a::after {
@@ -298,7 +375,7 @@ li#menu-item-128{
   position: relative;
   width: 100%;
   height: 711px;
-  background: no-repeat url('./../img/accueil/menuisier_artisan_createur_XXS.jpg');
+  background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_XXS.jpg');
   background-size: cover; /* L'image couvre la div sans se déformer */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Éviter les répétitions */
@@ -337,32 +414,10 @@ li#menu-item-128{
   width: 100%;
 }
 
-button.header__cta-link{
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between;
-  align-content: center;
-  gap: 10px; 
-  width: 186px;
-  height: 44px;
-  font-size: 0.9rem; 
-  letter-spacing: 0.13rem;
-  padding: 10px 20px;
-  background-color: var(--bg-color-sombre);
+a.header__cta-link{
+  background-color: transparent;
   color: var(--bg-color-light, #FFF); 
-  /* border: 1px solid var(--bg-color-light);  */
-  border: none;
-  border-radius: 30px; 
-}
-
-button.header__cta-link:hover{
-  background-color: var(--color-decorative, #965634)
-}
-
-button.header__cta-link img{
-  width: 32px;
-  height: 32px;
-  margin-right: -14px;
+  border: 1px solid var(--bg-color-light); 
 }
 
 
@@ -570,7 +625,7 @@ span.trait{
 
   .header__banner{
     height:579px;
-    background-image: url('./../img/accueil/menuisier_artisan_createur_XS.jpg');
+    background-image: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_XS.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -670,6 +725,11 @@ span.trait{
     margin-left: 60px;
   }
 
+  #menu-item-112 a{
+    display: block;
+    width: 210px;
+  }
+
   .header__btn{
     display: none;
   }
@@ -677,7 +737,7 @@ span.trait{
     /****************** Header banner ******************/
   .header__banner{
     height: 655px;
-    background: no-repeat url('./../img/accueil/menuisier_artisan_createur_S.jpg');
+    background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_S.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -763,8 +823,8 @@ span.trait{
     width: 190px;
   }
 
-  .header__menu .toggle-button{
-    margin-left: 40px;
+  .header__menu .toggle-button{  
+    margin-left: 22px;
   }
 
   #menu-item-118{
@@ -778,7 +838,7 @@ span.trait{
     /****************** Header banner ******************/
     .header__banner{
       height:688px;
-      background: no-repeat url('./../img/accueil/menuisier_artisan_createur_M.jpg');
+      background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_M.jpg');
       background-size: cover; 
       background-position: center; 
       background-repeat: no-repeat; 
@@ -792,7 +852,6 @@ span.trait{
   span.trait{
     margin: auto 70px;
   }
-
 }
 
 
@@ -804,7 +863,7 @@ span.trait{
     /****************** Header banner ******************/
     .header__banner{
       height:797px;
-      background: no-repeat url('./../img/accueil/menuisier_artisan_createur_L.jpg');
+      background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_L.jpg');
       background-size: cover; 
       background-position: center; 
       background-repeat: no-repeat; 
@@ -828,7 +887,7 @@ span.trait{
     /****************** Header banner ******************/
     .header__banner{
       height:837px;
-      background: no-repeat url('./../img/accueil/menuisier_artisan_createur_XL.jpg');
+      background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_XL.jpg');
       background-size: cover; 
       background-position: center; 
       background-repeat: no-repeat; 

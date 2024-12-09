@@ -1,0 +1,66 @@
+/* Général */
+/* :root {
+
+    --bg-border: #C7714A;
+    --bg-color-beige: #CDC6BE;
+    --bg-color-blue: #172733;
+    --bg-color-grey: #F6F6F6;
+    --bg-color-light: rgba(255, 255, 255, 1);
+    --bg-color-sombre: #37372F;
+    --bg-linear-gradient:  linear-gradient(to top, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.3) 17%, rgba(0, 0, 0, 0) 75%);
+  
+  
+    --color-decorative: #965634;
+    --color-decorative-secondary:#CDC6BE;
+    --color-h2:#161616;
+    --color-text: #2C2C2C;
+    --color-p-light: #505050;
+  
+    --font-main:  'Open Sans', Arial, sans-serif;
+    --font-title: 'Poppins', Arial, sans-serif;
+    --font-subtitle: 'Cormorant Garamond';
+  
+    --font-size-main: 16px;
+  
+  } */
+
+
+main{
+    margin: 12px;
+}
+
+.section-about{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.section-about__img{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 200px;
+    height: 250px;
+    background-image: url('./../img/accueil/dessin_technique_LM_Menuisier.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0.4;
+  }
+
+.section-about__artisanat{
+    padding-top: 250px;
+    padding-bottom: 28px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 2.125rem;
+    letter-spacing: 0.56rem;
+    color: var(--color-decorative);
+    text-transform: uppercase;
+}
+
+.section-about__content{
+  width: 96%;
+}
+

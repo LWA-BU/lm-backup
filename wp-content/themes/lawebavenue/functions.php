@@ -38,15 +38,11 @@ function lwa_register_assets() {
         '1.0'
     );
 
-    wp_enqueue_style( 'fonts', get_template_directory_uri() . 'assets/css/fonts.css' );
+    wp_enqueue_style( 'fonts', get_template_directory_uri() . '/assets/css/fonts.css' );
 
     if(is_front_page()){
-        wp_enqueue_style( 'front-page-styles', get_template_directory_uri() . 'assets/css/front-page.css' );
+        wp_enqueue_style( 'front-page-styles', get_template_directory_uri() . '/assets/css/front-page.css' );
     }
-
-
-
-
 
 }
 add_action( 'wp_enqueue_scripts', 'lwa_register_assets' );
