@@ -20,7 +20,7 @@
 
         <section class="section-interiorDesign">
             <img class= "section-interiorDesign__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/accueil/interior-design-xs.jpg" alt="" aria-hidden="true">
-            <img class="section-interiorDesign__img-decorative"src="<?php echo get_template_directory_uri(); ?>/assets/img/accueil/img-deco.png" alt="" aria-hidden="true">
+            <img class="section-interiorDesign__img-decorative" src="<?php echo get_template_directory_uri(); ?>/assets/img/accueil/img-deco.png" alt="" aria-hidden="true">
             <div class="section-interiorDesign__content">
                 <p class="section-interiorDesign__txt section-subtitle">Pour professionnels et particuliers</p>
                 <h1 class="section-interiorDesign__title section-title">Agencement intérieur</h1>

@@ -4,7 +4,7 @@
 	<title id="svgTitle">Icône de flèche droite</title>
 	<desc id="svgDesc">Une flèche pointant vers la droite dans un cercle.</desc>
 	
-	<path  fill="#965634" opacity="1.000000" stroke="none" 
+	<path  fill="#B7714A" opacity="1.000000" stroke="none" 
 		d="
 	M22.991148,92.902504 
 		C13.291121,76.758682 15.697000,50.034756 27.630281,35.460506 
@@ -21,7 +21,7 @@
 		C17.778414,63.752174 22.286827,87.355583 39.255341,101.988808 
 		C53.515961,114.286819 78.909813,116.039459 94.567368,103.038910 
 	z"/>
-	<path fill="#965634" opacity="1.000000" stroke="none" 
+	<path fill="#B7714A" opacity="1.000000" stroke="none" 
 		d="
 	M55.004021,71.000000 
 		C50.845688,71.000000 47.171970,70.796814 43.530628,71.053307 
