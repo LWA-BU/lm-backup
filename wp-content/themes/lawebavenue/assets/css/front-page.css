@@ -1,61 +1,41 @@
 /* Général */
-.main-content{
+.main-content, 
+.section-customMade, 
+.section-concept{
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .section-subtitle, .section-title{
   margin-left: 15px;
+  margin-bottom: 5px;
+  margin: 10px 0px 0px 15px;
+}
+
+.section-title{
+  font-size: 1.5rem;
 }
 
 .paragraphe{
   font-family: var(--font-main);
-  padding: 15px;
+  padding: 15px 11px 15px 15px;
   font-weight: 400;
   color: var(--color-p-light);
 }
 
-/* :root {
-
-    --bg-border: #C7714A;
-    --bg-color-beige: #CDC6BE;
-    --bg-color-blue: #172733;
-    --bg-color-grey: #F6F6F6;
-    --bg-color-light: rgba(255, 255, 255, 1);
-    --bg-color-sombre: #37372F;
-    --bg-linear-gradient:  linear-gradient(to top, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.3) 17%, rgba(0, 0, 0, 0) 75%);
-  
-  
-    --color-decorative: #965634;
-    --color-decorative-secondary:#CDC6BE;
-    --color-h2:#161616;
-    --color-text: #2C2C2C;
-    --color-p-light: #505050;
-  
-    --font-main:  'Open Sans', Arial, sans-serif;
-    --font-title: 'Poppins', Arial, sans-serif;
-    --font-subtitle: 'Cormorant Garamond';
-  
-    --font-size-main: 16px;
-  
-  } */
-
-
 .section-about{
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 12px;
-  /* margin-bottom: 150px; */
+  justify-content: center;
+  align-items: center;
 }
 
 .section-about__img{
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: -10px;
     width: 200px;
-    height: 250px;
-    background-image: url('./../img/accueil/dessin_technique_LM_Menuisier.png');
+    height: 250px; 
+    margin: 50px 0px 25px 100px;
+    background-image: url('./../img/accueil/dessin_technique_LM_Menuisier.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -63,21 +43,19 @@
   }
 
 .section-about__artisanat{
-    padding-top: 250px;
-    padding-bottom: 28px;
+    margin: -175px 0px 150px -230px;
     font-family: var(--font-main);
     font-weight: 700;
     font-size: 2.125rem;
     letter-spacing: 0.56rem;
     color: var(--color-decorative);
     text-transform: uppercase;
+    transform: rotate(-90deg);
 }
 
 .section-about__content{
   width: 96%;
 }
-
-
 
 .section-interiorDesign{
   position:relative;
@@ -88,9 +66,10 @@
   position: relative;
   z-index: 10;
   width: 100%;
-  /* background-size: contain; 
-  background-position: center; 
-  background-repeat: no-repeat;  */
+  height: 300px;
+  background-image: url('./../img/accueil/interior-design-xs.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 .section-interiorDesign__img-decorative{
@@ -100,9 +79,10 @@
   height: 190px;
   top: -90px;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.2;
+  background-image: url('./../img/accueil/img-deco.png');
+  background-size: contain; 
 }
-
 
 .section-interiorDesign__content{
   margin-top: -8px;
@@ -116,4 +96,173 @@
   color: var(--bg-color-light);
 }
 
+.section-customMade__icone,
+.section-concept__title-icone{
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0px auto;
+}
 
+.section-customMade__icone{
+  background-image: url('./../img/icones/measuring-tape.png');
+  background-size: contain; 
+}
+
+.section-customMade__txt, 
+.section-customMade__title{
+  text-align: center;
+  margin-left: 0px;
+}
+
+.section-concept{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section-concept__content-img{
+  width: 100%;
+  height: auto;
+}
+
+.section-concept__img{
+  width: 100%;
+  max-width: 630px;
+  height: auto;
+}
+
+.section-concept__title{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+.section-concept__title-icone{
+  width: 48px;
+  height: 48px;
+  margin: inherit;
+  background-image: url('./../img/icones/workflow.png');
+  background-size: contain; 
+}
+
+.section-concept__title-title{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+ul.section-concept__list{
+  counter-reset: item; /* Initialise le compteur */
+  margin-left: 30px;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.section-concept__list li {
+  position: relative;
+  padding-left: 40px; 
+  padding: 5px 0px 5px 40px;
+}
+
+ul.section-concept__list li::before {
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  font-family: var(--font-subtitle);
+  color: var(--color-decorative, #965634);
+  font-size: 1.8rem;
+  content: "0" counter(item) " "; /* Ajoute un chiffre suivi d'un point */
+  counter-increment: item; /* Incrémente le compteur */
+}
+
+ul.section-concept__list li.list-definition::before, 
+ul.section-concept__list li.list-measure::before{
+  font-size: 2rem;
+}
+
+
+/* ================================================================
+                          MEDIAS QUERIES
+=================================================================== */
+
+@media (min-width: 472px) {
+  .section-about__content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .section-about{
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 170px 0px 150px 0px;
+  }
+
+  .section-about__img{
+    position: absolute;
+    top: -20px;
+    right: 0px;
+  }
+
+  .section-about__artisanat {
+    width: 100px;
+    margin: inherit;
+    margin-top: 370px;
+    font-size: 4.5rem;
+  }
+
+  .section-about__content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+  .section-about{
+    width: 80%;
+    padding-top: 220px
+  }
+
+  .section-about__img {
+    top: 0px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .section-about{
+    width: 90%;
+    padding-top: 270px
+  }
+
+  .section-about__img {
+    top: 50px;
+    right: 45px;
+    width: 290px;
+    height: 340px;
+  }
+
+  .section-about__p{
+    width: 80%;
+  }
+}
+
+@media (min-width: 1668px) {
+
+}
+
+@media (min-width: 1920px) {
+
+}

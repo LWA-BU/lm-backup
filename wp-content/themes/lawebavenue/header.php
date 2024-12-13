@@ -38,17 +38,17 @@
                 <div class="header__cta">
                     <a class="header__cta-link header__cta-link-cuisines btn-transparent"  href="votre-lien.html" aria-label="Voir nos cuisines">
                         <span>Cuisines</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="" >
+                        <span class="icone"></span>
                     </a>
 
                     <a class="header__cta-link header__cta-link-sdb btn-transparent" href="votre-lien.html" aria-label="Voir nos salles de bain">
                         <span>Salles de bain</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="" >
+                        <span class="icone"></span>
                     </a>
 
                     <a class="header__cta-link header__cta-link-dressings btn-transparent" href="votre-lien.html" aria-label="Voir nos dressings">
                         <span>Dressings</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="" >
+                        <span class="icone" >
                     </a>
                 </div>     
 
