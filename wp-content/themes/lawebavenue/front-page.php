@@ -58,10 +58,16 @@
 
         <section class="section-concept">
 
-            <figure class="section-concept__content-img">
-                <img class="section-concept__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/accueil/conception_projet.webp" alt="Dressing ouvert" >
-                <figcaption class="visuallyhidden">Dressing en bois blanc ouvert sur l'espace chambre</figcaption>
-            </figure>
+            <div class="section-concept__container-img">
+                <div class="section-concept__img-main">
+                    <div class="section-concept__img-bg"></div>
+                    <figure class="section-concept__content-img">
+                        <img class="section-concept__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/accueil/conception_projet.webp" alt="Dressing ouvert" >
+                        <figcaption class="visuallyhidden">Dressing en bois blanc ouvert sur l'espace chambre</figcaption>
+                    </figure>
+                    <div class="section-concept__img-decorative"></div>
+                </div>
+            </div>
 
             <div class="section-concept__main">
                 <div class="section-concept__title">

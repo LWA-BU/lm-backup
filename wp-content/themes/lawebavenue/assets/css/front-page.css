@@ -119,17 +119,42 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding-bottom: 120px;
 }
 
-.section-concept__content-img{
-  width: 100%;
-  height: auto;
+.section-concept__container-img{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+}
+
+.section-concept__img-bg{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: var(--bg-border);
+  background-size: 100% 100%;
+  /* background-color: var(--color-decorative-secondary); */
+
 }
 
 .section-concept__img{
   width: 100%;
-  max-width: 630px;
-  height: auto;
+}
+
+.section-concept__img-decorative{
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 150px;
+  background-image: url('./../img/accueil/img-deco.png');
+  background-size: 100% 100%;
 }
 
 .section-concept__title{
@@ -181,6 +206,7 @@ ul.section-concept__list li.list-measure::before{
 }
 
 
+
 /* ================================================================
                           MEDIAS QUERIES
 =================================================================== */
@@ -189,19 +215,39 @@ ul.section-concept__list li.list-measure::before{
   .section-about__content {
     width: 80%;
   }
+
+  .section-concept__img-bg{
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-concept__img-decorative{
+    width: 150px;
+    height: 200px;
+  }
+
+  .section-interiorDesign__img{
+    height: 450px;
+    background-image: url('./../img/accueil/interior-design-s.jpg');
+  }
 }
 
 @media (min-width: 768px) {
+
+  .section-about, 
+  .section-about__content,
+    .section-customMade {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .section-about{
     position: relative;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     width: 90%;
-    padding: 170px 0px 150px 0px;
+    padding: 170px 0px 120px 0px;
   }
 
   .section-about__img{
@@ -217,34 +263,63 @@ ul.section-concept__list li.list-measure::before{
     font-size: 4.5rem;
   }
 
-  .section-about__content {
-    margin-left: auto;
-    margin-right: auto;
+  .section-interiorDesign__img{
+    height: 470px;
   }
-  
+
+  .section-interiorDesign__content, 
+  .section-customMade, 
+  .section-concept{
+    padding: 50px 35px 70px 35px;
+  }
+
+  .section-customMade{
+    padding-top: 120px;
+    max-width: 850px;
+  }
+
+  .section-concept{
+    padding-bottom: 120px
+  }
+
 }
-
-
-
 
 
 @media (min-width: 1024px) {
   .section-about{
     width: 80%;
-    padding-top: 220px
+    padding-top: 220px;
+    padding-bottom: 120px;
   }
 
   .section-about__img {
     top: 0px;
   }
 
+  .section-about__artisanat{
+    transform: rotate(-90deg);
+  }
+
+  .section-interiorDesign__img{
+    height: 650px;
+    background-image: url('./../img/accueil/interior-design-m.jpg');
+  }
+
+  .section-concept{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
-@media (min-width: 1440px) {
 
+
+@media (min-width: 1200px) {
   .section-about{
     width: 90%;
-    padding-top: 270px
+    padding-top: 300px;
+    padding-bottom: 120px;
   }
 
   .section-about__img {
@@ -257,9 +332,71 @@ ul.section-concept__list li.list-measure::before{
   .section-about__p{
     width: 80%;
   }
+
+  .section-interiorDesign{
+    margin-top: inherit;
+  }
+  
+  .section-interiorDesign__img{
+    height: 850px;
+    background-image: url('./../img/accueil/interior-design-l.jpg');
+  }
+
+  .section-interiorDesign__img-decorative {
+    width: 50%;
+    bottom: 0px;
+    left: 0;
+    top: inherit;
+  }
+
+  .section-interiorDesign__content {
+    position: relative;
+    z-index: 10;
+    width: 50%;
+    margin-top: -400px;
+    margin-left: 50%;
+  }
+
+  .section-concept{
+    flex-direction: row-reverse;
+    column-gap: 100px;
+  }
+
+  /* .section-concept figure{
+    width: 50%;
+  } */
+
+
+
+  .section-concept__main{
+    width: 50%;
+  }
+
+
+}
+
+@media (min-width: 1440px) {
+
+  .section-about{
+    padding-top: 270px;
+  }
+
+  .section-interiorDesign__img{
+    height: 850px;
+    background-image: url('./../img/accueil/interior-design-xl.jpg');
+  }
+
+  .section-interiorDesign__content {
+    margin-top: -350px;
+  }
+  
+
 }
 
 @media (min-width: 1668px) {
+  .section-interiorDesign__img{
+    height: 900px;
+  }
 
 }
 
