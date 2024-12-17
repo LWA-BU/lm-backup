@@ -44,6 +44,10 @@ function lwa_register_assets() {
         wp_enqueue_style( 'front-page-styles', get_template_directory_uri() . '/assets/css/front-page.css' );
     }
 
+    if(is_page('prestations')){
+        wp_enqueue_style( 'page-prestations-styles', get_template_directory_uri() . '/assets/css/page-prestations.css' );
+    }
+
 }
 add_action( 'wp_enqueue_scripts', 'lwa_register_assets' );
 

@@ -31,7 +31,7 @@
 
             <div class="header__banner">
 
-                <h1 class="header__banner-title">artisan créateur d'espaces intérieurs <span class="header__banner-subtitle">sur mesure</span> </h1>
+                <h1 class="header__banner-title">artisan créateur d'espaces intérieurs <span class="header__banner-subtitle">sur mesure</span></h1>
 
                 <?php get_template_part('parts/contact_banner'); ?>
 
@@ -61,26 +61,9 @@
 
             <div class="headerPrestations__banner">
                 
-                <h1 class="headerPrestations__banner-title">Prestations </h1>
+                <h1 class="headerPrestations__banner-title">De la conception à l'installation <span class="header__banner-subtitle">Projet clé en main</span></h1>
 
                 <?php get_template_part('parts/contact_banner'); ?>
-
-                <div class="headerPrestationsr__cta-">
-                    <a class="header__cta-link header__cta-link">
-                        <span></span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </a>
-
-                    <a class="headerPrestations__cta-link header__cta-link">
-                        <span></span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </a>
-
-                    <a class="headerPrestations__cta-link header__cta-link">
-                        <span></span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.png" alt="" >
-                    </a>
-                </div>
 
             </div>
 
