@@ -153,6 +153,17 @@ ul, li , a{
   padding-bottom: 25px;
 }
 
+.section-subtitle, .section-title {
+  margin: 10px 0px 0px 15px;
+}
+
+.paragraphe{
+  font-family: var(--font-main);
+  padding: 15px 11px 15px 15px;
+  font-weight: 400;
+  color: var(--color-p-light);
+}
+
 
 /* ============================================
                   Header
@@ -408,6 +419,11 @@ li#menu-item-128{
   text-transform: uppercase;
 }
 
+.headerPrestations__banner-title{
+  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
 .header__banner-subtitle{
   display: block;
   font-family: var(--font-subtitle);
@@ -435,29 +451,13 @@ a.header__cta-link{
 .headerPrestations__banner{
   position: relative;
   width: 100%;
-  height: 540px;
+  height: 750px;
   background: url('./../img/prestations/meuble-m.webp');
   background-size: auto; 
-  background-position: right; 
+  background-position: left; 
   background-repeat: no-repeat; 
 }
 
-
-/*header prestations*/
-/* .headerPrestations__banner-title{
-  position: absolute;
-  bottom: 240px;
-  width: 100%;
-  max-width: 360px;
-  padding: 25px 40px;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-title);
-  font-size: 1.175rem;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.25rem;
-  text-transform: uppercase;
-} */
 
 /****************** Header contact ******************/
 
@@ -788,11 +788,7 @@ span.trait{
   }
 
   .headerPrestations__banner{
-    width: 100%;
     height: 721px;
-    background: url('./../img/prestations/meuble-l.webp');
-    background-size: cover; 
-    background-repeat: no-repeat; 
   }
 
 
@@ -858,9 +854,8 @@ span.trait{
 @media (min-width: 1200px) {
 
   .headerPrestations__banner{
-    width: 100%;
     height: 850px;
-    background: url('./../img/prestations/meuble-xl.webp');
+    background: url('./../img/prestations/meuble-l.webp');
     background-size: cover; 
     background-repeat: no-repeat; 
   }
@@ -900,6 +895,13 @@ span.trait{
     background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_M.webp');
     background-size: cover; 
     background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+  .headerPrestations__banner{
+    height: 850px;
+    background: url('./../img/prestations/meuble-xl.webp');
+    background-size: cover; 
     background-repeat: no-repeat; 
   }
 

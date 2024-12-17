@@ -21,12 +21,18 @@ get_header(); ?>
             </div>
 
            <ul class="section-prestation__list">
-                <li class="section-prestation__list-item list-design"><a href="">Agencement intérieur</a></li>
-                <li class="section-prestation__list-item list-floor"><a href="">Revêtement de sol</a></li>
-                <li class="section-prestation__list-item list-furniture"><a href="">Mobilier</a></li>
-                <li class="section-prestation__list-item list-door"><a href="">Porte / Cloison / Habillage mural</a></li>
-                <li class="section-prestation__list-item list-staircase"><a href="">Escalier intérieur</a></li>
+                <li class="section-prestation__list-item list-design"><label for="modal1" >Agencement intérieur</label></li>
+                <li class="section-prestation__list-item list-floor"><label for="modal2" >Revêtement de sol</label></li>
+                <li class="section-prestation__list-item list-furniture"><label for="modal3" >Mobilier</label></li>
+                <li class="section-prestation__list-item list-door"><label for="modal4" >Porte / Cloison / Habillage mural</label></li>
+                <li class="section-prestation__list-item list-staircase"><label for="modal5" >Escalier intérieur</label></li>
            </ul>
+
+            <!-- <input type="checkbox" id="modal1" class="modal-toggle">
+            <input type="checkbox" id="modal2" class="modal-toggle">
+            <input type="checkbox" id="modal3" class="modal-toggle">
+            <input type="checkbox" id="modal4" class="modal-toggle">
+            <input type="checkbox" id="modal5" class="modal-toggle"> -->
 
         </section>
 

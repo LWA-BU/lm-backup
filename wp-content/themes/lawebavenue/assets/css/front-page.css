@@ -6,21 +6,6 @@
   padding-bottom: 50px;
 }
 
-.section-subtitle, .section-title{
-  margin: 10px 0px 0px 15px;
-}
-
-.section-title{
-  font-size: 1.5rem;
-}
-
-.paragraphe{
-  font-family: var(--font-main);
-  padding: 15px 11px 15px 15px;
-  font-weight: 400;
-  color: var(--color-p-light);
-}
-
 .section-about{
   display: flex;
   flex-direction: column;

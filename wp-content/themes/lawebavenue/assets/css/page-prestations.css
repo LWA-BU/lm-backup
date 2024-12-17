@@ -1,3 +1,7 @@
 main.prestations section{
     padding: 60px 10px;
 }
+
+.section-prestation__txt{
+    color: var(--color-decorative, #965634);
+}
