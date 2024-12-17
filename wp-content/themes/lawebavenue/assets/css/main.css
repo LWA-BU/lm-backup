@@ -83,7 +83,7 @@ a.btn-transparent-black span.icone {
 
 a.btn-transparent-black{
   color: var(--bg-color-sombre, #37372F); 
-  border: 1px solid var(--bg-color-sombre); 
+  border: 1.5px solid var(--bg-color-sombre); 
 }
 
 a.btn-transparent-black span.icone{
@@ -92,7 +92,7 @@ a.btn-transparent-black span.icone{
 
 a.btn-transparent-beige{
   color: var(--bg-border, #B7714A); 
-  border: 1px solid var(--bg-border, #C7714A); 
+  border: 1.5px solid var(--bg-border, #C7714A); 
 }
 
 a.btn-transparent-beige span.icone{
@@ -101,7 +101,7 @@ a.btn-transparent-beige span.icone{
 
 a.header__cta-link:hover, 
 a.btn-transparent-black:hover{
-  background-color: var(--color-decorative, #965634);
+  background-color: var(--bg-border, #965634);
 }
 
  
