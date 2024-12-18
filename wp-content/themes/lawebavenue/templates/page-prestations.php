@@ -20,21 +20,82 @@ get_header(); ?>
                 </p>
             </div>
 
-           <ul class="section-prestation__list">
-                <li class="section-prestation__list-item list-design"><label for="modal1" >Agencement intérieur</label></li>
-                <li class="section-prestation__list-item list-floor"><label for="modal2" >Revêtement de sol</label></li>
-                <li class="section-prestation__list-item list-furniture"><label for="modal3" >Mobilier</label></li>
-                <li class="section-prestation__list-item list-door"><label for="modal4" >Porte / Cloison / Habillage mural</label></li>
-                <li class="section-prestation__list-item list-staircase"><label for="modal5" >Escalier intérieur</label></li>
-           </ul>
+            <!-- <ul class="section-prestation__list">
+                    <li class="section-prestation__list-item list-design"><label for="modal1" >Agencement intérieur</label></li>
+                    <li class="section-prestation__list-item list-floor"><label for="modal2" >Revêtement de sol</label></li>
+                    <li class="section-prestation__list-item list-furniture"><label for="modal3" >Mobilier</label></li>
+                    <li class="section-prestation__list-item list-door"><label for="modal4" >Porte / Cloison / Habillage mural</label></li>
+                    <li class="section-prestation__list-item list-staircase"><label for="modal5" >Escalier intérieur</label></li>
+            </ul> -->
 
-            <!-- <input type="checkbox" id="modal1" class="modal-toggle">
-            <input type="checkbox" id="modal2" class="modal-toggle">
-            <input type="checkbox" id="modal3" class="modal-toggle">
-            <input type="checkbox" id="modal4" class="modal-toggle">
-            <input type="checkbox" id="modal5" class="modal-toggle"> -->
+            <ul lass="section-prestation__list">
+                <li> 
+                    <button class="open-modal section-prestation__list-item list-design" data-modal="modal1">
+                        Agencement intérieur
+                        <span class="icon" aria-hidden="true">
+                            <!-- Icône SVG décorative -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="open-modal section-prestation__list-item list-floor" data-modal="modal2">
+                        Revêtement de sol
+                        <span class="icon" aria-hidden="true">
+                            <!-- Icône SVG décorative -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="open-modal section-prestation__list-item list-furniture" data-modal="modal3">
+                        Mobilier
+                        <span class="icon" aria-hidden="true">
+                            <!-- Icône SVG décorative -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="open-modal section-prestation__list-item list-door" data-modal="modal4">
+                        Porte / Cloison / Habillage mural
+                        <span class="icon" aria-hidden="true">
+                            <!-- Icône SVG décorative -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="open-modal section-prestation__list-item list-staircase" data-modal="modal5">
+                        Escalier intérieur
+                        <span class="icon" aria-hidden="true">
+                            <!-- Icône SVG décorative -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+            </ul>
+            
+            <?php get_template_part('parts/modales'); ?>
 
         </section>
+
+
+       
 
 
         <section class="section-customMade">

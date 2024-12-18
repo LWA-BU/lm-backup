@@ -1,6 +1,11 @@
 
 displayHeaderMainMenu();
+displayModale();
 toggleButtonSubMenu();
+
+
+
+
 
 
 
@@ -43,6 +48,98 @@ function displayHeaderMainMenu() {
       burgerMenu.style.background= '#37372F';
     }
   }
+}
+
+function displayModale(){
+    /********** 
+   * modale 
+   *********/
+  // Sélection des éléments nécessaires
+  const openModalButtons = document.querySelectorAll('.open-modal');
+  const closeModalButtons = document.querySelectorAll('.close-modal');
+  const modals = document.querySelectorAll('.modal');
+  const body = document.body;
+  const overlay = document.querySelector('.overlay');
+
+  // Sauvegarder l'élément précédemment en focus
+  let previousFocusElement = null;
+
+  // Gestion des clics sur les boutons pour ouvrir les modales
+  openModalButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const modalId = button.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      overlay.style.display = 'block'; // Afficher l'overlay
+      openModal(modal);
+    });
+  });
+
+  // Gestion des clics sur les boutons pour fermer les modales
+  closeModalButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal');
+      overlay.style.display = 'none'; // Cacher l'overlay
+      closeModal(modal);
+    });
+  });
+
+  // Fermer les modales avec la touche Échap
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modals.forEach((modal) => {
+        if (modal.getAttribute('aria-hidden') === 'false') {
+          closeModal(modal);
+        }
+      });
+    }
+  });
+
+  // Empêcher le focus en arrière-plan lorsqu'une modale est ouverte
+  document.addEventListener('focus', (event) => {
+    const activeModal = Array.from(modals).find(
+      (modal) => modal.getAttribute('aria-hidden') === 'false'
+    );
+
+    if (activeModal && !activeModal.contains(event.target)) {
+      event.stopPropagation();
+      activeModal.querySelector('.close-modal').focus();
+    }
+  }, true);
+
+
+  // Fonction pour fermer une modale
+  function closeModal(modal) {
+    if (modal) {
+      // Cacher la modale
+      modal.setAttribute('aria-hidden', 'true');
+
+      // Restaurer le focus sur l'élément précédent
+      if (previousFocusElement) {
+        previousFocusElement.focus();
+      }
+
+      // Réactiver le défilement de l'arrière-plan
+      body.classList.remove('no-scroll');
+
+    }
+  }
+
+  // Fonction pour ouvrir une modale
+  function openModal(modal) {
+    if (modal) {
+      // Sauvegarder l'élément en focus avant d'ouvrir la modale
+      previousFocusElement = document.activeElement;
+
+      // Afficher la modale
+      modal.setAttribute('aria-hidden', 'false');
+      modal.querySelector('.close-modal').focus();
+
+      // Empêcher le défilement de l'arrière-plan
+      body.classList.add('no-scroll');
+    
+    }
+  }
+
 }
 
 function toggleButtonSubMenu(){
@@ -105,7 +202,4 @@ function toggleButtonSubMenu(){
       }
   }); 
 }
-
-
-
 

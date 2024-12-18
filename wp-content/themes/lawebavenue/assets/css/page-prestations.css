@@ -1,3 +1,18 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    z-index: 3; /* Juste en dessous de la modale */
+    display: none; /* Caché par défaut */
+}
+
+main.prestations{
+    position: relative;
+}
+
 main.prestations section{
     padding: 60px 10px;
 }
@@ -5,3 +20,64 @@ main.prestations section{
 .section-prestation__txt{
     color: var(--color-decorative, #965634);
 }
+
+
+
+/* Modales */
+
+.modal {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    margin: auto;
+    padding: 100px;
+    background-color: var(--bg-color-light, #FFFFFF);
+    border-radius: 5px;
+    box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  button.open-modal {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.open-modal:hover {
+    background-color: #0056b3;
+  }
+    
+  .modal[aria-hidden="false"] {
+    display: flex;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-modal {
+    margin-top: 10px;
+    background-color: #dc3545;
+  }
+  
+  .close-modal:hover {
+    background-color: #c82333;
+  }
+   
+  /* Cacher le contenu d'arrière-plan */
+  body.no-scroll, html.no-scroll{
+    overflow: hidden;
+    height: 100%;
+  }
+

@@ -8,6 +8,7 @@
   --bg-color-blue: #172733;
   --bg-color-grey: #F6F6F6;
   --bg-color-light: rgba(255, 255, 255, 1);
+  --bg-color-medium: #f0f0f0;
   --bg-color-sombre: #37372F;
   --bg-color-green: #564E1F;
   --bg-linear-gradient:  linear-gradient(to top, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.3) 17%, rgba(0, 0, 0, 0) 75%);
@@ -42,6 +43,8 @@ body{
   font-weight: 400;
   font-size: var(--font-size-main);
 }
+
+
 
 a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige{
   display: flex; 
