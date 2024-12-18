@@ -20,22 +20,21 @@ get_header(); ?>
                 </p>
             </div>
 
-            <!-- <ul class="section-prestation__list">
-                    <li class="section-prestation__list-item list-design"><label for="modal1" >Agencement intérieur</label></li>
-                    <li class="section-prestation__list-item list-floor"><label for="modal2" >Revêtement de sol</label></li>
-                    <li class="section-prestation__list-item list-furniture"><label for="modal3" >Mobilier</label></li>
-                    <li class="section-prestation__list-item list-door"><label for="modal4" >Porte / Cloison / Habillage mural</label></li>
-                    <li class="section-prestation__list-item list-staircase"><label for="modal5" >Escalier intérieur</label></li>
-            </ul> -->
-
-            <ul lass="section-prestation__list">
+            <ul class="section-prestation__list">
                 <li> 
                     <button class="open-modal section-prestation__list-item list-design" data-modal="modal1">
                         Agencement intérieur
                         <span class="icon" aria-hidden="true">
                             <!-- Icône SVG décorative -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            <svg fill="#965634" height="26px" width="26px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 330 330" xml:space="preserve">
+                                <g id="XMLID_2_">
+                                    <path id="XMLID_4_" d="M145.606,74.393c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l69.393,69.392
+                                        l-69.393,69.395c-5.858,5.858-5.858,15.355,0,21.213C127.322,258.536,131.161,260,135,260s7.678-1.464,10.606-4.394l80-80.002
+                                        c2.814-2.813,4.394-6.628,4.394-10.607c0-3.979-1.58-7.794-4.394-10.607L145.606,74.393z"/>
+                                    <path id="XMLID_5_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300
+                                        c-74.439,0-135-60.561-135-135S90.561,30,165,30s135,60.561,135,135S239.439,300,165,300z"/>
+                                </g>
                             </svg>
                         </span>
                     </button>
@@ -46,8 +45,15 @@ get_header(); ?>
                         Revêtement de sol
                         <span class="icon" aria-hidden="true">
                             <!-- Icône SVG décorative -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            <svg fill="#965634" height="26px" width="26px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 330 330" xml:space="preserve">
+                                <g id="XMLID_2_">
+                                    <path id="XMLID_4_" d="M145.606,74.393c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l69.393,69.392
+                                        l-69.393,69.395c-5.858,5.858-5.858,15.355,0,21.213C127.322,258.536,131.161,260,135,260s7.678-1.464,10.606-4.394l80-80.002
+                                        c2.814-2.813,4.394-6.628,4.394-10.607c0-3.979-1.58-7.794-4.394-10.607L145.606,74.393z"/>
+                                    <path id="XMLID_5_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300
+                                        c-74.439,0-135-60.561-135-135S90.561,30,165,30s135,60.561,135,135S239.439,300,165,300z"/>
+                                </g>
                             </svg>
                         </span>
                     </button>
@@ -58,8 +64,15 @@ get_header(); ?>
                         Mobilier
                         <span class="icon" aria-hidden="true">
                             <!-- Icône SVG décorative -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            <svg fill="#965634" height="26px" width="26px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 330 330" xml:space="preserve">
+                                <g id="XMLID_2_">
+                                    <path id="XMLID_4_" d="M145.606,74.393c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l69.393,69.392
+                                        l-69.393,69.395c-5.858,5.858-5.858,15.355,0,21.213C127.322,258.536,131.161,260,135,260s7.678-1.464,10.606-4.394l80-80.002
+                                        c2.814-2.813,4.394-6.628,4.394-10.607c0-3.979-1.58-7.794-4.394-10.607L145.606,74.393z"/>
+                                    <path id="XMLID_5_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300
+                                        c-74.439,0-135-60.561-135-135S90.561,30,165,30s135,60.561,135,135S239.439,300,165,300z"/>
+                                </g>
                             </svg>
                         </span>
                     </button>
@@ -70,8 +83,15 @@ get_header(); ?>
                         Porte / Cloison / Habillage mural
                         <span class="icon" aria-hidden="true">
                             <!-- Icône SVG décorative -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            <svg fill="#965634" height="26px" width="26px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 330 330" xml:space="preserve">
+                                <g id="XMLID_2_">
+                                    <path id="XMLID_4_" d="M145.606,74.393c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l69.393,69.392
+                                        l-69.393,69.395c-5.858,5.858-5.858,15.355,0,21.213C127.322,258.536,131.161,260,135,260s7.678-1.464,10.606-4.394l80-80.002
+                                        c2.814-2.813,4.394-6.628,4.394-10.607c0-3.979-1.58-7.794-4.394-10.607L145.606,74.393z"/>
+                                    <path id="XMLID_5_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300
+                                        c-74.439,0-135-60.561-135-135S90.561,30,165,30s135,60.561,135,135S239.439,300,165,300z"/>
+                                </g>
                             </svg>
                         </span>
                     </button>
@@ -82,8 +102,15 @@ get_header(); ?>
                         Escalier intérieur
                         <span class="icon" aria-hidden="true">
                             <!-- Icône SVG décorative -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4 7h8v2H4V7z" />
+                            <svg fill="#965634" height="26px" width="26px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 330 330" xml:space="preserve">
+                                <g id="XMLID_2_">
+                                    <path id="XMLID_4_" d="M145.606,74.393c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l69.393,69.392
+                                        l-69.393,69.395c-5.858,5.858-5.858,15.355,0,21.213C127.322,258.536,131.161,260,135,260s7.678-1.464,10.606-4.394l80-80.002
+                                        c2.814-2.813,4.394-6.628,4.394-10.607c0-3.979-1.58-7.794-4.394-10.607L145.606,74.393z"/>
+                                    <path id="XMLID_5_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300
+                                        c-74.439,0-135-60.561-135-135S90.561,30,165,30s135,60.561,135,135S239.439,300,165,300z"/>
+                                </g>
                             </svg>
                         </span>
                     </button>

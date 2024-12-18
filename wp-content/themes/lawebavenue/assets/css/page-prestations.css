@@ -14,48 +14,79 @@ main.prestations{
 }
 
 main.prestations section{
+    position: relative;
     padding: 60px 10px;
+   
 }
 
 .section-prestation__txt{
     color: var(--color-decorative, #965634);
 }
 
+button.open-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 420px;
+    height: 60px;
+    border-bottom: 1px solid var(--color-decorative-secondary);
+    padding: 15px 0px 0px 0px;
+    font-family: var(--font-title);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.124rem;
+    text-transform: uppercase;
+    color: var(--color-h2, #161616);
+    cursor: pointer;
+  }
+  
+  button.open-modal:hover {
+    color: var(--color-decorative, #965634)
+  }
+
+  span.icon{
+    display: block;
+    width: 26px;
+    height: 26px;
+  }
+
+  ul.section-prestation__list{
+    margin-left: 25% ;
+    padding-top: 40px;
+  }
+    
+
 
 
 /* Modales */
 
-.modal {
+.modal[aria-hidden="false"] {
+    display: flex;
+  }
+
+
+section.modal {
     display: none;
     z-index: 10;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 80%;
-    margin: auto;
-    padding: 100px;
+    width: 100%;
+    height: auto;
+    max-height: 934px;
+    /* margin: 100px auto; */
+    padding: 10px;
     background-color: var(--bg-color-light, #FFFFFF);
     border-radius: 5px;
     box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.25);
   }
 
-  button.open-modal {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button.open-modal:hover {
-    background-color: #0056b3;
-  }
-    
-  .modal[aria-hidden="false"] {
-    display: flex;
-  }
+ 
   
   .modal-content {
     background: white;
@@ -77,7 +108,7 @@ main.prestations section{
    
   /* Cacher le contenu d'arrière-plan */
   body.no-scroll, html.no-scroll{
-    overflow: hidden;
+    overflow: scroll;
     height: 100%;
   }
 
