@@ -16,99 +16,330 @@ main.prestations{
 main.prestations section{
     position: relative;
     padding: 60px 10px;
-   
 }
 
 .section-prestation__txt{
     color: var(--color-decorative, #965634);
 }
 
+ul.section-prestation__list{
+  margin-left: 10% ;
+  padding-top: 40px;
+}
+
+button.open-modal,
+button.modal__btn{
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 button.open-modal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    width: 420px;
-    height: 60px;
-    border-bottom: 1px solid var(--color-decorative-secondary);
-    padding: 15px 0px 0px 0px;
-    font-family: var(--font-title);
-    font-weight: 500;
-    font-size: 1rem;
-    letter-spacing: 0.124rem;
-    text-transform: uppercase;
-    color: var(--color-h2, #161616);
-    cursor: pointer;
-  }
-  
-  button.open-modal:hover {
-    color: var(--color-decorative, #965634)
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 280px;
+  height: 60px;
+  border-bottom: 1px solid var(--color-decorative-secondary);
+  padding: 15px 0px 0px 0px;
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: left;
+  letter-spacing: 0.124rem;
+  text-transform: uppercase;
+  color: var(--color-h2, #161616);
+  cursor: pointer;
+}
 
-  span.icon{
-    display: block;
-    width: 26px;
-    height: 26px;
-  }
+button.list-door{
+  word-spacing: 0.5rem;
+}
 
-  ul.section-prestation__list{
-    margin-left: 25% ;
-    padding-top: 40px;
-  }
-    
+button.list-door span{
+  padding-left: 30px;
+}
 
+button.open-modal:hover {
+  color: var(--color-decorative, #965634);
+}
 
+span.section-prestation__list-icon{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('./../img/arrow-right-circle.svg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
 
-/* Modales */
+h1.section-project__title{
+  display: flex;
+  flex-direction: column;
+  text-transform: inherit;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+h1.section-project__title::before{
+  content: '';
+  width: 64px;
+  height: 64px;
+  background-image: url('./../img/icones/femme.png');
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+}
+
+section#section-projet a.btn-transparent-beige {
+  color: var(--color-decorative, #965634);
+  border: 1.5px solid var(--color-decorative, #965634);
+}
+      
+
+/**** Modales ****/
 
 .modal[aria-hidden="false"] {
-    display: flex;
-  }
+  display: flex;
+}
 
 
 section.modal {
-    display: none;
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    height: auto;
-    max-height: 934px;
-    /* margin: 100px auto; */
-    padding: 10px;
-    background-color: var(--bg-color-light, #FFFFFF);
-    border-radius: 5px;
-    box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.25);
+  display: none;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  /* max-height: 934px; */
+  padding: 10px;
+  background-color: var(--bg-color-light, #FFFFFF);
+  border-radius: 5px;
+  box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+button.modal__btn{
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #dc3545;
+  border: 2px solid var(--bg-color-light);
+}
+
+button.modal__btn img{
+  width: 20px;
+  height: 20px;
+}
+
+.modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 20px; */
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.close-modal {
+  margin-top: 10px;
+}
+
+.close-modal:hover {
+  background-color: #a10111;
+}
+  
+/* Cacher le contenu d'arrière-plan */
+body.no-scroll, html.no-scroll{
+  overflow: scroll;
+  height: 100%;
+}
+
+.modal__subtitle{
+  padding-top: 30px;
+  font-family: var(--font-title);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--color-decorative);
+  text-align: center;
+}
+
+.modal__title{
+  text-transform: none;
+  text-align: center;
+}
+
+.modal__p{
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.modal__gallery{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 770px;
+  margin: 50px auto 100px auto;
+  gap:10px;
+}
+
+.modal__gallery-item{
+  position: relative;
+}
+
+.modal__gallery-img-wrapper, 
+.modal__gallery-img{
+  width: 160px;
+  max-width: 180px;
+  height: 267px;
+  max-height: 291.24px;
+  border-radius: 12px;
+}
+
+.modal__gallery-img-wrapper {
+  position: relative;
+  display: inline-block; /* Assurez-vous que le conteneur s'ajuste à l'image */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal__gallery-img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-linear-gradient);
+  z-index: 2; /* Place le dégradé au-dessus de l'image */
+  pointer-events: none; /* Empêche l'interaction avec le pseudo-élément */
+}
+
+.modal__gallery-img {
+  position: relative; /* Pour s'assurer que ::before s'applique bien */
+  z-index: 1; /* Place l'image sous le dégradé */
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal__gallery-title{
+  position: absolute;
+  z-index: 20;
+  bottom: 15px;
+  width: 100%;
+  font-family: var(--font-title);
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--bg-color-light);
+  line-height: 1.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* 
+  ******************
+    MEDIAS QUERIES 
+  ******************
+  */
+
+  @media (min-width: 472px) {
+    ul.section-prestation__list {
+      margin-left: 20%;
+    }
+  }
+
+
+  @media (min-width: 762px) {
+    ul.section-prestation__list {
+      margin-left: 25%;
+    }
+
+    button.open-modal {
+      width: 550px;
+      height: 60px;
+      font-size: 1rem;
+      letter-spacing: 0.124rem;
+    }
+
+    .section-projet{
+      position: relative;
+    }
+
+    h1.section-project__title{
+      flex-direction: row;
+      align-items: flex-end;
+      text-transform: inherit;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    
+    h1.section-project__title::before{
+      margin-right: 20px;
+      margin-bottom: 0px;
+    }
+
+    .section-project__p{
+       width: 80%;
+      max-width: 800px;
+      margin-left: 85px;
+    }
+  }
+
+  @media(min-width:1024px){
+
+    section#section-projet{
+      width: 80%;
+      max-width: 800px;
+    }
+
+    .section-project__p{
+      width: 100%;
+   }
+
+    section#section-projet a.btn-transparent-beige {
+      position:absolute;
+      right: 0px;
+    }
   }
 
  
-  
-  .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .close-modal {
-    margin-top: 10px;
-    background-color: #dc3545;
-  }
-  
-  .close-modal:hover {
-    background-color: #c82333;
-  }
-   
-  /* Cacher le contenu d'arrière-plan */
-  body.no-scroll, html.no-scroll{
-    overflow: scroll;
-    height: 100%;
+  @media(min-width:1200px){
+
+    main.prestations{
+      padding: 0px 50px;
+      margin-bottom: 100px;
+    }
   }
 
+  @media(min-width: 1440px){
+    main.prestations{
+      padding: 0px 60px;
+    }
+
+    .section-projet{
+      width: 75%;
+    }
+
+    a.section-project__button{
+      margin-left: 520px;
+    }
+  }

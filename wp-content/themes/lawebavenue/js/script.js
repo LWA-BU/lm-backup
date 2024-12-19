@@ -1,6 +1,8 @@
 
 displayHeaderMainMenu();
-displayModale();
+displayOrCloseModale();
+keyboardNavigation();
+openModalWithKeyboard();
 toggleButtonSubMenu();
 
 
@@ -50,7 +52,7 @@ function displayHeaderMainMenu() {
   }
 }
 
-function displayModale(){
+function displayOrCloseModale(){
     /********** 
    * modale 
    *********/
@@ -88,6 +90,7 @@ function displayModale(){
     if (e.key === 'Escape') {
       modals.forEach((modal) => {
         if (modal.getAttribute('aria-hidden') === 'false') {
+            overlay.style.display = 'none'; 
           closeModal(modal);
         }
       });
@@ -140,6 +143,43 @@ function displayModale(){
     }
   }
 
+}
+
+function keyboardNavigation(){
+  const listItems = document.querySelectorAll('ul li');
+  listItems.forEach((item, index) => {
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') {
+        const next = listItems[index + 1];
+        if (next) next.focus();
+      } else if (e.key === 'ArrowUp') {
+        const prev = listItems[index - 1];
+        if (prev) prev.focus();
+      }
+    });
+  });
+}
+
+function openModalWithKeyboard(){
+  document.querySelectorAll('.section-prestation__list > li').forEach(li => {
+      li.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault(); // Empêche le comportement par défaut pour éviter le défilement avec la barre d'espace
+              const button = li.querySelector('.open-modal'); // Trouve le bouton à l'intérieur de l'élément
+              if (button) {
+                  const modalId = button.getAttribute('data-modal');
+                  const modal = document.getElementById(modalId);
+
+                  if (modal) {
+                      // Ouvre le modal
+                      modal.classList.add('visible');
+                      modal.setAttribute('aria-hidden', 'false');
+                      modal.querySelector('.close-modal').focus(); // Place le focus sur le bouton de fermeture
+                  }
+              }
+          }
+      });
+  });
 }
 
 function toggleButtonSubMenu(){
@@ -202,4 +242,7 @@ function toggleButtonSubMenu(){
       }
   }); 
 }
+
+
+
 

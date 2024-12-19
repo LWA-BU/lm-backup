@@ -424,14 +424,14 @@ li#menu-item-128{
 
 .headerPrestations__banner-title{
   background-color: rgba(255, 255, 255, 0.9);
-
 }
 
 .header__banner-subtitle{
   display: block;
   font-family: var(--font-subtitle);
-  text-transform: lowercase;
+  text-transform: none;
   font-size: 1.5rem;
+  padding-top: 4px;
 }
 
 .header__cta{
@@ -529,6 +529,10 @@ span.trait{
   font-weight: 300;
   color: var(--bg-color-light);
   padding: 0px;
+}
+
+.footer__contact a:hover{
+  color: var(--bg-border, #C7714A);
 }
 
 .footer__contact svg{
