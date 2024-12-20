@@ -112,21 +112,20 @@ section#section-projet a.btn-transparent-beige {
 
 section.modal {
   display: none;
-
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
   max-width: 950px;
-  height: auto;
+  /* height: auto; */
   /* max-height: 934px; */
   padding: 10px;
   background-color: var(--bg-color-light, #FFFFFF);
   border-radius: 5px;
   box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.25);
-  overflow-y: auto; /* Permet le défilement si nécessaire */
+  /* overflow-y: auto; Permet le défilement si nécessaire */
 }
 
 button.modal__btn{
@@ -208,26 +207,43 @@ body.no-scroll, html.no-scroll{
 }
 
 .modal__gallery{
-  position: relative;
+  /* position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   max-width: 770px;
   margin: 50px auto 100px auto;
-  gap:10px;
+  gap:10px; */
+  display: flex;
+  --item: 3;
+  --gap: 1.5rem;
+  gap: var(--gap);
+  overflow-x: auto;
+  padding: calc(var(--gap)*.5);
+  margin:  calc(var(--gap)* -.5);
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: calc(var(--gap)* .5);
+  /* margin: 50px auto 100px auto; */
+  margin-top: 50px;
+
+  margin-bottom: 100px;
 }
 
 .modal__gallery-item{
   position: relative;
+  min-width: calc((100% - (var(--items-) -1) * var(--gap)) / var(--items));
+  scroll-snap-align: center;
 }
 
 .modal__gallery-img-wrapper, 
 .modal__gallery-img{
-  width: 160px;
+  /* width: 160px;
   max-width: 180px;
   height: 267px;
-  max-height: 291.24px;
+  max-height: 291.24px; */
+  width: 270px;
+  height: 436px;
   border-radius: 12px;
 }
 
@@ -263,7 +279,7 @@ body.no-scroll, html.no-scroll{
   bottom: 15px;
   width: 100%;
   font-family: var(--font-title);
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   color: var(--bg-color-light);
   line-height: 1.3rem;
