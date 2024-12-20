@@ -4,7 +4,7 @@
   <section class="modal modal-design" id="modal1" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal1-title">
 
     <div class="modal__content">
-      <button class="modal__btn close-modal" aria-label="Fermer la modale" >
+      <button class="close-modal modal__btn" tabindex="0" aria-label="Fermer la modale" >
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icones/cross.svg"  alt="">
       </button>
       <p class="modal__subtitle">Conception, réalisation, pose</p>

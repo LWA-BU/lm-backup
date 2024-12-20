@@ -56,11 +56,9 @@ get_header(); ?>
                     </button>
                 </li>
             </ul>
-            
-            <?php get_template_part('parts/modales'); ?>
-
         </section>
-
+        
+        <?php get_template_part('parts/modales'); ?>
 
         <section id="section-projet" class="section-project" >
             

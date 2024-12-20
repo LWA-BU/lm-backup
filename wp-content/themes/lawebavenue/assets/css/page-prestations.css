@@ -62,7 +62,12 @@ button.list-door span{
   padding-left: 30px;
 }
 
-button.open-modal:hover {
+li[tabindex='0']{
+  max-width: 550px;
+}
+
+button.open-modal:hover, 
+li[tabindex='0']:focus button{
   color: var(--color-decorative, #965634);
 }
 
@@ -107,8 +112,9 @@ section#section-projet a.btn-transparent-beige {
 
 section.modal {
   display: none;
-  z-index: 10;
-  position: absolute;
+
+  position: fixed;
+  z-index: 1000;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -120,6 +126,7 @@ section.modal {
   background-color: var(--bg-color-light, #FFFFFF);
   border-radius: 5px;
   box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.25);
+  overflow-y: auto; /* Permet le défilement si nécessaire */
 }
 
 button.modal__btn{
@@ -162,6 +169,14 @@ button.modal__btn img{
 
 .close-modal:hover {
   background-color: #a10111;
+}
+
+
+button.close-modal:focus {
+  outline: none; /* Pour enlever le contour par défaut (facultatif) */
+  background-color: #dc3545;
+  border: 2px solid blue; /* Ajouter un contour pour mettre en valeur le focus */
+  padding: 10px;
 }
   
 /* Cacher le contenu d'arrière-plan */

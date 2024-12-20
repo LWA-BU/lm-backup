@@ -8,9 +8,6 @@ toggleButtonSubMenu();
 
 
 
-
-
-
 function displayHeaderMainMenu() {
   const burgerMenu = document.querySelector('div.header__btn');
   const headerMenu = document.querySelector('nav.header__menu');
@@ -160,12 +157,13 @@ function keyboardNavigation(){
   });
 }
 
-function openModalWithKeyboard(){
+function openModalWithKeyboard(){ 
   document.querySelectorAll('.section-prestation__list > li').forEach(li => {
       li.addEventListener('keydown', (event) => {
           if (event.key === 'Enter' || event.key === ' ') {
               event.preventDefault(); // Empêche le comportement par défaut pour éviter le défilement avec la barre d'espace
               const button = li.querySelector('.open-modal'); // Trouve le bouton à l'intérieur de l'élément
+              const overlay = document.querySelector('.overlay');
               if (button) {
                   const modalId = button.getAttribute('data-modal');
                   const modal = document.getElementById(modalId);
@@ -175,6 +173,7 @@ function openModalWithKeyboard(){
                       modal.classList.add('visible');
                       modal.setAttribute('aria-hidden', 'false');
                       modal.querySelector('.close-modal').focus(); // Place le focus sur le bouton de fermeture
+                      overlay.style.display = 'block';
                   }
               }
           }
@@ -242,7 +241,3 @@ function toggleButtonSubMenu(){
       }
   }); 
 }
-
-
-
-
