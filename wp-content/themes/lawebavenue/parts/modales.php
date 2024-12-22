@@ -105,7 +105,6 @@
       <div class="modal__gallery-img-wrapper">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-cuisine.jpeg" alt="" class="modal__gallery-img">
       </div>
-      
       <h2 class="modal__gallery-title">Cuisine</h2>
     </div>
 

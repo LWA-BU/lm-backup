@@ -14,12 +14,16 @@ main.prestations{
 }
 
 main.prestations section{
-    position: relative;
+    /* position: relative; */
     padding: 60px 10px;
 }
 
 .section-prestation__txt{
     color: var(--color-decorative, #965634);
+}
+
+.section-prestation__p{
+  padding: 15px 11px 15px 11px;
 }
 
 ul.section-prestation__list{
@@ -80,6 +84,10 @@ span.section-prestation__list-icon{
   background-repeat: no-repeat;
 }
 
+.section-projet__content{
+  position: relative;
+}
+
 h1.section-project__title{
   display: flex;
   flex-direction: column;
@@ -114,7 +122,7 @@ section.modal {
   display: none;
   position: absolute;
   z-index: 1000;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
@@ -130,8 +138,8 @@ section.modal {
 
 button.modal__btn{
   position: absolute;
-  right: 15px;
-  top: 5px;
+  right: 5px;
+  top: -55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,8 +147,8 @@ button.modal__btn{
   height: 40px;
   padding: 10px;
   border-radius: 50%;
-  background: #dc3545;
-  border: 2px solid var(--bg-color-light);
+  /* background: #dc3545; */
+  border: 2px solid var(--color-h2);
 }
 
 button.modal__btn img{
@@ -166,16 +174,15 @@ button.modal__btn img{
   margin-top: 10px;
 }
 
-.close-modal:hover {
+/* .close-modal:hover {
   background-color: #a10111;
-}
+} */
 
 
 button.close-modal:focus {
-  outline: none; /* Pour enlever le contour par défaut (facultatif) */
-  background-color: #dc3545;
-  border: 2px solid blue; /* Ajouter un contour pour mettre en valeur le focus */
-  padding: 10px;
+ outline: 3px solid #0077ff; /* Couleur bleue */
+ /* outline-offset: 3px;  */
+ border: none;
 }
   
 /* Cacher le contenu d'arrière-plan */
@@ -199,7 +206,7 @@ body.no-scroll, html.no-scroll{
 }
 
 .modal__p{
-  width: 90%;
+  /* width: 90%; */
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -220,14 +227,17 @@ body.no-scroll, html.no-scroll{
   --gap: 1.5rem;
   gap: var(--gap);
   overflow-x: auto;
-  padding: calc(var(--gap)*.5);
-  margin:  calc(var(--gap)* -.5);
+  /* padding: calc(var(--gap)*.5);
+  margin:  calc(var(--gap)* -.5); */
+  padding: calc(var(--gap)*.8);
+  margin:  calc(var(--gap)* -.1);
+
   scroll-snap-type: x proximity;
   scroll-padding-inline: calc(var(--gap)* .5);
   /* margin: 50px auto 100px auto; */
   margin-top: 50px;
 
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .modal__gallery-item{
