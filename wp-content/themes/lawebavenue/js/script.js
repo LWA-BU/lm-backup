@@ -181,71 +181,6 @@ function openModalWithKeyboard(){
   });
 }
 
-// function toggleButtonSubMenu(){
-//   /** @type {HTMLElement[]} */
-//   /**
-//    * @param {HTMLElement} el
-//    * @param {string}      attr
-//    * @param {any}         value
-//    */
-//   const menuItems = Array.from( document.querySelectorAll( 'li.menu-item-has-children' ) );
-//   // const subMenuHeader = document.querySelector('li#menu-item-120');
-//   // const subMenuFooter = document.querySelector('li#menu-item-128');
-
-//   const setAttr = ( el, attr, value ) => el.setAttribute( attr, value );
-
-//   menuItems.forEach( ( el ) => {
-//     const button = el.querySelector( 'button' );
-//       const ariaControls = button.getAttribute('aria-controls');
-
-//       if ( ariaControls === 'sub-menu-120' || ariaControls === 'sub-menu-128') {
-//         button
-//         .addEventListener( 'click', function( event ) {
-//           const parent = this.parentNode;
-//           const iconeMenu = parent.querySelector('img.toggle-button-img');
-//           const subMenu = parent.lastElementChild;
-//           /**
-//            * Si le sous-menu est ouvert :
-//            * - on retire la classe "open" au sous-menu
-//            * - on passe l'attribut "aria-expanded" à false
-//            * - On indique visuellement que le bouton est fermé
-//            */
-//           if ( parent && parent.classList.contains( 'open' ) ) {
-//             parent.classList.remove( 'open' );
-//             setAttr( parent.querySelector( 'button' ), 'aria-expanded', 'false');
-//             iconeMenu.src = 'http://localhost:8888/lm-menuisier/wp-content/themes/lawebavenue/assets/img/down-arrow.png';
-//             subMenu.style.visibility= 'hidden';
-//             subMenu.style.opacity= '0';
-//             subMenu.style.transition="all 0.3s ease-in-out";
-//             subMenu.style.height="10px";
-
-//             } else if ( parent ) {
-//               /**
-//                * Si le sous-menu est fermé :
-//                * - on ajoute la classe "open" au sous-menu
-//                * - on passe l'attribut "aria-expanded" à true
-//                * - On indique visuellement que le bouton est ouvert
-//                */
-//                 parent.classList.add( 'open' );
-//                 setAttr( parent.querySelector( 'button' ), 'aria-expanded', 'true' );
-//                 iconeMenu.src = 'http://localhost:8888/lm-menuisier/wp-content/themes/lawebavenue/assets/img/up-arrow.png';
-//                 subMenu.style.visibility= 'visible';
-//                 subMenu.style.opacity= '1';
-//                 subMenu.style.transition="all 0.3s ease-in-out";
-//                 subMenu.style.height="218px";
-//                 subMenu.style.width="250px";
-//                 subMenu.style.background="white";
-//             }
-    
-//               event.preventDefault();
-  
-//         });
-//       }
-//   }); 
-//}
-
-
-
 function toggleButtonSubMenu() {
   const menuItems = Array.from(document.querySelectorAll('li.menu-item-has-children'));
 
@@ -271,7 +206,6 @@ const toggleMenuState = (parent, isOpen) => {
   const button = parent.querySelector('button');
   const iconMenu = parent.querySelector('img.toggle-button-img');
   const subMenu = parent.lastElementChild;
-
   parent.classList.toggle('open', isOpen);
   button.setAttribute('aria-expanded', isOpen.toString());
   iconMenu.src = isOpen
