@@ -258,9 +258,9 @@ ul, li , a{
 
 nav.header__menu {
   position: relative;
-  visibility: visible;         
+  /* visibility: visible;          */
   opacity: 0;      
-  background-color: var(--bg-color-light);           
+  /* background-color: var(--bg-color-light);            */
   transition: all 0.3s ease-in-out;
   z-index: 10;
 }
@@ -271,6 +271,7 @@ nav.header__menu.active {
   margin-top: -10px;  
   padding: 75px 0px 75px 30px;
   color: var(--color-decorative, #965634);
+  background-color: var(--bg-color-light);      
   opacity: 1;      
   transition: all 0.3s ease-in-out;        
 }
@@ -368,10 +369,39 @@ ul#sub-menu-128.sub-menu{
 ul#sub-menu-120.sub-menu,
 ul#sub-menu-128.sub-menu {
   visibility: hidden;
-  height: 0px;
+  height: 0;
+  width: 0;
   margin-left: 20px;
   padding-top: 16px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+
 }
+
+ul#sub-menu-120.sub-menu.open,
+ul#sub-menu-128.sub-menu.open {
+  visibility: visible;
+  opacity: 1;
+  height: 218px;
+}
+
+ul#sub-menu-120.sub-menu.open{
+  width: 250px;
+  padding-left: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+ul#sub-menu-128.sub-menu.open{
+  color: white;
+  width: auto;
+
+}
+
+/* ul#sub-menu-128.sub-menu.open li a{
+  color: white;
+  width: 180px;
+} */
 
 #menu-main-menu li,
 #menu-footer li,
@@ -589,6 +619,7 @@ span.trait{
   margin-bottom: 25px;
   text-transform: uppercase;
   font-weight: 600;
+  width: 210px;
 }
 
 .hurly-day{
@@ -846,7 +877,13 @@ span.trait{
   }
 
   .footer__main-presentation{
-    margin-top: 50px
+    margin-top: 50px;
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+
+  .footer__main-nav{
+    width: 210px;
   }
 
   .footer__main-nav, 
