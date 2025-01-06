@@ -10,7 +10,7 @@ get_header(); ?>
             <div class="section-prestation__content">
                 <p class="section-prestation__txt section-subtitle">Vous le pensez, nous le créons...</p>
                 <h1 class="section-prestation__title section-title">Nos prestations</h1>
-                <p class="section-prestation__p paragraphe">
+                <p class="section-prestation__p paragraphe"> 
                     « Nous concevons, réalisons et installons votre projet d’agencement intérieur. 
                     Découvrez l’éventail de nos prestations, allant de la création de cuisines modernes et fonctionnelles à l’aménagement de dressings. 
                     Nous posons également des revêtements de sol ainsi que des portes intérieures. 

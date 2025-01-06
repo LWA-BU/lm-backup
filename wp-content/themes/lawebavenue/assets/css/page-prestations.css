@@ -392,3 +392,17 @@ body.no-scroll, html.no-scroll{
       margin-left: 520px;
     }
   }
+
+  @media(min-width: 1440px){
+    main.prestations{
+      max-width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media(min-width: 1600px){
+    main.prestations{
+      max-width: 75%;;
+    }
+  }

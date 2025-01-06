@@ -19,21 +19,21 @@
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-cuisine.jpeg"  alt="Cuisine aménagée avec un style moderne" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-cuisine.webp"  alt="Cuisine aménagée avec un style moderne" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Cuisine</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-salle-de-bain.jpg"  alt="Salle de bains élégante avec un agencement optimisé"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-salle-de-bain.webp"  alt="Salle de bains élégante avec un agencement optimisé"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Salle de bains</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-dressing.jpg" alt="Dressing avec espaces de rangement bien organisés" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-dressing.webp" alt="Dressing avec espaces de rangement bien organisés" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Dressing</h2>
         </div>
@@ -47,28 +47,28 @@
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-buanderie-cave.jpg" alt="Buanderie et caves avec espaces de rangement et organisation efficace" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-buanderie-cave.webp" alt="Buanderie et caves avec espaces de rangement et organisation efficace" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Buanderie / Cave</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-etagere-bibliotheque.jpg" alt="Étagères et bibliothèque intégrées dans un salon" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-etagere-bibliotheque.webp" alt="Étagères et bibliothèque intégrées dans un salon" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Etagères<br>Bibliothèque </h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-meubleTV.jpg" alt="Meuble TV intégré avec espaces de rangement" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-meubleTV.webp" alt="Meuble TV intégré avec espaces de rangement" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Ensembles intégrés <br>Meuble TV</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-tablette-fenetre.jpg"  alt="Tablette de fenêtre anthracite élégante"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-tablette-fenetre.webp"  alt="Tablette de fenêtre anthracite élégante"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Tablette de fenêtre</h2>
         </div>
@@ -230,5 +230,53 @@
         </div>
 
       </div>
-  </div>
+    </div>
+  </section>
+
+  <section class="modal modal-stairs" id="modal5" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal5-title">
+
+    <div class="modal__content">
+      <button class="close-modal modal__btn" tabindex="0" aria-label="Fermer la modale" >
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icones/cross.svg"  alt="">
+      </button>
+      <p class="modal__subtitle">Conception, réalisation, pose</p>
+      <h1 id="modal5-title" class="modal__title section-title">Escalier intérieur - Création ou rénovation</h1>
+      <p class="modal__p paragraphe">
+        Nous réalisons et installons des escaliers intérieurs sur mesure, des mains courantes robustes, des garde-corps design pour sécuriser
+        vos escaliers tout en apportant du style. L'habillage des marches qu'il soit en bois, métal ou verre, est conçu pour offrir une finition 
+        durable et élégante. 
+      </p>
+
+      <div class="modal__gallery">
+
+        <div class="modal__gallery-item">
+          <div class="modal__gallery-img-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/escalier.webp"  alt="Escalier intérieur avec marches en bois sans contremarche"  class="modal__gallery-img">
+          </div>
+          <h2 class="modal__gallery-title">Escalier</h2>
+        </div>
+
+        <div class="modal__gallery-item">
+          <div class="modal__gallery-img-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/garde-corps.webp" alt="Garde-corps escalier en bois et barres acier anthracites horizontales " class="modal__gallery-img">
+          </div>
+          <h2 class="modal__gallery-title">Garde-corps</h2>
+        </div>
+
+        <div class="modal__gallery-item">
+          <div class="modal__gallery-img-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/main-courante.webp" alt="Main courante d'escalier en bois et acier gris anthracite"  class="modal__gallery-img">
+          </div>
+          <h2 class="modal__gallery-title">Main courante</h2>
+        </div>
+
+        <div class="modal__gallery-item">
+          <div class="modal__gallery-img-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/habillage-marche.webp" alt="Habillage de marche en chêne clair vernis satiné"  class="modal__gallery-img">
+          </div>
+          <h2 class="modal__gallery-title">Habillage de marche</h2>
+        </div>
+
+      </div>
+    </div>
 </section>
