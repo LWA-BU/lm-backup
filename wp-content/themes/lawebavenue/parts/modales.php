@@ -11,7 +11,7 @@
       <h1 id="modal1-title" class="modal__title section-title">Agencement intérieur</h1>
       <p class="modal__p paragraphe">
           L’agencement intérieur consiste à optimiser et embellir les espaces de vie. 
-          Nos éléments sont conçus en respectant les matériaux et le style souhaité par le client. 
+          Nos éléments sont conçus en respectant les styles et matériaux selon les souhaits du client . 
           Nous allions esthétisme et fonctionnalité pour un aménagement harmonieux.
       </p>
 

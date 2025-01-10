@@ -48,6 +48,11 @@ function lwa_register_assets() {
         wp_enqueue_style( 'page-prestations-styles', get_template_directory_uri() . '/assets/css/page-prestations.css' );
     }
 
+
+    if(is_page('cuisines')){
+        wp_enqueue_style( 'page-prestations-styles', get_template_directory_uri() . '/assets/css/page-cuisines.css' );
+    }
+
 }
 add_action( 'wp_enqueue_scripts', 'lwa_register_assets' );
 

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page Personnalisée
+Template Name: Page Prestations
 */
 
 get_header(); ?>

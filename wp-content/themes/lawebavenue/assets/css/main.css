@@ -12,7 +12,7 @@
   --bg-color-sombre: #37372F;
   --bg-color-green: #564E1F;
   --bg-linear-gradient:  linear-gradient(to top, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.3) 17%, rgba(0, 0, 0, 0) 75%);
-  --bg-gradient-button: rgba(0, 0, 0, 0.5);
+  --bg-gradient-button: rgba(255, 255, 255, 0.9);
 
 
   --color-decorative: #965634;
@@ -108,12 +108,12 @@ a.btn-transparent-beige span.icone{
   background-image: url('./../img/arrow-right-beige.svg');
 }
 
-a.header__cta-link:hover, 
+
 a.btn-transparent-black:hover{
   background-color: var(--bg-border, #965634);
 }
 
- 
+a.header__cta-link:hover,
 a.btn-transparent-beige:hover {
   background-color: var(--bg-color-beige, #CDC6BE);
 }
@@ -483,8 +483,11 @@ li#menu-item-128{
 
 a.header__cta-link{
   background-color: var(--bg-gradient-button);
-  color: var(--bg-color-light, #FFF); 
-  border: 1px solid var(--bg-color-light); 
+  color: var(--color-h2);
+}
+
+.header__cta-link span{
+  text-transform: capitalize;
 }
 
 .headerPrestations__banner{
