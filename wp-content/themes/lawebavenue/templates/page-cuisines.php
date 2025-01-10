@@ -17,24 +17,23 @@ get_header(); ?>
             </div>
 
             <div class="cuisines-section">
-                <div class="cuisines-container__img">
-                    <img class="cuisines-container__img-large cuisines__img-left" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-moderne.jpg" alt="Cuisine moderne laquée blanche avec plan de travail en marbre noir" >
-                    <img class="cuisines-container__img-small cuisines__img-second" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-moderne-s.jpg" alt="Cuisine moderne laquée blanche avec plan de travail en marbre noir" >
-                </div>
-               
-                <div class="cuisines-modernes__content cuisines-txt">
-                    <h2 class="cuisines-modernes__content-title cuisines-title-beige">Moderne</h2>
-                    <p class="cuisines-modernes__content-txt cuisines-paragraphe paragraphe">
-                        « Cette cuisine incarne la modernité. Ses meubles blancs épurés agrandissent visuellement l’espace. 
-                        Le plan de travail en marbre anthracite veiné de gris clair ajoute une touche de caractère pour
-                        un ensemble sophistiqué et harmonieux... »
-                    </p>
+                <img class="cuisines-section__img-large" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-moderne.jpg" alt="Cuisine moderne laquée blanche avec plan de travail en marbre noir" >
+                <div class="cuisines-section__content">
+                    <div class="cuisines-modernes__content cuisines-txt">
+                        <h2 class="cuisines-modernes__content-title cuisines-title-beige">Moderne</h2>
+                        <p class="cuisines-modernes__content-txt cuisines-paragraphe paragraphe">
+                            « Cette cuisine incarne la modernité. Ses meubles blancs épurés agrandissent visuellement l’espace. 
+                            Le plan de travail en marbre anthracite veiné de gris clair ajoute une touche de caractère pour
+                            un ensemble sophistiqué et harmonieux... »
+                        </p>
+                    </div>
+                    <img class="cuisines-section__img-small cuisines__img-second" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-moderne-s.jpg" alt="Cuisine moderne laquée blanche avec plan de travail en marbre noir" >
                 </div>
             </div>
 
-            <!-- <div class="cuisines-elegantes cuisines-section ">
-                <img class="cuisines-elegantes__img cuisines__img-first cuisines__img-right" src="" alt="" >
-                <div class="cuisines-elegantes__main cuisines-content">
+            <div class="cuisines-elegantes cuisines-section ">
+                <img class="cuisines-section__img-large cuisines-section__img-large-r" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-elegante.webp" alt="Cuisine moderne laquée blanche avec plan de travail en marbre noir" >
+                <div class="cuisines-section__content-right cuisines-content">
                     <div class="cuisines-elegantes__content cuisines-txt">
                         <h2 class="cuisines-elegantes__content-title cuisines-title-black">Elegante</h2>
                         <p class="cuisines-elegantes__content-txt cuisines-paragraphe paragraphe">
@@ -45,8 +44,9 @@ get_header(); ?>
                             L’éclairage LED, met en valeur la texture du marbre et ajoute une atmosphère chaleureuse à cette cuisine résolument élégante. »
                         </p>
                     </div>
-                    <img class="cuisines-elegantes__main-img cuisines__img-second" src="" alt="">
+                    <img class="cuisines-section__img-small cuisines__img-second" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-elegante-s.webp" alt="Cuisine moderne laquée blanche avec plan de travail en marbre noir" >
                 </div>
+
             </div>
          
 
@@ -100,7 +100,7 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
- -->
+
 
 
        
