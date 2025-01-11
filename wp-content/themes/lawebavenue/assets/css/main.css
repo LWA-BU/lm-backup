@@ -118,6 +118,10 @@ a.btn-transparent-beige:hover {
   background-color: var(--bg-color-beige, #CDC6BE);
 }
 
+a.header__cta-link:hover span{
+  font-weight: 500;
+}
+
 .sr-only, .visuallyhidden{
   position: absolute;
   width: 1px;

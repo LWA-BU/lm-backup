@@ -2,6 +2,17 @@ main.cuisines{
     margin: 120px auto;
 }
 
+.cuisines-header{
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cuisines-header__subtitle{
+    color: var(--color-decorative);
+}
+
 .cuisines-section{
     max-width: 1200px;
     height: auto;
@@ -9,6 +20,7 @@ main.cuisines{
 }
 
 .cuisines-section__img-large{
+    display: block;
     width: 96%;
     max-width: 900px;
     height: auto;
@@ -32,7 +44,6 @@ main.cuisines{
 .cuisines-section__content-right{
     align-items: flex-start;
 }
-
 
 .cuisines-txt{
   padding-left: 12px;
@@ -58,7 +69,6 @@ main.cuisines{
 
 .cuisines-section__img-small{
     width: 90%;
-    /* width: 75%; */
     max-width: 600px;
     height: auto;
     max-height: 400px;
@@ -68,12 +78,18 @@ main.cuisines{
 }
 
 @media(min-width: 768px){
+    .cuisines-header{
+        width: 80%;
+    }
     .cuisines-container__img-small{
         width: 80%;
     }
 }
 
 @media(min-width: 1024px){
+    .cuisines-header{
+        width: 70%;
+    }
     .cuisines-section__content, 
     .cuisines-section__content-right{
         flex-direction: row;
@@ -90,7 +106,7 @@ main.cuisines{
        width: 45%;
        padding-top: 50px;
        padding-left: 20px;
-      }
+    }
 }
 
 @media(min-width: 1200px){
@@ -110,7 +126,12 @@ main.cuisines{
 
     .cuisines-txt{
         padding-left: 0px;
-       }
+    }
+
+    .cuisines-elegantes__content, 
+    .cuisines-natures__content {
+        padding-left: 30px;
+    }
 }
 
 
