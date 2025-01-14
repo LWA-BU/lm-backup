@@ -14,6 +14,7 @@ main.cuisines{
 }
 
 .cuisines-section{
+    width: 100%;
     max-width: 1200px;
     height: auto;
     margin: 100px auto;
