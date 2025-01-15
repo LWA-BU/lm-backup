@@ -19,56 +19,56 @@
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-cuisine.webp"  alt="Cuisine aménagée avec un style moderne" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-cuisine.jpg"  alt="Cuisine aménagée avec un style moderne" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Cuisine</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-salle-de-bain.webp"  alt="Salle de bains élégante avec un agencement optimisé"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-salle-de-bain.jpg"  alt="Salle de bains élégante avec un agencement optimisé"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Salle de bains</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-dressing.webp" alt="Dressing avec espaces de rangement bien organisés" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-dressing.jpg" alt="Dressing avec espaces de rangement bien organisés" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Dressing</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-placard.webp" alt="Placard aménagé avec des portes classiques et vitrées"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-placard.jpg" alt="Placard aménagé avec des portes classiques et vitrées"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Aménagement placard</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-buanderie-cave.webp" alt="Buanderie et caves avec espaces de rangement et organisation efficace" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-buanderie-cave.jpg" alt="Buanderie et caves avec espaces de rangement et organisation efficace" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Buanderie / Cave</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-etagere-bibliotheque.webp" alt="Étagères et bibliothèque intégrées dans un salon" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-etagere-bibliotheque.jpg" alt="Étagères et bibliothèque intégrées dans un salon" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Etagères<br>Bibliothèque </h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-meubleTV.webp" alt="Meuble TV intégré avec espaces de rangement" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-meubleTV.jpg" alt="Meuble TV intégré avec espaces de rangement" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Ensembles intégrés <br>Meuble TV</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-tablette-fenetre.webp"  alt="Tablette de fenêtre anthracite élégante"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-tablette-fenetre.jpg"  alt="Tablette de fenêtre anthracite élégante"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Tablette de fenêtre</h2>
         </div>
@@ -96,28 +96,28 @@
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/parquet-massif.webp"  alt="Parquet massif couleur miel posé dans une chambre" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/parquet-massif.jpg"  alt="Parquet massif couleur miel posé dans une chambre" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Parquet massif</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/parquet-stratifie.webp"  alt="Parquet stratifié posé dans un salon"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/parquet-stratifie.jpg"  alt="Parquet stratifié posé dans un salon"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Parquet stratifié</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/poncage-parquet.webp" alt="Machine utilisée pour poncer les parquets" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/poncage-parquet.jpg" alt="Machine utilisée pour poncer les parquets" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Ponçage<sup>(*)</sup> </h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/pose-plinthe.webp" alt="Menuisier posant une plinthe gris anthracite en angle"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/pose-plinthe.jpg" alt="Menuisier posant une plinthe gris anthracite en angle"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Pose de plinthes</h2>
         </div>
@@ -147,42 +147,42 @@
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/Armoire-living.webp"  alt="Armoire living sur mesure bois veiné couleur acajou"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/Armoire-living.jpg"  alt="Armoire living sur mesure bois veiné couleur acajou"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Armoire / Living</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/buffet.webp" alt="Buffet blanc laqué avec niche bibliothèque dans le milieu" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/buffet.jpg" alt="Buffet blanc laqué avec niche bibliothèque dans le milieu" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Buffet</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/meubleTV.webp" alt="Meuble TV bas suspendu blanc et ses étagèrse intégrées sur la droite "  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/meubleTV.jpg" alt="Meuble TV bas suspendu blanc et ses étagèrse intégrées sur la droite "  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Meuble TV</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/bureau.webp" alt="Bureau épuré blanc et bois avec son bloc de trois tiroirs"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/bureau.jpg" alt="Bureau épuré blanc et bois avec son bloc de trois tiroirs"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Bureau</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/table.webp" alt="Table de salle à manger avec plateau en bois de chêne massif "  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/table.jpg" alt="Table de salle à manger avec plateau en bois de chêne massif "  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Table</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/Lit-chevet.webp" alt="Lit d'enfant avec un espace jeu en mezzanine réalisé sur mesure"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/Lit-chevet.jpg" alt="Lit d'enfant avec un espace jeu en mezzanine réalisé sur mesure"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Lit / Chevet</h2>
         </div>
@@ -210,21 +210,21 @@
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/portes-interieures.webp"  alt="Porte intérieure en bois avec effet texturé et poignée noire couleur chêne foncé"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/portes-interieures.jpg"  alt="Porte intérieure en bois avec effet texturé et poignée noire couleur chêne foncé"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Portes</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/cloisons.webp" alt="Claustras couleur wengé lamelles horizontales" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/cloisons.jpg" alt="Claustras couleur wengé lamelles horizontales" class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Claustras</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/habillage-mural.webp" alt="Habillage mural composé de plusieurs carrés de bois en chêne clair"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/habillage-mural.jpg" alt="Habillage mural composé de plusieurs carrés de bois en chêne clair"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Habillages muraux</h2>
         </div>
@@ -251,28 +251,28 @@
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/escalier.webp"  alt="Escalier intérieur avec marches en bois sans contremarche"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/escalier.jpg"  alt="Escalier intérieur avec marches en bois sans contremarche"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Escalier</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/garde-corps.webp" alt="Garde-corps escalier en bois et barres acier anthracites horizontales " class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/garde-corps.jpg" alt="Garde-corps escalier en bois et barres acier anthracites horizontales " class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Garde-corps</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/main-courante.webp" alt="Main courante d'escalier en bois et acier gris anthracite"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/main-courante.jpg" alt="Main courante d'escalier en bois et acier gris anthracite"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Main courante</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/habillage-marche.webp" alt="Habillage de marche en chêne clair vernis satiné"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/habillage-marche.jpg" alt="Habillage de marche en chêne clair vernis satiné"  class="modal__gallery-img">
           </div>
           <h2 class="modal__gallery-title">Habillage de marche</h2>
         </div>

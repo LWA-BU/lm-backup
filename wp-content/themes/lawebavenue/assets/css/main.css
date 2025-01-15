@@ -483,6 +483,7 @@ li#menu-item-128{
   align-content: center;
   gap: 20px; 
   width: 100%;
+  display: none;
 }
 
 a.header__cta-link{
@@ -498,9 +499,9 @@ a.header__cta-link{
   position: relative;
   width: 100%;
   height: 750px;
-  background: url('./../img/prestations/meuble-m.webp');
-  background-size: auto; 
-  background-position: left; 
+  background: url('./../img/prestations/meuble-s.jpg');
+  background-size: cover; 
+  /* background-position: left;  */
   background-repeat: no-repeat; 
 }
 
@@ -727,8 +728,10 @@ span.trait{
   }
 
   .header__cta{
+    display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 50px;
   }
 
     /****************** Header contact ******************/
@@ -760,6 +763,16 @@ span.trait{
   a.header__contact-phone:hover{
     background-color: var(--bg-color-beige);
     border-radius: 5px 0px 0px 5px;
+  }
+
+  .headerPrestations__banner{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background: url('./../img/prestations/meuble-m.jpg');
+    /* background-size: auto;  */
+    background-position: left; 
+    background-repeat: no-repeat; 
   }
 
 }
@@ -912,7 +925,7 @@ span.trait{
 
   .headerPrestations__banner{
     height: 850px;
-    background: url('./../img/prestations/meuble-l.webp');
+    background: url('./../img/prestations/meuble-l.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
   }
@@ -957,12 +970,10 @@ span.trait{
 
   .headerPrestations__banner{
     height: 850px;
-    background: url('./../img/prestations/meuble-xl.webp');
+    background: url('./../img/prestations/meuble-xl.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
   }
-
-
 
   /* ============================================
                     Footer

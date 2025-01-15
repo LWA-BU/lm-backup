@@ -20,13 +20,19 @@ main.cuisines{
     margin: 100px auto;
 }
 
+.cuisines-section__img-large,
+.cuisines-section__img-large-r,
+.cuisines-section__img-small{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
 .cuisines-section__img-large{
     display: block;
     width: 96%;
     max-width: 900px;
     height: auto;
     max-height: 500px;
-    border-radius: 5px;
 }
 
 .cuisines-section__img-large-r{
@@ -73,9 +79,8 @@ main.cuisines{
     max-width: 600px;
     height: auto;
     max-height: 400px;
-    margin-top: -40px;
+    margin-top: -20px;
     margin-bottom: 50px;
-    border-radius: 5px;
 }
 
 @media(min-width: 768px){
@@ -100,7 +105,7 @@ main.cuisines{
 
     .cuisines-section__content-right{
         flex-direction: row-reverse;
-        align-items: flex-end;
+        /* align-items: flex-end; */
     }
 
     .cuisines-txt{
