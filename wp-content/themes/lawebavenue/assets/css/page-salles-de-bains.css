@@ -1,0 +1,12 @@
+@media (min-width: 1024px) {
+  .vertical-text {
+    writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    padding: 10px;
+  }
+}
+
+
+
+
+

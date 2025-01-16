@@ -38,7 +38,10 @@ function lwa_register_assets() {
         '1.0'
     );
 
-    wp_enqueue_style( 'fonts', get_template_directory_uri() . '/assets/css/fonts.css' );
+    wp_enqueue_style( 
+        'fonts', 
+        get_template_directory_uri() . '/assets/css/fonts.css' 
+    );
 
     if(is_front_page()){
         wp_enqueue_style( 'front-page-styles', get_template_directory_uri() . '/assets/css/front-page.css' );
@@ -48,9 +51,12 @@ function lwa_register_assets() {
         wp_enqueue_style( 'page-prestations-styles', get_template_directory_uri() . '/assets/css/page-prestations.css' );
     }
 
-
     if(is_page('cuisines')){
-        wp_enqueue_style( 'page-prestations-styles', get_template_directory_uri() . '/assets/css/page-cuisines.css' );
+        wp_enqueue_style( 'page-cuisines-styles', get_template_directory_uri() . '/assets/css/page-cuisines.css' );
+    }
+
+    if(is_page('salles-de-bains')){
+        wp_enqueue_style( 'page-salles-de-bains-styles', get_template_directory_uri() . '/assets/css/page-salles-de-bains.css' );
     }
 
 }

@@ -113,40 +113,11 @@
   padding-bottom: 120px;
 }
 
-.section-concept__container-img{
-  /* position: relative;
-  margin-left: auto;
-  margin-right: auto; */
-  /* padding: 5%; */
-}
-
-/* .section-concept__img-bg{
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background-color: var(--color-decorative-secondary);
-  background-size: 100% 100%;
-} */
-
 .section-concept__img{
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
-
-/* .section-concept__img-decorative{
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  right: 0;
-  width: 100px;
-  height: 150px;
-  background-image: url('./../img/accueil/img-deco.png');
-  background-size: 100% 100%;
-} */
 
 .section-concept__title{
   display: flex;
@@ -207,16 +178,6 @@ ul.section-concept__list li.list-measure::before{
     width: 80%;
   }
 
-  /* .section-concept__img-bg{
-    width: 150px;
-    height: 150px;
-  } */
-
-  /* .section-concept__img-decorative{
-    width: 150px;
-    height: 200px;
-  } */
-
   .section-interiorDesign__img{
     height: 450px;
     background-image: url('./../img/accueil/interior-design-s.jpg');
@@ -272,7 +233,6 @@ ul.section-concept__list li.list-measure::before{
   .section-concept{
     padding-bottom: 120px
   }
-
 }
 
 
@@ -301,12 +261,6 @@ ul.section-concept__list li.list-measure::before{
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* .section-concept__img-bg {
-    width: 454px;
-    height: 200px;
-  } */
-
 }
 
 
@@ -363,14 +317,8 @@ ul.section-concept__list li.list-measure::before{
   }
 
  .section-concept__container-img {
-
     width: 50%;
   }
-
-  /* .section-concept__img-decorative {
-    width: 200px;
-    height: 250px;
-  } */
 
   .section-concept__p, 
   ul.section-concept__list {
@@ -388,7 +336,6 @@ ul.section-concept__list li.list-measure::before{
 }
 
 @media (min-width: 1440px) {
-
   .section-about{
     padding-top: 270px;
   }
@@ -401,17 +348,6 @@ ul.section-concept__list li.list-measure::before{
   .section-interiorDesign__content {
     margin-top: -350px;
   }
-
-  /* .section-concept{
-    width: 80%;
-  } */
-
-
-
-  /* .section-concept__img-decorative {
-    height: 280px;
-  } */
-
 }
 
 @media (min-width: 1668px) {
@@ -422,15 +358,6 @@ ul.section-concept__list li.list-measure::before{
   .section-concept{
     width: 85%;
   }
-
-  /* .section-concept__container-img {
-    width: 60%;
-  } */
-
-  /* .section-concept__img-decorative {
-    height: 300px;
-  } */
-
 }
 
 

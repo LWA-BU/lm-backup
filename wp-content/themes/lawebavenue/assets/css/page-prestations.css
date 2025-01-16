@@ -128,13 +128,10 @@ section.modal {
   max-width: 950px;
   margin: auto;
   padding: 30px 10px !important;
-  /* height: auto; */
-  /* max-height: 934px; */
   padding: 10px;
   background-color: var(--bg-color-light, #FFFFFF);
   border-radius: 5px;
   box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.25);
-  /* overflow-y: auto; Permet le défilement si nécessaire */
 }
 
 button.modal__btn{
@@ -148,7 +145,6 @@ button.modal__btn{
   height: 40px;
   padding: 10px;
   border-radius: 50%;
-  /* background: #dc3545; */
   border: 2px solid var(--color-h2);
 }
 
@@ -165,20 +161,9 @@ button.modal__btn img{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 20px; */
   border-radius: 5px;
   text-align: center;
-
 }
-
-/* .close-modal {
-  margin-top: 10px;
-} */
-
-/* .close-modal:hover {
-  background-color: #a10111;
-} */
-
 
 button.close-modal:focus {
  outline: 3px solid #0077ff; /* Couleur bleue */
@@ -215,30 +200,16 @@ body.no-scroll, html.no-scroll{
 }
 
 .modal__gallery{
-  /* position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  max-width: 770px;
-  margin: 50px auto 100px auto;
-  gap:10px; */
   display: flex;
   --item: 3;
   --gap: 1.5rem;
   gap: var(--gap);
   overflow-x: auto;
-  /* padding: calc(var(--gap)*.5);
-  margin:  calc(var(--gap)* -.5); */
   padding: calc(var(--gap)*.8);
   margin:  calc(var(--gap)* -.1);
-
   scroll-snap-type: x proximity;
   scroll-padding-inline: calc(var(--gap)* .5);
-  /* margin: 50px auto 100px auto; */
   margin-top: 10px;
-
-  /* margin-bottom: 100px; */
 }
 
 .modal__gallery-item{
@@ -249,10 +220,6 @@ body.no-scroll, html.no-scroll{
 
 .modal__gallery-img-wrapper, 
 .modal__gallery-img{
-  /* width: 160px;
-  max-width: 180px;
-  height: 267px;
-  max-height: 291.24px; */
   width: 270px;
   height: 436px;
   border-radius: 12px;
@@ -316,7 +283,6 @@ body.no-scroll, html.no-scroll{
     }
   }
 
-
   @media (min-width: 762px) {
     ul.section-prestation__list {
       margin-left: 25%;
@@ -369,7 +335,6 @@ body.no-scroll, html.no-scroll{
       right: 0px;
     }
   }
-
  
   @media(min-width:1200px){
 

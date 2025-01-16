@@ -263,9 +263,7 @@ ul, li , a{
 
 nav.header__menu {
   position: relative;
-  /* visibility: visible;          */
   opacity: 0;      
-  /* background-color: var(--bg-color-light);            */
   transition: all 0.3s ease-in-out;
   z-index: 10;
 }
@@ -400,13 +398,7 @@ ul#sub-menu-120.sub-menu.open{
 ul#sub-menu-128.sub-menu.open{
   color: white;
   width: auto;
-
 }
-
-/* ul#sub-menu-128.sub-menu.open li a{
-  color: white;
-  width: 180px;
-} */
 
 #menu-main-menu li,
 #menu-footer li,
@@ -691,8 +683,6 @@ span.trait{
   height: 45px;
 }
 
-
-
 /* ================================================================
                           MEDIAS QUERIES
 =================================================================== */
@@ -774,7 +764,6 @@ span.trait{
     background-position: left; 
     background-repeat: no-repeat; 
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -918,7 +907,6 @@ span.trait{
     width: 250px;
     height: 350px;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -983,7 +971,6 @@ span.trait{
     margin: auto 70px;
   }
 }
-
 
 @media (min-width: 1668px) {
 
