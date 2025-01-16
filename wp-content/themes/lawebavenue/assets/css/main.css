@@ -440,7 +440,7 @@ li#menu-item-128{
   position: relative;
   width: 100%;
   height: 711px;
-  background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_xs.webp');
+  background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_xs.jpg');
   background-size: cover; /* L'image couvre la div sans se déformer */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Éviter les répétitions */
@@ -715,7 +715,7 @@ span.trait{
 
   .header__banner{
     height:579px;
-    background-image: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_s.webp');
+    background-image: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_s.jpg');
     background-size: cover; 
     background-position: right; 
     background-repeat: no-repeat; 
@@ -840,7 +840,7 @@ span.trait{
     /****************** Header banner ******************/
   .header__banner{
     height: 655px;
-    background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_m.webp');
+    background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_m.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -962,7 +962,7 @@ span.trait{
     /****************** Header banner ******************/
   .header__banner{
     height:695px;
-    background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_l.webp');
+    background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_l.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -993,7 +993,7 @@ span.trait{
     /****************** Header banner ******************/
     .header__banner{
       height:797px;
-      background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_xl.webp');
+      background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_xl.jpg');
       background-size: cover; 
       background-position: center; 
       background-repeat: no-repeat; 
