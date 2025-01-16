@@ -493,7 +493,6 @@ a.header__cta-link{
   height: 750px;
   background: url('./../img/prestations/meuble-s.jpg');
   background-size: cover; 
-  /* background-position: left;  */
   background-repeat: no-repeat; 
 }
 
@@ -760,7 +759,6 @@ span.trait{
     width: 100%;
     height: 750px;
     background: url('./../img/prestations/meuble-m.jpg');
-    /* background-size: auto;  */
     background-position: left; 
     background-repeat: no-repeat; 
   }
@@ -794,7 +792,7 @@ span.trait{
     margin-top: -50px;
     margin-left: auto;
     margin-right: auto;
-    gap: 120px;
+    gap: 40px;
   }
 
   #menu-item-120{
@@ -802,7 +800,8 @@ span.trait{
   }
 
   .header__menu .toggle-button{
-    margin-left: 20px;
+    width: 150px;
+    margin-left: -10px;
   }
 
   #menu-item-118{
@@ -811,10 +810,6 @@ span.trait{
 
   #menu-item-113{
     margin-left: -73px;
-  }
-
-  ul#sub-menu-120.sub-menu {
-    margin-left: 60px;
   }
 
   #menu-item-112 a{
@@ -910,6 +905,9 @@ span.trait{
 }
 
 @media (min-width: 1200px) {
+  #menu-main-menu{
+    gap: 80px;
+  }
 
   .headerPrestations__banner{
     height: 850px;
@@ -941,6 +939,10 @@ span.trait{
 
   #menu-item-118{
     margin-right: 260px;
+  }
+
+  ul#sub-menu-120.sub-menu {
+    margin-left: 60px;
   }
 
   #menu-item-113{
