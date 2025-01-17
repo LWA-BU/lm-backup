@@ -1,9 +1,9 @@
 main.sdb{
-  margin: 100px 0;
+  margin: 100px 0 0 0;
 }
 
 .sdb__header {
-  width: 94%;
+  width: 96%;
   margin: 0 auto 120px auto;
   text-align: center;
 }
@@ -15,14 +15,31 @@ main.sdb{
 .sdb__section{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  /* max-width: 360px; */
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--bg-color-beige);
 }
 
-.sdb__section-img{
+/* .sdb__section-img{
+  width: 360px;
+  max-width: 480px;
+  height: 630px;
+} */
+
+.sdb__section-img-small, 
+.sdb__section-img-big{
+  display: block;
   width: 100%;
+  /* object-fit: cover; */
+
 }
 
 .sdb__section-main{
-  width: 100%;
+  /* width: 100%; */
+  background-color: var(--bg-color-beige);
 }
 
 .sdb__section-main-title{
@@ -31,24 +48,26 @@ main.sdb{
   justify-content: flex-start;
   width: 205px;
   height: 165px;
-  margin-left: 30px;
-  margin-bottom: 50px;
-  border-left: solid 5px var(--color-decorative);
+  margin: -50px 30px 50px 30px;
+  padding-bottom: 15px;
 }
 
-.sdb__section-main-title-left,
-.sdb__section-main-title-right{
-  padding-left: 30px;
+.sdb__section-main-title-left{
+  padding-left: 15px;
+  border-left: solid 5px var(--color-decorative);
 }
 
 .sdb__section-main-title-right{
   padding-right: 15px;
+  margin-left: auto;
+  border-right: solid 5px var(--color-decorative);
+  text-align: right;
 }
 
 .sdb__section-main-title-bold,
 .sdb__section-main-title-light{
-  margin: 5px 0px;
-  padding-bottom: 0;
+  margin: 3px 0px;
+  padding-bottom: 0px;
 }
 
 .sdb__section-main-title-bold{
@@ -59,12 +78,14 @@ main.sdb{
   text-transform: uppercase;
 }
 
-
 .sdb__section-main-title-light{
   font-size: 1.125rem;
 }
 
-
+.sdb-paragraphe{
+  padding-bottom: 75px;
+  color: var(--color-text);
+}
 
 
 @media (min-width: 1024px) {
