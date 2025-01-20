@@ -14,7 +14,6 @@
   --bg-linear-gradient:  linear-gradient(to top, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.3) 17%, rgba(0, 0, 0, 0) 75%);
   --bg-gradient-button: rgba(255, 255, 255, 0.9);
 
-
   --color-decorative: #965634;
   --color-decorative-secondary:#CDC6BE;
   --color-h2:#161616;
@@ -732,13 +731,15 @@ span.trait{
     align-items: center;
     justify-content: center;
     position: absolute;
+    z-index: 9;
     right: 0;
     bottom: 250px;
     width: 35px;
     height: 150px;
     background-color: var(--bg-color-light, #FFF);
-    z-index: 9;
     border-radius: 5px 0px 0px 5px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
   }
 
   .header__contact svg{

@@ -23,6 +23,7 @@ main.cuisines{
 .cuisines-section__img-large,
 .cuisines-section__img-large-r,
 .cuisines-section__img-small{
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
@@ -54,12 +55,15 @@ main.cuisines{
 
 .cuisines-txt{
   padding-left: 12px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .cuisines h2{
     font-family: var(--font-title);
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: 2.188rem;
+    letter-spacing: -0.063px;
 }
 
 .cuisines-paragraphe{
@@ -120,6 +124,10 @@ main.cuisines{
       width: 1200px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .cuisines h2{
+        font-size: 2.5rem;
     }
 }
 

@@ -115,6 +115,7 @@
 
 .section-concept__img{
   width: 100%;
+  -webkit-box-shadow:  0 4px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }

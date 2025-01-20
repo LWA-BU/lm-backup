@@ -21,7 +21,7 @@ get_header(); ?>
             </p>
         </div>
 
-        <div class="cuisines-section">
+        <article class="cuisines-section">
             <img class="cuisines-section__img-large"   
           
                 srcset="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-moderne-480.jpg 480w,
@@ -34,7 +34,7 @@ get_header(); ?>
                 <div class="cuisines-modernes__content cuisines-txt">
                     <h2 class="cuisines-modernes__content-title cuisines-title-black">Moderne</h2>
                     <p class="cuisines-modernes__content-txt cuisines-paragraphe paragraphe">
-                        « Cette cuisine incarne la modernité. Ses meubles blanc mat et gris bleu agrandissent visuellement l’espace.
+                        « Cette cuisine incarne la modernité. Ses meubles blanc et gris bleu agrandissent visuellement l’espace.
                         Le plan de travail en bois chêne clair ajoute une touche de caractère pour
                         un ensemble sophistiqué et harmonieux... »
                     </p>
@@ -43,9 +43,9 @@ get_header(); ?>
                     src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-moderne-small.jpg" 
                     alt="Cuisine moderne blanc mat et gris bleu avec plan de travail en bois de chêne clair">
             </div>
-        </div>
+        </article>
 
-        <div class="cuisines-elegantes cuisines-section ">
+        <article class="cuisines-elegantes cuisines-section ">
             <img class="cuisines-section__img-large cuisines-section__img-large-r" 
                 srcset="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-elegante-480.jpg 480w,
                         <?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-elegante-768.jpg 768w,
@@ -55,7 +55,7 @@ get_header(); ?>
                 alt="Cuisine élégante en bois noir et son plan de travail en marbre gris">
             <div class="cuisines-section__content-right cuisines-content">
                 <div class="cuisines-elegantes__content cuisines-txt">
-                    <h2 class="cuisines-elegantes__content-title cuisines-title-beige">Elegante</h2>
+                    <h2 class="cuisines-elegantes__content-title cuisines-title-beige">Elégante</h2>
                     <p class="cuisines-elegantes__content-txt cuisines-paragraphe paragraphe">
                         « Cette cuisine aux meubles noirs au design épuré apportent un côté sophistiqué à l’espace. Le style contemporain est accentué par le contraste 
                         saisissant entre le noir profond des meubles et le plan de travail en marbre gris. 
@@ -65,9 +65,9 @@ get_header(); ?>
                 </div>
                 <img class="cuisines-section__img-small cuisines__img-second" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-elegante-small.jpg" alt="Cuisine élégante en bois noir et son plan de travail en marbre gris">
             </div>
-        </div>
+        </article>
         
-        <div class="cuisines-minimalistes cuisines-section ">
+        <article class="cuisines-minimalistes cuisines-section ">
             <img class="cuisines-section__img-large cuisines__img-first cuisines__img-left"  
                 srcset="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-minimaliste-480.jpg 480w,
                         <?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-minimaliste-768.jpg 768w,
@@ -85,9 +85,9 @@ get_header(); ?>
                 </div>                       
                 <img class="cuisines-section__img-small  cuisines__img-second" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-minimaliste-s.jpg" alt="Cuisine minimaliste bois blanc mat et beige, niche en bois couleur chêne">
             </div>
-        </div>
+        </article>
         
-        <div class="cuisines-natures cuisines-section ">
+        <article class="cuisines-natures cuisines-section ">
             <img class="cuisines-section__img-large cuisines-section__img-large-r" 
                 srcset="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-nature-480.jpg 480w,
                             <?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-nature-768.jpg 768w,
@@ -107,9 +107,9 @@ get_header(); ?>
                 </div>                        
                 <img class="cuisines-section__img-small  cuisines__img-second" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-nature-small.jpg" alt="Cuisine aux couleurs nature beige, vert d'eau et son plan de travail blanc cassé ">
             </div>
-        </div>
+        </article>
 
-        <div class="cuisines-chaleureuses cuisines-section">
+        <article class="cuisines-chaleureuses cuisines-section">
             <img class="cuisines-section__img-large cuisines__img-first cuisines__img-left" 
                 srcset="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-chaleureuse-480.jpg 480w,
                         <?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-chaleureuse-768.jpg 768w,
@@ -129,7 +129,7 @@ get_header(); ?>
                 </div>                        
                 <img class="cuisines-section__img-small cuisines__img-second" src="<?php echo get_template_directory_uri(); ?>/assets/img/cuisines/cuisine-chaleureuse-small.jpg" alt="Cuisine aux couleurs nature beige, vert d'eau et son plan de travail blanc cassé ">
             </div>
-        </div>
+        </article>
      
     </main>
 <?php get_footer(); ?>

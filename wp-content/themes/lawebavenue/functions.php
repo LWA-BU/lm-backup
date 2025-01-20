@@ -59,6 +59,10 @@ function lwa_register_assets() {
         wp_enqueue_style( 'page-salles-de-bains-styles', get_template_directory_uri() . '/assets/css/page-salles-de-bains.css' );
     }
 
+    if(is_page('dressings')){
+        wp_enqueue_style( 'page-dressings-styles', get_template_directory_uri() . '/assets/css/page-dressings.css' );
+    }
+
 }
 add_action( 'wp_enqueue_scripts', 'lwa_register_assets' );
 
