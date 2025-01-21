@@ -19,6 +19,7 @@ get_header(); ?>
         </div>
 
         <section>
+            
             <article class="dressings__section dressing__section-left">
                 <div class="dressings__section-bg-img-subtitle">
                     <span class="dressings__section-bg bg-top"></span>
@@ -47,7 +48,7 @@ get_header(); ?>
 
 
             <article class="dressings__section dressing-hdg dressing__section-top">
-                <div class="dressings__section-bg-img-subtitle">
+                <div class="dressings__section-bg-img-subtitle dressing-hdg-bg-img-subtitle">
                     <span class="dressings__section-bg bg-top"></span>
                     <div class="dressings__section-img-subtitle">
                         <span class="dressings__section-subtitle">Chic & Raffiné</span>
@@ -65,7 +66,7 @@ get_header(); ?>
                     « Un dressing haut de gamme se distingue par des matériaux nobles — bois précieux, finitions en cuir, miroirs sans défaut — et 
                     par un éclairage doux, idéal pour révéler les textures et couleurs des vêtements et accessoires.
                     Il est généralement aménagé de tiroirs compartimentés, d’étagères modulables, de penderies extensibles et même de présentoirs pour les pièces les plus précieuses. 
-                    Il est pensé pour faciliter l’accès à la garde-robe. L’ensemble qui reflète le luxe et l'élégance répond aux exigences d’un goût raffiné.»
+                    Il est pensé pour faciliter l’accès à la garde-robe. L’ensemble qui reflète le luxe et l'élégance répond aux exigences d’un goût raffiné. »
                     </p>
                 </div>
             </article>
@@ -95,7 +96,6 @@ get_header(); ?>
                 </div>
             </article>
 
-         
         </section>
 
     </main>
