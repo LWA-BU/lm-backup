@@ -4,9 +4,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
-    z-index: 3; /* Juste en dessous de la modale */
-    display: none; /* Caché par défaut */
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 3; 
+    display: none; 
 }
 
 main.prestations{
@@ -14,7 +14,6 @@ main.prestations{
 }
 
 main.prestations section{
-    /* position: relative; */
     padding: 60px 10px;
 }
 
@@ -167,8 +166,7 @@ button.modal__btn img{
 }
 
 button.close-modal:focus {
- outline: 3px solid #0077ff; /* Couleur bleue */
- /* outline-offset: 3px;  */
+ outline: 3px solid #0077ff; 
  border: none;
 }
   
@@ -193,7 +191,6 @@ body.no-scroll, html.no-scroll{
 }
 
 .modal__p{
-  /* width: 90%; */
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -228,7 +225,7 @@ body.no-scroll, html.no-scroll{
 
 .modal__gallery-img-wrapper {
   position: relative;
-  display: inline-block; /* Assurez-vous que le conteneur s'ajuste à l'image */
+  display: inline-block; 
   overflow: hidden;
   -webkit-box-shadow: 0 4px 10px (rgba(0, 0, 0, 0.2));
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -242,13 +239,13 @@ body.no-scroll, html.no-scroll{
   width: 100%;
   height: 100%;
   background: var(--bg-linear-gradient);
-  z-index: 2; /* Place le dégradé au-dessus de l'image */
-  pointer-events: none; /* Empêche l'interaction avec le pseudo-élément */
+  z-index: 2; 
+  pointer-events: none; 
 }
 
 .modal__gallery-img {
-  position: relative; /* Pour s'assurer que ::before s'applique bien */
-  z-index: 1; /* Place l'image sous le dégradé */
+  position: relative; 
+  z-index: 1; 
   object-fit: cover;
   object-position: center;
 }

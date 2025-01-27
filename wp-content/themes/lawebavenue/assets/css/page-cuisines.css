@@ -10,8 +10,16 @@ main.cuisines{
 }
 
 .cuisines-header__subtitle{
+    margin-bottom: var(--margin-bottom-subtitle);
+    font-size: var(--font-size-subtitle-inpiration);
     color: var(--color-decorative);
 }
+
+.section-title{
+    font-size: var(--font-size-title-inspiration);
+    letter-spacing: var(--letter-spacing-title-inspiration);
+}
+
 
 .cuisines-section{
     width: 100%;

@@ -63,6 +63,10 @@ function lwa_register_assets() {
         wp_enqueue_style( 'page-dressings-styles', get_template_directory_uri() . '/assets/css/page-dressings.css' );
     }
 
+    if(is_page('agencement-interieur')){
+        wp_enqueue_style( 'page-agencement-styles', get_template_directory_uri() . '/assets/css/page-agencement.css' );
+    }
+
 }
 add_action( 'wp_enqueue_scripts', 'lwa_register_assets' );
 

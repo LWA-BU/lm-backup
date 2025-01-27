@@ -1,0 +1,33 @@
+main.agencement{
+    margin: 120px auto;
+}
+
+.agencement__header {
+    width: 96%;
+    margin: 0 auto 100px auto;
+    text-align: center;
+}
+
+.agencement__header-subtitle{
+    color: var(--color-decorative);
+}
+
+.agencement__header-subtitle{
+    margin-bottom: var(--margin-bottom-subtitle);
+    font-size: var(--font-size-subtitle-inpiration);
+    color: var(--color-decorative);
+  }
+  
+  .section-title{
+    font-size: var(--font-size-title-inspiration);
+    letter-spacing: var(--letter-spacing-title-inspiration);
+  }
+
+
+
+
+@media(min-width: 1024px){
+    .agencement__header {
+        width: 50%;
+    }
+}

@@ -25,6 +25,12 @@
   --font-subtitle: 'Cormorant Garamond';
 
   --font-size-main: 16px;
+  --font-size-title-inspiration: 2.5rem;
+  --font-size-subtitle-inpiration: 1.2rem;
+  --letter-spacing-title-inspiration: 0.09rem;
+
+  --margin-bottom-subtitle: 20px;
+
 
 }
 
@@ -149,7 +155,6 @@ ul, li , a{
   color: black;
 }
 
-
 .section-subtitle{
   font-family: var(--font-subtitle);
   font-weight: 400;
@@ -167,6 +172,7 @@ ul, li , a{
 
 .section-subtitle, .section-title {
   margin: 10px 0px 0px 15px;
+  line-height: 1;
 }
 
 .paragraphe{
@@ -384,7 +390,8 @@ ul#sub-menu-120.sub-menu.open,
 ul#sub-menu-128.sub-menu.open {
   visibility: visible;
   opacity: 1;
-  height: 218px;
+  /* height: 218px; */
+  height: 180px;
 }
 
 ul#sub-menu-120.sub-menu.open{

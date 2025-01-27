@@ -9,8 +9,16 @@ main.dressings{
 }
 
 .dressings__header-subtitle{
+    margin-bottom: var(--margin-bottom-subtitle);
+    font-size: var(--font-size-subtitle-inpiration);
     color: var(--color-decorative);
 }
+
+.section-title{
+    font-size: var(--font-size-title-inspiration);
+    letter-spacing: var(--letter-spacing-title-inspiration);
+}
+
 
 .dressings article {
     margin-bottom: 100px;
@@ -220,9 +228,6 @@ main.dressings{
     }
 
     .dressing-hdg .dressings__section-subtitle {
-        /* width: 350px;
-        margin-left: -130px;
-        margin-top: 360px; */
         width: 350px;
         margin-left: 90px;
         transform: rotate(0deg);

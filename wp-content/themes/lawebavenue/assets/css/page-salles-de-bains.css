@@ -8,9 +8,19 @@ main.sdb{
   text-align: center;
 }
 
+
 .sdb__header-subtitle{
+  margin-bottom: var(--margin-bottom-subtitle);
+  font-size: var(--font-size-subtitle-inpiration);
   color: var(--color-decorative);
 }
+
+.section-title{
+  font-size: var(--font-size-title-inspiration);
+  letter-spacing: var(--letter-spacing-title-inspiration);
+}
+
+
 
 .sdb__section{
   display: flex;
