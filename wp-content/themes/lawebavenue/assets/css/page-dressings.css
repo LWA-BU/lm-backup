@@ -10,7 +10,6 @@ main.dressings{
 
 .dressings__header-subtitle{
     margin-bottom: var(--margin-bottom-subtitle);
-    font-size: var(--font-size-subtitle-inpiration);
     color: var(--color-decorative);
 }
 
@@ -18,7 +17,6 @@ main.dressings{
     font-size: var(--font-size-title-inspiration);
     letter-spacing: var(--letter-spacing-title-inspiration);
 }
-
 
 .dressings article {
     margin-bottom: 100px;
@@ -217,7 +215,6 @@ main.dressings{
     }
 
     .dressing-hdg .dressings__section-bg {
-        /* width: 770px; */
         width: 840px;
         height: 240px;
     }
@@ -231,8 +228,7 @@ main.dressings{
         width: 350px;
         margin-left: 90px;
         transform: rotate(0deg);
-      
-      }
+    }
 
     .dressings__section-img img,
     .dressing-hdg .dressings__section-img img{
@@ -240,7 +236,6 @@ main.dressings{
         height: 528px;
     } 
   
-
     .dressings__section-img img {
         margin-left: -130px;
     }
@@ -249,7 +244,6 @@ main.dressings{
         margin-left: 10px;
         margin-top: 48px;
     }
-        
     
     .dressings__section-main-top {
         /* width: 600px; */

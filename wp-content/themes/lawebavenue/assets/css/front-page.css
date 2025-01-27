@@ -262,6 +262,10 @@ ul.section-concept__list li.list-measure::before{
     margin-left: auto;
     margin-right: auto;
   }
+
+  .section-concept__title-title{
+    font-size: 1.8rem;
+  }
 }
 
 

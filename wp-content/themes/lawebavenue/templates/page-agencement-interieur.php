@@ -13,7 +13,7 @@ get_header(); ?>
             <p class="agencement__header-p paragraphe">
                 « L’agencement intérieur va  généralement créer un sentiment d’ordre. 
                 Celui que nous créons pour vous s’intègre au centimètre près à l’endroit auquel il est destiné. 
-                Chaque meuble a sa fonction » 
+                Chaque meuble a sa fonction. » 
             </p>
         </div>
 

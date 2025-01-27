@@ -9,24 +9,34 @@ main.agencement{
 }
 
 .agencement__header-subtitle{
+    margin-bottom: var(--margin-bottom-subtitle);
     color: var(--color-decorative);
 }
 
-.agencement__header-subtitle{
-    margin-bottom: var(--margin-bottom-subtitle);
-    font-size: var(--font-size-subtitle-inpiration);
-    color: var(--color-decorative);
-  }
-  
-  .section-title{
-    font-size: var(--font-size-title-inspiration);
-    letter-spacing: var(--letter-spacing-title-inspiration);
-  }
+@media(min-width: 768px){
+    .agencement__header {
+        width: 70%;
+    }
 
-
+    .section-title{
+        font-size: var(--font-size-title-inspiration);
+        letter-spacing: var(--letter-spacing-title-inspiration);
+    }
+}
 
 
 @media(min-width: 1024px){
+    .agencement__header {
+        width: 60%;
+    }
+
+    .section-title{
+        font-size: var(--font-size-title-inspiration);
+        letter-spacing: var(--letter-spacing-title-inspiration);
+    }
+}
+
+@media(min-width: 1420px){
     .agencement__header {
         width: 50%;
     }
