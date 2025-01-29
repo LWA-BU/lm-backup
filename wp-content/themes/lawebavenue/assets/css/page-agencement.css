@@ -4,7 +4,7 @@ main.agencement{
 
 .agencement__header {
     width: 96%;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 150px auto;
     text-align: center;
 }
 
@@ -30,6 +30,7 @@ main.agencement{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 40px 0;
 }
 
 .agencement-etagere__img img{
@@ -43,6 +44,7 @@ main.agencement{
 .agencement-etagere__img .agencement-etagere__img-small img{
    margin-right: auto;
    border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
 }
 
 .agencement-etagere__img .agencement-etagere__img-tall img{
@@ -56,6 +58,7 @@ main.agencement{
 .agencement-etagere__img .agencement-etagere__img-square img{
     margin-left: auto;
     border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
  }
 
  .agencement-etagere__banner{
@@ -63,22 +66,24 @@ main.agencement{
     z-index: -1;
     display: block;
     width: 100%;
-    height: 1350px;
+    height: 1150px;
     background-color: #121212;
     margin-top: -1250px;
  }
 
-
-.agencement-title{
-    margin: 0 0 35px 15px;
-    padding-bottom: 15px;
-    border-bottom: 1.5px solid var(--color-decorative);
+ .agencement-title{
     font-family: var(--font-title);
     font-size: 1.3rem;
     text-transform: uppercase;
     line-height: 2rem;
     letter-spacing: 0.13rem;
 }
+
+ .agencement-etagere__title{
+    padding-bottom: 15px;
+    margin: 0 0 35px 15px;
+    border-bottom: 1.5px solid var(--color-decorative);
+ }
 
 .etagere__img-small{
     width: 380px;
@@ -88,12 +93,73 @@ main.agencement{
 .agencement-etagere__p{
     position: absolute;
     z-index: 20;
-    bottom: 500px;
+    bottom: 300px;
     width: 96%;
     height: auto;
     color: white;
     text-shadow: 3px 3px 6px #000;
 }
+
+.agencement__icones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 164px;
+    margin-top: 120px;
+}
+
+.agencement__icones .icone{
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.agencement__icones-kitchen{
+    background-image: url('./../img/icones/meuble-cuisine.png');
+}
+
+.agencement__icones-bathroom{
+    background-image: url('./../img/icones/salle-de-bains.png');
+}
+
+.agencement__icones-dressing{
+    background-image: url('./../img/icones/dressing.png');
+}
+
+.agencement__icones-library{
+    background-image: url('./../img/icones/bibliotheque.png');
+}
+
+
+/* Combine */
+
+.agencement__combine{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.agencement__combine-img{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color-grey);
+}
+
+.agencement__combine-img-rect{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media(min-width:480px){
+    .agencement-etagere__img .agencement-etagere__img-tall img{
+        border-radius: 5px;
+    }
+}
+
 
 @media(min-width: 768px){
     .agencement__header,
@@ -106,7 +172,7 @@ main.agencement{
         letter-spacing: var(--letter-spacing-title-inspiration);
     }
 
-    .agencement-title{
+    .agencement-etagere__title{
         margin: 0px 0 -85px 355px;
     }
 
@@ -119,6 +185,19 @@ main.agencement{
         width: 70%;
         margin-left: 50px;
     }
+
+    .agencement__icones {
+        justify-content: center;
+        margin-top: 220px;
+        gap: 0 150px;
+      }
+
+    .agencement__icones .icone{
+        width: 64px;
+        height: 64px;
+    }
+
+
 }
 
 
@@ -132,7 +211,7 @@ main.agencement{
         width: 60%;
     }
 
-    .agencement-title {
+    .agencement-etagere__title {
         width: 350px;
         margin: 0px 0 -80px 15px;
     }
@@ -174,12 +253,16 @@ main.agencement{
         max-width: 400px;
         height: auto;
     }
+
+    .agencement__icones{
+        margin-top: 0px;
+    }
 }
 
 
 @media(min-width: 1024px){
 
-    .agencement-title {
+    .agencement-etagere__title {
         width: 450px;
         margin: 0px 0 -80px 7px;
         font-size: 1.4rem;
@@ -206,7 +289,7 @@ main.agencement{
 }
 
 @media(min-width: 1200px){
-    .agencement-title {
+    .agencement-etagere__title {
         width: 550px;
         margin-left: 65px;
         font-size: 1.5rem;
@@ -232,9 +315,10 @@ main.agencement{
 @media(min-width: 1420px){
     .agencement__header {
         width: 50%;
+        margin: 50px auto 250px auto;
     }
 
-    .agencement-title {
+    .agencement-etagere__title {
         font-size: 1.6rem;
         margin-left: 120px;
     }
@@ -257,5 +341,12 @@ main.agencement{
         bottom: 50px;
         margin-left: 60px;
     }
+
+}
+
+@media(min-width: 1700px){
+    .agencement-etagere__title {
+        margin-left: 250px;
+      }
 
 }
