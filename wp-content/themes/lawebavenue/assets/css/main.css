@@ -12,6 +12,7 @@
   --bg-color-sombre: #37372F;
   --bg-color-green: #564E1F;
   --bg-linear-gradient:  linear-gradient(to top, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.3) 17%, rgba(0, 0, 0, 0) 75%);
+  --bg-linear-dark:  linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 43%);
   --bg-gradient-button: rgba(255, 255, 255, 0.9);
 
   --color-decorative: #965634;
