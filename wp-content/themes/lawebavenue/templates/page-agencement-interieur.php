@@ -45,7 +45,7 @@ get_header(); ?>
 
                     <span class="agencement-etagere__banner"></span>
 
-                    <p class="agencement-etagere__content-p paragraphe">
+                    <p class="agencement-etagere__p paragraphe">
                         Bibliothèque et étagère permettent un rangement pratique et esthétique. Elles optimisent l’espace en libérant les surfaces et apportent un aspect structuré et soigné à la pièces.  
                     </p>
        
