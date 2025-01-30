@@ -77,8 +77,8 @@ get_header(); ?>
                 </div>
 
                 <picture class="agencement__combine-img-tall">
-                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/agencement/combine-TV-encastre-480.jpg" media="(max-width: 480px)" type"image/jpg">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/agencement/combine-TV-encastre.jpg" alt="Bibliotheque chic en bois gris anthracite au hauts arrondis et bas avec portes" width="400" 
+                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/agencement/combine-TV-480.jpg" media="(max-width: 767px)" type"image/jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/agencement/combine-TV.jpg" alt="Bibliotheque chic en bois gris anthracite au hauts arrondis et bas avec portes" width="400" 
                     height="566">
                 </picture>  
             </div>
@@ -87,7 +87,7 @@ get_header(); ?>
                 <span class="agencement__combine-trait"></span>
                 <div class="agencment__combine-txt">
                     <p class="agencement__combine-subtitle section-subtitle">Organiser son salon</p>
-                    <h1 class="agencement__combine-title agencement-title">Meuble TV combiné</h1>
+                    <h1 class="agencement__combine-title agencement-title">Meuble TV & combiné</h1>
                     <p class="agencement__combine-p paragraphe">
                         Les meubles TV combinés sont pratiques et esthétiques : ils offrent un espace de rangement pour organiser les équipements multimédias. 
                         En plus d’être fonctionnels, ils apportent une touche décorative au salon, s’adaptent aux différents styles d’intérieur grâce à une large variété de designs et de matériaux.

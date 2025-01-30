@@ -35,10 +35,10 @@ main.agencement{
 
 .agencement-etagere__img img{
     display: block;
-    width: 325px;
-    max-width: 480px;
+    width: 100%;
+    max-width: 360px;
     object-fit: cover;
-    object-position: center;
+    /* object-position: center; */
 }
 
 .agencement-etagere__img .agencement-etagere__img-small img{
@@ -48,7 +48,9 @@ main.agencement{
 }
 
 .agencement-etagere__img .agencement-etagere__img-tall img{
-    width: 360px;
+
+    width: 100%;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
     border-bottom-left-radius: 5px;
@@ -145,18 +147,64 @@ main.agencement{
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color-grey);
+    gap:27px 0;
+    margin-bottom: -50px;
+}
+
+.agencement__combine-img img{
+    width: 94%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .agencement__combine-img-rect{
     display: flex;
     flex-direction: column;
+    gap: 20px 0;
 }
 
+.agencement__combine-img-small{
+    margin-top: -80px;
+}
+
+.agencement__combine-img-square img{
+    display: block;
+    margin-left: auto;
+}
+
+.agencement__combine-content{
+    text-align: center;
+}
+
+.agencement__combine-trait{
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--color-decorative);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agencement__combine-subtitle {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.agencement__combine-p{
+    margin-bottom: 135px;
+}
 
 
 @media(min-width:480px){
     .agencement-etagere__img .agencement-etagere__img-tall img{
         border-radius: 5px;
+    }
+
+    .agencement__combine-p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -173,7 +221,7 @@ main.agencement{
     }
 
     .agencement-etagere__title{
-        margin: 0px 0 -85px 355px;
+        margin: 0px 0 -85px 395px;
     }
 
     .agencement-etagere__banner {
@@ -195,6 +243,15 @@ main.agencement{
     .agencement__icones .icone{
         width: 64px;
         height: 64px;
+    }
+
+    .agencement__combine-img{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .agencement__combine-img-tall{
+        margin-top: -50px;
     }
 
 
