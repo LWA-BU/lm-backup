@@ -2,6 +2,21 @@ main.agencement{
     margin: 120px auto;
 }
 
+/* Main */
+
+.agencement-title{
+    margin-bottom: 40px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.agencement img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .agencement__header {
     width: 96%;
     margin: 0 auto 150px auto;
@@ -13,93 +28,51 @@ main.agencement{
     color: var(--color-decorative);
 }
 
-.agencement-etagere{
-    width: 100%;
-    height: auto;
-}
 
+/* Etagere */
+/* 
 .agencement-etagere__main{
     position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+} */
+
+.agencement-etagere__title{
+    margin-left: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid var(--color-decorative);
 }
 
 .agencement-etagere__img{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 40px 0;
+    gap: 30px 0px;
 }
 
-.agencement-etagere__img img{
-    display: block;
-    width: 100%;
-    max-width: 360px;
-    object-fit: cover;
-    /* object-position: center; */
+.agencement-etagere__img-small img,
+.agencement-etagere__img-square img{
+    width: 90%;
+    max-width: 480px;
 }
 
-.agencement-etagere__img .agencement-etagere__img-small img{
-   margin-right: auto;
-   border-top-right-radius: 5px;
-   border-bottom-right-radius: 5px;
-}
-
-.agencement-etagere__img .agencement-etagere__img-tall img{
-
-    width: 100%;
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.agencement-etagere__img .agencement-etagere__img-square img{
-    margin-left: auto;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
- }
-
- .agencement-etagere__banner{
+.agencement-etagere__img-txt{
     position: relative;
-    z-index: -1;
-    display: block;
-    width: 100%;
-    height: 1150px;
-    background-color: #121212;
-    margin-top: -1250px;
- }
-
- .agencement-title{
-    font-family: var(--font-title);
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    line-height: 2rem;
-    letter-spacing: 0.13rem;
-}
-
- .agencement-etagere__title{
-    padding-bottom: 15px;
-    margin: 0 0 35px 15px;
-    border-bottom: 1.5px solid var(--color-decorative);
- }
-
-.etagere__img-small{
-    width: 380px;
-    height: 445px;
 }
 
 .agencement-etagere__p{
     position: absolute;
     z-index: 20;
-    bottom: 300px;
-    width: 96%;
-    height: auto;
-    color: white;
+    bottom: 20px;
+    max-width: 400px;
+    color: #FFFFFF;
     text-shadow: 3px 3px 6px #000;
+}
+
+.agencement-etagere__banner{
+    position: absolute;
+    z-index: -2;
+    top: 885px;
+    width: 100%;
+    height: 1500px;
+    background-color: var(--bg-color-blue);
 }
 
 .agencement__icones{
@@ -111,13 +84,15 @@ main.agencement{
     margin-top: 120px;
 }
 
-.agencement__icones .icone{
+.agencement .icone{
     display: block;
     width: 48px;
     height: 48px;
     background-size: cover; 
     background-repeat: no-repeat;
 }
+
+/* Icones */
 
 .agencement__icones-kitchen{
     background-image: url('./../img/icones/meuble-cuisine.png');
@@ -135,65 +110,11 @@ main.agencement{
     background-image: url('./../img/icones/bibliotheque.png');
 }
 
-
-/* Combine */
-
-.agencement__combine{
-    display: flex;
-    flex-direction: column-reverse;
+.agencement__icones-projet{
+    background-image: url('./../img/icones/projet.png');
 }
 
-.agencement__combine-img{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-color-grey);
-    gap:27px 0;
-    margin-bottom: -50px;
-}
 
-.agencement__combine-img img{
-    width: 94%;
-    max-width: 480px;
-    height: auto;
-    border-radius: 5px;
-}
-
-.agencement__combine-img-rect{
-    display: flex;
-    flex-direction: column;
-    gap: 20px 0;
-}
-
-.agencement__combine-img-small{
-    margin-top: -80px;
-}
-
-.agencement__combine-img-square img{
-    display: block;
-    margin-left: auto;
-}
-
-.agencement__combine-content{
-    text-align: center;
-}
-
-.agencement__combine-trait{
-    display: block;
-    width: 20%;
-    height: 2px;
-    background-color: var(--color-decorative);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.agencement__combine-subtitle {
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.agencement__combine-p{
-    margin-bottom: 135px;
-}
 
 
 @media(min-width:480px){
@@ -220,190 +141,5 @@ main.agencement{
         letter-spacing: var(--letter-spacing-title-inspiration);
     }
 
-    .agencement-etagere__title{
-        margin: 0px 0 -85px 395px;
-    }
-
-    .agencement-etagere__banner {
-        height: 1050px;
-    }
-
-    .agencement-etagere__p {
-        bottom: 160px;
-        width: 70%;
-        margin-left: 50px;
-    }
-
-    .agencement__icones {
-        justify-content: center;
-        margin-top: 220px;
-        gap: 0 150px;
-      }
-
-    .agencement__icones .icone{
-        width: 64px;
-        height: 64px;
-    }
-
-    .agencement__combine-img{
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .agencement__combine-img-tall{
-        margin-top: -50px;
-    }
-
-
 }
 
-
-@media(min-width: 960px){
-
-    .agencement-etagere{
-        margin-top: 150px;
-    }
-
-    .agencement__header {
-        width: 60%;
-    }
-
-    .agencement-etagere__title {
-        width: 350px;
-        margin: 0px 0 -80px 15px;
-    }
-
-    .agencement-etagere__img{
-        flex-direction: row;
-        gap: 0 30px;
-    }
-
-    .agencement-etagere__img img{
-        border-radius: 5px;
-    }
-
-    .agencement-etagere__img .agencement-etagere__img-small img{
-        margin-top: 160px;
-        width: 300px;
-        height: 405px;
-    }
-        
-    .agencement-etagere__img .agencement-etagere__img-tall img{
-        width: 350px;
-    }
-    
-    .agencement-etagere__img .agencement-etagere__img-square img{
-        width: 280px;
-        height: 280px;
-        margin-top: 90px;
-    }
-
-    .agencement-etagere__banner {
-        height: 450px;
-        margin-top: -350px;
-    }
-
-    .agencement-etagere__p{
-        bottom: 100px;
-        left: 50%;
-        width: 50%;
-        max-width: 400px;
-        height: auto;
-    }
-
-    .agencement__icones{
-        margin-top: 0px;
-    }
-}
-
-
-@media(min-width: 1024px){
-
-    .agencement-etagere__title {
-        width: 450px;
-        margin: 0px 0 -80px 7px;
-        font-size: 1.4rem;
-      }
-
-    .agencement-etagere__img .agencement-etagere__img-small img{
-        margin-top: 160px;
-     }
-     
-     .agencement-etagere__img .agencement-etagere__img-tall img{
-        width: 350px;
-     }
-     
-     .agencement-etagere__img .agencement-etagere__img-square img{
-        width: 320px;
-        height: 320px;
-        margin-top: 90px;
-      }
-
-    .agencement-etagere__banner {
-        height: 450px;
-        margin-top: -350px;
-    }
-}
-
-@media(min-width: 1200px){
-    .agencement-etagere__title {
-        width: 550px;
-        margin-left: 65px;
-        font-size: 1.5rem;
-      }
-
-    .agencement-etagere__img .agencement-etagere__img-small img {
-        width: 350px;
-        height: 440px;
-    }
-
-    .agencement-etagere__img .agencement-etagere__img-tall img{
-        width: 380px;
-    }
-
-    .agencement-etagere__img .agencement-etagere__img-square img{
-        width: 350px;
-        height: 350px;
-    }
-
-
-}
-
-@media(min-width: 1420px){
-    .agencement__header {
-        width: 50%;
-        margin: 50px auto 250px auto;
-    }
-
-    .agencement-etagere__title {
-        font-size: 1.6rem;
-        margin-left: 120px;
-    }
-
-    .agencement-etagere__img .agencement-etagere__img-small img {
-        width: 375px;
-        height: 440px;
-    }
-
-    .agencement-etagere__img .agencement-etagere__img-tall img{
-        width: 385px;
-    }
-
-    .agencement-etagere__img .agencement-etagere__img-square img{
-        width: 375px;
-        height: 375px;
-    }
-
-    .agencement-etagere__p{
-        bottom: 50px;
-        margin-left: 60px;
-    }
-
-}
-
-@media(min-width: 1700px){
-    .agencement-etagere__title {
-        margin-left: 250px;
-      }
-
-}
