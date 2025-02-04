@@ -1,16 +1,22 @@
 main.arrange{
-    margin: 120px auto;
+    margin: 120px auto 0px auto;
 }
 
 /* Main */
+
+.arrange section{
+    margin : 100px 0;
+}
 .arrange .section-subtitle{
     margin-left: 0px;
 }
 .arrange-title{
     margin-top: 10px;
-    margin-bottom: 40px;
-    font-size: 1.25rem;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
     text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
 }
 
 .arrange img{
@@ -22,7 +28,6 @@ main.arrange{
 
 .arrange__header {
     width: 96%;
-    margin: 0 auto 150px auto;
     text-align: center;
 }
 
@@ -34,11 +39,10 @@ main.arrange{
 /* 
     Shelf 
 */
-
 .arrange-shelf__title{
-    margin-left: 30px;
+    margin-left: 15px;
     padding-bottom: 20px;
-    border-bottom: 1.5px solid var(--color-decorative);
+    border-bottom: 3px solid var(--color-decorative);
 }
 
 .arrange-shelf__img{
@@ -78,7 +82,6 @@ main.arrange{
 /* 
     Combined
 */
-
 .arrange__combined{
     position: relative;
     display: flex;
@@ -136,7 +139,6 @@ main.arrange{
     align-items: center;
     width: 100%;
     height: 164px;
-    margin: 30px 0px;
 }
 
 .arrange .icone{
@@ -188,20 +190,102 @@ main.arrange{
 }
 
 /* 
-    Room 
+    Room & laundry
 */
 
-.arrange__room-main-title{
+.arrange__room-main-title,
+.arrange__laundry-main-title{
+    margin-left: 20px;
+    padding: 10px 0px 0px 20px;
+    border-left: solid 4px var(--color-decorative);
+}
 
-    margin-left: 15px;
-    padding: 10px 0px 0px 10px;
-    border-left: solid 3px var(--color-decorative);
+.arrange__room-p, 
+.arrange__laundry-p{
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+
+.arrange__room-img,
+.arrange__room-img-col1,
+.arrange__room-img-col2,
+.arrange__laundry-img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+
+
+/* 
+    Room
+*/
+
+.arrange__room-subtitle{
+    margin: inherit;
+}
+
+.arrange__room-title{
+    padding-bottom: 10px;
+}
+
+.arrange__room-p{
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+
+
+.arrange__room-img-rect img{
+    min-height: 270px;
+}
+
+/* 
+    Laundry 
+*/
+section.arrange__laundry{
+    margin-bottom: 0;
+}
+.arrange__laundry-txt{
+    position: relative;
+}
+
+.arrange__laundry-main-title::after{
+    content:"";
+    display: block;
+    width: 50%;
+    height: 4px;
+    margin: 40px 0 30px auto;
+    background-color: var(--color-decorative);
+}
+
+.arrange__laundry-main-title{
+   border-left: none;
+}
+
+.arrange__laundry-txt-second{
+    position: absolute;
+    top: 200px;
+    left: -80px;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+}
+
+.arrange__laundry-img{
+    display: flex;
+    flex-direction: column;
 }
 
 
 @media(min-width:480px){
-    .arrange-shelf__img .arrange-shelf__img-tall img{
-        border-radius: 5px;
+    .arrange-shelf__banner {
+        height: 1400px;
+    }
+
+    .arrange__room-img-rect img {
+        min-height: 320px;
     }
 
     .arrange__combined-p{
@@ -209,19 +293,60 @@ main.arrange{
         margin-left: auto;
         margin-right: auto;
     }
+
+    .arrange-combined__banner {
+        height: 760px;
+    }
 }
 
 
 @media(min-width: 768px){
-    .arrange__header,
-    .arrange-shelf__p {
-        width: 70%;
-    }
 
     .section-title{
         font-size: var(--font-size-title-inspiration);
         letter-spacing: var(--letter-spacing-title-inspiration);
     }
+
+    .arrange__header,
+    .arrange-shelf__p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .arrange-shelf__title {
+        margin-left: 95px;
+    }
+
+    .arrange-shelf__p {
+        width: 450px;
+        margin-bottom: -60px;
+        margin-left: 80px;
+    }
+
+    .arrange-shelf__img {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 0px 20px;
+    }
+
+    .arrange-shelf__img-small img, 
+    .arrange-shelf__img-square img {
+        width: 100%;
+    }
+
+    .arrange-shelf__img-square img {
+        margin-bottom: 60%;
+    }
+
+    .arrange-shelf__banner {
+        height: 265px;
+    }
+
+    .arrange__combined-content::before {
+        margin-bottom: 50px;
+      }
 
     .arrange__combined-content::before{
         margin-top: 50px;

@@ -21,7 +21,7 @@ get_header(); ?>
         <section>
             <article class="sdb__section sdb__section-nature">
                 <picture class="sdb__section-img">
-                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-naturelle-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-naturelle-480.jpg" media="(max-width: 480px)" type="image/jpg">
                     <img class="sdb__section-img-big" src="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-naturelle.jpg" alt="Salle de bain avec meuble en chêne foncé et plan de travail en marbre fin"  width="480" 
                     height="700">
                 </picture>
@@ -41,7 +41,7 @@ get_header(); ?>
 
             <article class="sdb__section sdb__section-right sdb__section-epuree">
                 <picture class="sdb__section-img">
-                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-epuree-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-epuree-480.jpg" media="(max-width: 480px)" type="image/jpg">
                     <img class="sdb__section-img-big" src="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-epuree.jpg" alt="Salle de bain avec meuble en chêne clair et plan de travail en marbre veiné gris" width="480" 
                     height="700">
                 </picture>    
@@ -60,7 +60,7 @@ get_header(); ?>
 
             <article class="sdb__section sdb__section-elegante">
                 <picture class="sdb__section-img">
-                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-elegante-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-elegante-480.jpg" media="(max-width: 480px)" type="image/jpg">
                     <img class="sdb__section-img-big" src="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-elegante.jpg" alt="Salle de bain avec meuble mélaminé bleu pastel et plan de travail marbre blanc fin"  width="480" 
                     height="700">
                 </picture>
@@ -80,7 +80,7 @@ get_header(); ?>
 
             <article class="sdb__section  sdb__section-right sdb__section-raffinee">
                 <picture class="sdb__section-img">
-                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-raffinee-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-raffinee-480.jpg" media="(max-width: 480px)" type="image/jpg">
                     <img class="sdb__section-img-big" src="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-raffinee.jpg" alt="Salle de bain avec meuble en bois d'ébène et plan de travail en marbre tacheté de gris" width="480" 
                     height="700">
                 </picture>    
@@ -100,7 +100,7 @@ get_header(); ?>
 
             <article class="sdb__section sdb__section-integrale">
                 <picture class="sdb__section-img">
-                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-integrale-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                    <source class="sdb__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-integrale-480.jpg" media="(max-width: 480px)" type="image/jpg">
                     <img class="sdb__section-img-big" src="<?php echo get_template_directory_uri(); ?>/assets/img/sdb/salle-de-bain-integrale.jpg" alt="Salle de bain avec meuble intégral mélaminé en chêne foncé et plan de travail en marbre fin"  width="480" 
                     height="700">
                 </picture>

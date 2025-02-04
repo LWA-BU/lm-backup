@@ -40,7 +40,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var(--font-main);
+  font-family: var(--font-title);
   font-weight: 400;   
   letter-spacing: 0.062rem;
   line-height: 1.6rem;
@@ -569,7 +569,7 @@ span.trait{
   display: flex;
   align-items: center;
   align-content: center;
-  font-weight: 300;
+  /* font-weight: 300; */
   color: var(--bg-color-light);
   padding: 0px;
 }
@@ -606,7 +606,7 @@ span.trait{
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1rem;
-  font-weight: 300;
+  /* font-weight: 300; */
   color: var(--bg-color-light);
 }
 
@@ -670,7 +670,7 @@ span.trait{
   display: block;
   width: 340px;
   color: var(--color-text);
-  font-size: 0.75rem;
+  font-size: 0.70rem;
 }
 
 .footer__legalNotices a:hover{

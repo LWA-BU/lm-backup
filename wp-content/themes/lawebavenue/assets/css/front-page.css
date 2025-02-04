@@ -150,6 +150,7 @@ ul.section-concept__list li {
   position: relative;
   padding-left: 40px; 
   padding: 8px 0px 8px 40px;
+  letter-spacing: 0.022rem;
 }
 
 ul.section-concept__list li::before {

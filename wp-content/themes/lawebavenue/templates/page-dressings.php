@@ -26,7 +26,7 @@ get_header(); ?>
                         <div class="dressings__section-img-subtitle">
                             <span class="dressings__section-subtitle">Esthétique & Pratique</span>
                             <picture class="dressings__section-img">
-                                <source class="dressings__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-entree-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                                <source class="dressings__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-entree-480.jpg" media="(max-width: 480px)" type="image/jpg">
                                 <img class="dressings__section-img-big" src="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-entree.jpg" alt="Dressing d'entrée noir mat avec niche en bois chêne clair"  width="700" 
                                 height="525">
                             </picture>
@@ -50,7 +50,7 @@ get_header(); ?>
                         <div class="dressings__section-img-subtitle">
                             <span class="dressings__section-subtitle">Chic & Raffiné</span>
                             <picture class="dressings__section-img">
-                                <source class="dressings__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-haut-de-gamme-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                                <source class="dressings__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-haut-de-gamme-480.jpg" media="(max-width: 480px)" type="image/jpg">
                                 <img class="dressings__section-img-big" src="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-haut-de-gamme.jpg" alt="Dressing haut de gamme en chêne clair et porte avec miroir teinté"  width="700" 
                                 height="525">
                             </picture>
@@ -74,7 +74,7 @@ get_header(); ?>
                         <div class="dressings__section-img-subtitle">
                             <span class="dressings__section-subtitle">Sensation d'espace</span>
                             <picture class="dressings__section-img">
-                                <source class="dressings__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-ouvert-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                                <source class="dressings__section-img-small" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-ouvert-480.jpg" media="(max-width: 480px)" type="image/jpg">
                                 <img class="dressings__section-img-big" src="<?php echo get_template_directory_uri(); ?>/assets/img/dressings/dressing-ouvert.jpg" alt="Dressing moderne ouvert sur chambre à coucher"  width="700" 
                                 height="525">
                             </picture>

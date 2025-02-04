@@ -23,17 +23,16 @@ get_header(); ?>
 
                 <h1 class="arrange-shelf__title arrange-title">étagère & bibliothèque</h1>
 
-                <div class="arrange-shelf__img">
-
+                <di class="arrange-shelf__img">
                     <picture class="arrange-shelf__img-small img480">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/library-shelf-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/library-shelf-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/library-shelf.jpg" alt="Bibliothèque en mélaminé blanc sur bureau avec tiroirs et plan en marbre" width="835" 
                         height="925">
                     </picture>    
 
                     <div class="arrange-shelf__img-txt">
                         <picture class="arrange-shelf__img-tall">
-                            <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/library-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                            <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/library-480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/library.jpg" alt="Bibliotheque chic en bois gris anthracite au hauts arrondis et bas avec portes" width="600" 
                             height="943">
                         </picture>    
@@ -43,12 +42,11 @@ get_header(); ?>
                     </div>
 
                     <picture class="arrange-shelf__img-square">
-                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/wooden-shelf-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/wooden-shelf-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/wooden-shelf.jpg" alt="Tablettes de cuisine en bois de chêne clair" width="600" 
                         height="624">
                     </picture>    
-
-                </div>
+                </di>
             </div>
 
             <span class="arrange-shelf__banner"></span>
@@ -68,20 +66,20 @@ get_header(); ?>
 
                 <div class="arrange__combined-img-rect">
                     <picture class="arrange__combined-img-small">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white.jpg" alt="Meuble télé combiné avec meuble surélevé en pin foncé" width="700" 
                         height="526">
                     </picture>    
 
                     <picture class="arrange__combined-img-square">
-                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet.jpg" alt="Meuble télé blanc combiné avec bibliothèque intégrée surélevée mélaminé et bois foncé" width="700" 
                         height="477">
                     </picture>    
                 </div>
 
                 <picture class="arrange__combined-img-tall">
-                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv-480.jpg" media="(max-width: 767px)" type"image/jpg">
+                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv-480.jpg" media="(max-width: 1020px)" type="image/jpg">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv.jpg" alt="Meuble télé blanc avec structure en bois qui relie les deux modules" width="500" 
                     height="750">
                 </picture>  
@@ -131,16 +129,15 @@ get_header(); ?>
             </div>
 
             <div class="arrange__room-img">
-
                 <div class="arrange__room-img-col1">
                     <picture class="arrange__room-img-tall">
-                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/kids-room-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/kids-room-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/kids-room.jpg" alt="room d'enfant avec lits superposés" width="900" 
                         height="1216">
                     </picture>    
 
                     <picture class="arrange__room-img-small">
-                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/desk-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/desk-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/desk.jpg" alt="Bureau en mélaminé blanc avec module quatre tiroirs" width="900" 
                         height="620">
                     </picture>   
@@ -148,31 +145,28 @@ get_header(); ?>
 
                 <div class="arrange__room-img-col2">
                     <picture class="arrange__room-img-rect">
-                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed-and-desk-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed-and-desk-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed-and-desk.jpg" alt="Lit d'adolescent surélevé sur tiroir avec bureau intégré" width="940" 
                         height="529">
                     </picture>    
 
                     <picture class="arrange__room-img-rect">
-                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                        <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed.jpg" alt="Bureau et bibliothèque en mélaminé blanc dans room d'enfant" width="940" 
                         height="694">
                     </picture>   
                 </div>
-
             </div>
 
         </section>
 
 
         <section class="arrange__laundry">
-            <p class="arrange__laundry-txt">Chaque espace a sa fonction</p>
-           
+          
             <div class="arrange__laundry-txt">
                 <div class="arrange__laundry-main-title">
-                    <p class="arrange__laundry-subtitle section-subtitle">Optimiser les espaces</p>
+                    <p class="arrange__laundry-subtitle section-subtitle">Les pièces dédiées</p>
                     <h1 class="arrange__laundry-title arrange-title">Buanderie & cave</h1>
-                    <span class="arrange__laundry-trait"></span>
                 </div>
                 <p class="arrange__laundry-p paragraphe">
                     « Optimisez chaque espace de votre maison avec une buanderie fonctionnelle ou une cave à vin. La buanderie, pensée pour maximiser le rangement et simplifier les tâches ménagères, 
@@ -180,17 +174,18 @@ get_header(); ?>
                     Pour les amateurs de vins, une cave sur mesure assure une conservation optimale. Nous vous accompagnons dans la création d’espaces à la fois pratiques et esthétiques, 
                     alliant design et fonctionnalité pour répondre à vos besoins quotidiens. »
                 </p>
+                <p class="arrange__laundry-txt-second">Optimiser les espaces</p>
             </div>
 
             <div class="arrange__laundry-img">
                 <picture class="arrange__laundry-img-tall">
-                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/buanderie-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/buanderie-480.jpg" media="(max-width: 480px)" type="image/jpg">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/buanderie.jpg" alt="Buanderie sur mesure meubles couleurs chêne et bois" width="700" 
                     height="900">
                 </picture>    
 
                 <picture class="arrange__laundry-img-tall">
-                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/wine-cellar-480.jpg" media="(max-width: 480px)" type"image/jpg">
+                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/wine-cellar-480.jpg" media="(max-width: 480px)" type="image/jpg">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/wine-cellar.jpg" alt="Cave à vin sur mesure en bois de chêne foncé" width="680" 
                     height="916">
                 </picture>   
