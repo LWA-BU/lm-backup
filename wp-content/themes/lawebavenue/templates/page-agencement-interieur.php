@@ -23,7 +23,7 @@ get_header(); ?>
 
                 <h1 class="arrange-shelf__title arrange-title">étagère & bibliothèque</h1>
 
-                <di class="arrange-shelf__img">
+                <div class="arrange-shelf__img">
                     <picture class="arrange-shelf__img-small img480">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/library-shelf-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/library-shelf.jpg" alt="Bibliothèque en mélaminé blanc sur bureau avec tiroirs et plan en marbre" width="835" 
@@ -46,7 +46,7 @@ get_header(); ?>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/wooden-shelf.jpg" alt="Tablettes de cuisine en bois de chêne clair" width="600" 
                         height="624">
                     </picture>    
-                </di>
+                </div>
             </div>
 
             <span class="arrange-shelf__banner"></span>
@@ -67,22 +67,27 @@ get_header(); ?>
                 <div class="arrange__combined-img-rect">
                     <picture class="arrange__combined-img-small">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white-480.jpg" media="(max-width: 480px)" type="image/jpg">
+                        <!-- <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white-768.jpg" media="(max-width: 960px)" type="image/jpg"> -->
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white.jpg" alt="Meuble télé combiné avec meuble surélevé en pin foncé" width="700" 
                         height="526">
                     </picture>    
 
                     <picture class="arrange__combined-img-square">
                         <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet-480.jpg" media="(max-width: 480px)" type="image/jpg">
+                        <!-- <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet-768.jpg" media="(max-width: 960px)" type="image/jpg"> -->
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet.jpg" alt="Meuble télé blanc combiné avec bibliothèque intégrée surélevée mélaminé et bois foncé" width="700" 
                         height="477">
                     </picture>    
                 </div>
 
                 <picture class="arrange__combined-img-tall">
-                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv-480.jpg" media="(max-width: 1020px)" type="image/jpg">
+                    <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv-480.jpg" media="(max-width: 767px)" type="image/jpg">
+                    <!-- <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv-768.jpg" media="(max-width: 960px)" type="image/jpg"> -->
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv.jpg" alt="Meuble télé blanc avec structure en bois qui relie les deux modules" width="500" 
                     height="750">
                 </picture>  
+
+                <span class="arrange-combined__banner"></span>
             </div>
             
             <div class="arrange__combined-content">
@@ -94,7 +99,7 @@ get_header(); ?>
                 </p>
             </div>
 
-            <span class="arrange-combined__banner"></span>
+    
         </section>
 
         <div class="arrange__contact">
