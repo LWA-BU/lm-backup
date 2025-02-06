@@ -47,9 +47,11 @@ get_header(); ?>
                         height="624">
                     </picture>    
                 </div>
+
+                <span class="arrange-shelf__banner"></span>
             </div>
 
-            <span class="arrange-shelf__banner"></span>
+          
 
         </section>
 
@@ -99,7 +101,6 @@ get_header(); ?>
                 </p>
             </div>
 
-    
         </section>
 
         <div class="arrange__contact">
@@ -149,13 +150,13 @@ get_header(); ?>
                 </div>
 
                 <div class="arrange__room-img-col2">
-                    <picture class="arrange__room-img-rect">
+                    <picture class="arrange__room-img-rect-1">
                         <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed-and-desk-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed-and-desk.jpg" alt="Lit d'adolescent surélevé sur tiroir avec bureau intégré" width="940" 
                         height="529">
                     </picture>    
 
-                    <picture class="arrange__room-img-rect">
+                    <picture class="arrange__room-img-rect-2">
                         <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed-480.jpg" media="(max-width: 480px)" type="image/jpg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/bed.jpg" alt="Bureau et bibliothèque en mélaminé blanc dans room d'enfant" width="940" 
                         height="694">
