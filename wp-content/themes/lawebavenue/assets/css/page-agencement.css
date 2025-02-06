@@ -283,25 +283,28 @@ section.arrange__laundry{
 @media(min-width:480px){
     .arrange-shelf__img,
     .arrange__combined-p,
-    .arrange__room-img{
+    .arrange__room-img,
+    .arrange__laundry-img{
         margin-left: auto;
         margin-right: auto;
     }
 
     .arrange-shelf__img,
     .arrange-shelf__img-small img,
-    .arrange-shelf__img-square img{
+    .arrange-shelf__img-square img,
+    .arrange__laundry-img{
         width: 70%;
     }
 
     .arrange__combined img,
-    .arrange__combined-p{
+    .arrange__combined-p,
+    .arrange__room-img{
         width: 80%;
     }
 
-    .arrange__room-img{
+    /* .arrange__room-img{
         width: 90%;
-    }
+    } */
 
 }
 
@@ -317,7 +320,9 @@ section.arrange__laundry{
     }
 
     .arrange__header,
-    .arrange-shelf__p {
+    .arrange-shelf__p,
+    .arrange__room-txt,
+    .arrange__laundry-txt {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -404,6 +409,13 @@ section.arrange__laundry{
         padding-bottom: 50px;
     }
 
+    .arrange__laundry-txt {
+        position: relative;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
     /* 
         Room 
     */
@@ -431,8 +443,30 @@ section.arrange__laundry{
         max-width: 470px;
         height: 335px;
     }
- 
-    
+
+    /* 
+        Laundry 
+    */
+    .arrange__laundry-p{
+        margin-left: 70px;
+    }
+
+    .arrange__laundry-txt-second {
+        left: -120px;
+    }
+
+    .arrange__laundry-img{
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .arrange__laundry-img-tall img{
+        max-width: 335px;
+        height: 430px;
+    }
+
 }
 
 @media(min-width: 1420px){

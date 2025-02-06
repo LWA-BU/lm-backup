@@ -18,7 +18,6 @@ get_header(); ?>
         </div>
 
         <section class="arrange-shelf">
-  
             <div class="arrange-shelf__main">
 
                 <h1 class="arrange-shelf__title arrange-title">étagère & bibliothèque</h1>
@@ -50,9 +49,6 @@ get_header(); ?>
 
                 <span class="arrange-shelf__banner"></span>
             </div>
-
-          
-
         </section>
 
         <div class="arrange__icones">
@@ -63,7 +59,6 @@ get_header(); ?>
         </div>
 
         <section class="arrange__combined">
-
             <div class="arrange__combined-img">
 
                 <div class="arrange__combined-img-rect">
@@ -100,7 +95,6 @@ get_header(); ?>
                     En plus d’être fonctionnels, ils apportent une touche décorative au salon, s’adaptent aux différents styles d’intérieur grâce à une large variété de designs et de matériaux.
                 </p>
             </div>
-
         </section>
 
         <div class="arrange__contact">
@@ -118,7 +112,6 @@ get_header(); ?>
                 <span>contactez-nous</span>
                 <span class="section-concept__button-icon icone" aria-hidden="true"></span>
             </a>
-          
         </div>
 
         <section class="arrange__room">
@@ -163,12 +156,9 @@ get_header(); ?>
                     </picture>   
                 </div>
             </div>
-
         </section>
 
-
         <section class="arrange__laundry">
-          
             <div class="arrange__laundry-txt">
                 <div class="arrange__laundry-main-title">
                     <p class="arrange__laundry-subtitle section-subtitle">Les pièces dédiées</p>
