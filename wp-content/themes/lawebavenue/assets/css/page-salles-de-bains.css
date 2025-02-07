@@ -85,6 +85,12 @@ main.sdb{
 }
 
 
+/* 
+  ******************
+    MEDIAS QUERIES 
+  ******************
+*/
+
 @media (min-width: 768px) {
 
   .sdb__section{

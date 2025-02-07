@@ -12,7 +12,7 @@ main.arrange{
     margin-left: 0px;
 }
 .arrange-title{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 30px;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -62,17 +62,35 @@ main.arrange{
 .arrange-shelf__title{
     margin-left: 15px;
     padding-bottom: 20px;
-    border-bottom: 3px solid var(--color-decorative);
+    border-bottom: 1px solid var(--color-decorative);
 }
 
 .arrange-shelf__img{
     gap: 30px 0px;
 }
 
+.arrange-shelf__img img{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.arrange-shelf__img-tall img{
+    max-width: 450px;
+    max-height: 700px;
+}
+
 .arrange-shelf__img-small img,
 .arrange-shelf__img-square img{
     width: 90%;
     max-width: 380px;
+}
+
+.arrange-shelf__img-small img{
+    max-height: 440px;
+}
+
+.arrange-shelf__img-square img{
+
+   max-height: 380px;
 }
 
 .arrange-shelf__img-txt{
@@ -95,6 +113,7 @@ main.arrange{
     width: 100%;
     height: 90%;
     background-color: var(--bg-color-blue);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* 
@@ -151,7 +170,7 @@ section.arrange__combined{
     height: 75%;
     margin: auto;
     background-color: var(--bg-color-grey);
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
 }
 
 /* Icones */
@@ -201,8 +220,9 @@ section.arrange__combined{
 }
 
 .arrange__contact-p{
-    max-width: 500px;
+    max-width: 625px;
 }
+
 
 /* 
     Room & laundry
@@ -258,8 +278,8 @@ section.arrange__laundry{
 .arrange__laundry-main-title::after{
     content:"";
     display: block;
-    width: 50%;
-    height: 4px;
+    width: 70%;
+    height: 3px;
     margin: 40px 0 30px auto;
     background-color: var(--color-decorative);
 }
@@ -279,6 +299,11 @@ section.arrange__laundry{
     letter-spacing: 0.15rem;
 }
 
+/* 
+  ******************
+    MEDIAS QUERIES 
+  ******************
+*/
 
 @media(min-width:480px){
     .arrange-shelf__img,
@@ -301,10 +326,6 @@ section.arrange__laundry{
     .arrange__room-img{
         width: 80%;
     }
-
-    /* .arrange__room-img{
-        width: 90%;
-    } */
 
 }
 
@@ -409,13 +430,6 @@ section.arrange__laundry{
         padding-bottom: 50px;
     }
 
-    .arrange__laundry-txt {
-        position: relative;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
     /* 
         Room 
     */
@@ -425,7 +439,6 @@ section.arrange__laundry{
         max-width: 830px;
         max-height: 670px;
         column-gap: 10px;
-
     }
    
     .arrange__room-img-tall img{
@@ -469,9 +482,71 @@ section.arrange__laundry{
 
 }
 
+@media(min-width: 1024px){
+
+    .arrange-shelf__img {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .arrange-shelf__p {
+        margin-left: 200px;
+    }
+    
+}
+
+@media(min-width: 1200px){
+    .arrange-shelf__p {
+        margin-left: 300px;
+    }
+
+    .arrange-shelf__img {
+        gap: 0px 40px;
+    }
+
+    .arrange-shelf__img-square img {
+        margin-bottom: 40%;
+    }
+}
+
 @media(min-width: 1420px){
+
+    .arrange section.arrange-shelf{
+        margin-top: 200px;
+    }
+
+    .arrange-shelf__title {
+        margin-bottom: -120px;
+        width: 450px;
+    }
+
+    .arrange__icones {
+        justify-content: center;
+        gap: 0 150px;
+      }
+
+    section.arrange__combined {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 65px;
+    }
+
+    .arrange__combined-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        margin-bottom: 0;
+    }
+
+    .arrange__combined-p{
+        width: 90%;
+        margin: 0;
+     }
+
     .arrange__combined-content::before{
         margin-top: 50px;
+        margin-bottom: 70px;
         transform: rotate(90deg);
     }
 
@@ -484,6 +559,41 @@ section.arrange__laundry{
         background-color: var(--color-decorative);
         transform: rotate(90deg);
     }
+
+    .arrange__room{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0 30px;
+        padding-left: 10px;
+    }
+
+ .arrange__room-txt{
+        width: 40%;
+        margin: 0;
+      }
+
+      .arrange .section-subtitle {
+        margin-top: 0px;
+      }
+
+      .arrange__room-p{
+        margin-bottom: 0;
+      }
+
+    /* .arrange__contact{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .arrange__contact a.btn-transparent-black{
+   
+            width: 260px;
+            margin: 0;
+          
+    } */
 
     
 }

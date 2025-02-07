@@ -69,7 +69,7 @@ get_header(); ?>
                     N’hésitez pas à consulter notre page d’inspiration qui pourra vous orienter. 
                     Vous y trouverez différents styles, du moderne au contemporain, différents coloris et différentes textures.  
                 </p>
-                <a class="section-project__button btn-transparent-beige"  href="votre-lien.html" aria-label="Voir nos inspirations">
+                <a class="section-project__button btn-transparent-black"  href="votre-lien.html" aria-label="Voir nos inspirations">
                     <span>voir nos inspirations</span>
                     <span class="section-project__button-section-prestation__list-icon icone" aria-hidden="true"></span>
                 </a>

@@ -170,10 +170,11 @@ ul.section-concept__list li.list-measure::before{
 }
 
 
-
-/* ================================================================
-                          MEDIAS QUERIES
-=================================================================== */
+/* 
+  ******************
+    MEDIAS QUERIES 
+  ******************
+*/
 
 @media (min-width: 472px) {
   .section-about__content {

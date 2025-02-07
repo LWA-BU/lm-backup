@@ -121,7 +121,7 @@ get_header(); ?>
                     <h1 class="arrange__room-title arrange-title">Chambre & bureau</h1>
                 </div>
                 <p class="arrange__room-p paragraphe">
-                    « Les meubles de room sur mesure répondent à vos habitudes et besoins pratiques. 
+                    « Les meubles de room sur mesure répondent à vos habitudes et besoins pratiques. 
                     Leur conception entièrement personnalisable permet d’intégrer des solutions astucieuses pour optimiser le rangement ou améliorer l’ergonomie, 
                     contribuant ainsi à un environnement plus ordonné et apaisant.»
                 </p>

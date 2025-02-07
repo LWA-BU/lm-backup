@@ -61,13 +61,13 @@ main.dressings{
     margin-top: 30px;
     margin-left: -30px;
     border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .dressing-hdg .dressings__section-img img{
     width: 320px;
     height: 290px;
     margin-left: -25px;
-
 }
 
 .dressings__section-img-subtitle{
@@ -125,6 +125,12 @@ main.dressings{
     text-transform: capitalize;
 }
 
+
+/* 
+  ******************
+    MEDIAS QUERIES 
+  ******************
+*/
 @media(min-width: 480px){
     .dressings__section-bg-img-subtitle{
         width: 390px;
@@ -246,7 +252,6 @@ main.dressings{
     }
     
     .dressings__section-main-top {
-        /* width: 600px; */
         max-width: 600px;
         margin-top: 250px;
         margin-left: -130px;

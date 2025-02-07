@@ -104,10 +104,10 @@ h1.section-project__title::before{
   margin-bottom: 20px;
 }
 
-section#section-projet a.btn-transparent-beige {
+/* section#section-projet a.btn-transparent-beige {
   color: var(--color-decorative, #965634);
   border: 1.5px solid var(--color-decorative, #965634);
-}
+} */
       
 
 /**** Modales ****/
@@ -274,7 +274,7 @@ body.no-scroll, html.no-scroll{
   ******************
     MEDIAS QUERIES 
   ******************
-  */
+*/
 
   @media (min-width: 472px) {
     ul.section-prestation__list {

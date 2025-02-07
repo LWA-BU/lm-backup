@@ -93,6 +93,13 @@ main.cuisines{
     margin-bottom: 50px;
 }
 
+
+/* 
+  ******************
+    MEDIAS QUERIES 
+  ******************
+*/
+
 @media(min-width: 768px){
     .cuisines-header{
         width: 80%;

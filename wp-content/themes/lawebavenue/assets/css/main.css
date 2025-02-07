@@ -4,6 +4,7 @@
 :root {
 
   --bg-border: #C7714A;
+  --bg-button: #985937;
   --bg-color-beige: #CDC6BE;
   --bg-color-blue: #172733;
   --bg-color-grey: #F6F6F6;
@@ -98,12 +99,12 @@ a.btn-transparent-black span.icone {
 }
 
 a.btn-transparent-black{
-  color: var(--bg-color-sombre, #37372F); 
-  border: 1.5px solid var(--bg-color-sombre); 
+  color: var(--bg-color-light);
+  background-color: var(--bg-button);
 }
 
 a.btn-transparent-black span.icone{
-  background-image: url('./../img/arrow-right-black.svg');
+  background-image: url('./../img/arrow-right.png');
 }
 
 a.btn-transparent-beige{
@@ -296,7 +297,7 @@ nav.header__menu.active {
 #menu-footer a:hover, 
 .toggle-button:hover {
   color: var(--color-decorative, #965634);
-  position: relative; /* Nécessaire pour positionner l'élément ::after */
+  position: relative; 
 }
 
 .header__menu .toggle-button {
@@ -307,12 +308,12 @@ nav.header__menu.active {
 .header__menu .toggle-button:hover::after {
   content: '';
   position: absolute;
-  width: 100%; /* Le soulignement prendra toute la largeur du lien au survol */
-  height: 1px; /* Épaisseur du soulignement */
-  background: var(--color-decorative, #965634); /* Couleur du soulignement */
-  bottom: 0; /* Soulignement sous le texte */
-  left: 0; /* Le soulignement commence à gauche */
-  transition: width 0.3s ease-in-out; /* Transition fluide du soulignement */
+  width: 100%; 
+  height: 1px; 
+  background: var(--color-decorative, #965634); 
+  bottom: 0; 
+  left: 0; 
+  transition: width 0.3s ease-in-out; 
 }
 
 .header__menu .current-menu-item a, .header__menu .toggle-button {
@@ -327,12 +328,12 @@ nav.header__menu.active {
 }
 
 .header__menu .toggle-button::after {
-  width: 0; /* Le soulignement commence à 0 */
-  height: 1px; /* Épaisseur du soulignement */
-  background: var(--color-decorative, #965634); /* Couleur du soulignement */
-  bottom: 0; /* Distance sous le texte */
-  left: 0; /* Le soulignement commence à gauche */
-  transition: width 0.3s ease-in-out; /* Animation du soulignement */
+  width: 0; 
+  height: 1px; 
+  background: var(--color-decorative, #965634); 
+  bottom: 0; 
+  left: 0; 
+  transition: width 0.3s ease-in-out; 
 }
 
 .header__menu .current-menu-item a{
@@ -340,30 +341,30 @@ nav.header__menu.active {
 }
 
 .header__menu .current-menu-item a::after {
-  width: 100%; /* Le soulignement prend toute la largeur du lien actif */
-  height: 1px; /* Épaisseur du soulignement */
-  background: var(--color-decorative, #965634); /* Couleur du soulignement */
-  bottom: 0; /* Distance sous le texte */
-  left: 0; /* Commence à la gauche */
-  transition: none; /* Pas de transition pour le lien actif */
+  width: 100%; 
+  height: 1px; 
+  background: var(--color-decorative, #965634); 
+  bottom: 0; 
+  left: 0;
+  transition: none; 
 }
 
 /* Soulignement au survol des liens */
 .header__menu a:hover::after {
-  width: 100%; /* Le soulignement prend toute la largeur au survol */
+  width: 100%; 
 }
 
 .header__menu a {
-  position: relative; /* Nécessaire pour le pseudo-élément ::after */
+  position: relative; 
   text-transform: uppercase;
 }
 
 .header__menu a::after {
-  width: 0; /* Le soulignement commence à 0 au départ */
-  height: 1px; /* Épaisseur du soulignement */
-  background: var(--color-decorative, #965634); /* Couleur du soulignement */
-  bottom: 0; /* Distance sous le texte */
-  left: 0; /* Le soulignement commence à gauche */
+  width: 0; 
+  height: 1px; 
+  background: var(--color-decorative, #965634); 
+  bottom: 0; 
+  left: 0; 
   transition: width 0.3s ease-in-out; 
 }
 
@@ -392,7 +393,6 @@ ul#sub-menu-120.sub-menu.open,
 ul#sub-menu-128.sub-menu.open {
   visibility: visible;
   opacity: 1;
-  /* height: 218px; */
   height: 180px;
 }
 
@@ -441,9 +441,9 @@ li#menu-item-128{
   width: 100%;
   height: 711px;
   background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_xs.jpg');
-  background-size: cover; /* L'image couvre la div sans se déformer */
-  background-position: center; /* Centrer l'image */
-  background-repeat: no-repeat; /* Éviter les répétitions */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 
 .header__banner-title, 
@@ -543,8 +543,8 @@ a.header__cta-link{
 
 .footer__contact{
   display: flex;
-  flex-direction: column; /* Les éléments sont alignés en colonne */
-  align-items: center; /* Centre les éléments horizontalement */
+  flex-direction: column; 
+  align-items: center; 
   border-bottom: 8px solid var(--color-text);
 }
 
@@ -569,7 +569,6 @@ span.trait{
   display: flex;
   align-items: center;
   align-content: center;
-  /* font-weight: 300; */
   color: var(--bg-color-light);
   padding: 0px;
 }
@@ -606,7 +605,6 @@ span.trait{
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1rem;
-  /* font-weight: 300; */
   color: var(--bg-color-light);
 }
 
@@ -690,9 +688,11 @@ span.trait{
   height: 45px;
 }
 
-/* ================================================================
-                          MEDIAS QUERIES
-=================================================================== */
+/* 
+  ******************
+    MEDIAS QUERIES 
+  ******************
+*/
 
 @media (min-width: 472px) {
   .footer__img-deco {
@@ -919,6 +919,10 @@ span.trait{
     left: 0;
     width: 250px;
     height: 350px;
+  }
+
+  ul#sub-menu-128.sub-menu.open {
+    min-width: 200px;
   }
 }
 
