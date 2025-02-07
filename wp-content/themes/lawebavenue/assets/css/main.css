@@ -69,7 +69,7 @@ a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige{
   width: 186px;
   height: 44px;
   padding: 10px 20px;
-  font-size: 0.9rem; 
+  font-size: 0.95rem; 
   letter-spacing: 0.13rem;
   text-transform: uppercase;
   border-radius: 30px; 
@@ -77,12 +77,13 @@ a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige{
 }
 
 a.btn-transparent-black, a.btn-transparent-beige{
-  width: 260px;
+  width: 270px;
   margin: 30px auto 0px auto;
 }
 
 a.header__cta-link{
   text-transform: lowercase;
+  padding: 8px 20px 10px 15px;
 }
 
 

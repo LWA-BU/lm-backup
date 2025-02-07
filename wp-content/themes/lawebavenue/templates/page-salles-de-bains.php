@@ -51,9 +51,9 @@ get_header(); ?>
                         <span class="sdb__section-main-title-light section-subtitle">Collection sobriété</span>
                     </div>
                     <p class="sdb__section-main-paragraphe-left sdb-paragraphe paragraphe">
-                        « Les matériaux naturels allient élégance et authenticité. Le meuble sous-vasque, avec ses teintes de bois, 
-                        apporte une atmosphère chaleureuse tandis que le plan de toilette en marbre ajoute une touche de raffinement. 
-                        Ce mélange harmonieux de bois et de marbre confère à la pièce un style moderne et apaisant, où chaque détail est pensé pour le confort. »
+                    « Cette salle de bain avec ses meubles aux lignes épurées et sobres, dégage une atmosphère apaisante et moderne. 
+                     Les armoires de toilette hautes, dotées de façades en miroir, agrandissent visuellement la pièce tout en offrant des rangements discrets et spacieux. 
+                     Ce design épuré, associé à des matériaux raffinés, libère l’espace. Chaque élément trouve sa place avec élégance et fonctionnalité. »
                     </p>
                 </div>
             </article>
