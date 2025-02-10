@@ -19,56 +19,56 @@
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-cuisine.jpg"  alt="Cuisine aménagée avec un style moderne" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-cuisine.jpg"  alt="Cuisine aménagée avec un style moderne" class="modal__gallery-img" tabindex="0">
           </div>
           <h2 class="modal__gallery-title">Cuisine</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-salle-de-bain.jpg"  alt="Salle de bains élégante avec un agencement optimisé"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-salle-de-bain.jpg"  alt="Salle de bains élégante avec un agencement optimisé"  class="modal__gallery-img" tabindex="0">
           </div>
           <h2 class="modal__gallery-title">Salle de bains</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-dressing.jpg" alt="Dressing avec espaces de rangement bien organisés" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-dressing.jpg" alt="Dressing avec espaces de rangement bien organisés" class="modal__gallery-img" tabindex="0">
           </div>
           <h2 class="modal__gallery-title">Dressing</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-placard.jpg" alt="Placard aménagé avec des portes classiques et vitrées"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-placard.jpg" alt="Placard aménagé avec des portes classiques et vitrées"  class="modal__gallery-img" tabindex="0">
           </div>
           <h2 class="modal__gallery-title">Aménagement placard</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-buanderie-cave.jpg" alt="Buanderie et caves avec espaces de rangement et organisation efficace" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-buanderie-cave.jpg" alt="Buanderie et caves avec espaces de rangement et organisation efficace" class="modal__gallery-img" tabindex="0">
           </div>
           <h2 class="modal__gallery-title">Buanderie / Cave</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-etagere-bibliotheque.jpg" alt="Étagères et bibliothèque intégrées dans un salon" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-etagere-bibliotheque.jpg" alt="Étagères et bibliothèque intégrées dans un salon" class="modal__gallery-img" tabindex="0">
           </div>
           <h2 class="modal__gallery-title">Etagères<br>Bibliothèque </h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-meubleTV.jpg" alt="Meuble TV intégré avec espaces de rangement" class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-meubleTV.jpg" alt="Meuble TV intégré avec espaces de rangement" class="modal__gallery-img" tabindex="0">
           </div>
           <h2 class="modal__gallery-title">Ensembles intégrés <br>Meuble TV</h2>
         </div>
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-tablette-fenetre.jpg"  alt="Tablette de fenêtre anthracite élégante"  class="modal__gallery-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-tablette-fenetre.jpg"  alt="Tablette de fenêtre anthracite élégante"  class="modal__gallery-img" tabindex="0">
           </div>
           <h2 class="modal__gallery-title">Tablette de fenêtre</h2>
         </div>

@@ -25,6 +25,11 @@
 
             <?php get_template_part('parts/nav_header'); ?>
 
+            <button class="btn-arrowup" aria-label="Remonter en haut de la page" tabindex="1">
+                <img class="icone-arrowup" src="<?php echo get_template_directory_uri(); ?>/assets/img/icones/arrow-up.png" alt=""/>
+            </button>
+          
+
         </div>
    
 
@@ -70,6 +75,5 @@
 
         <?php } ?>
 
-        
 
     </header>

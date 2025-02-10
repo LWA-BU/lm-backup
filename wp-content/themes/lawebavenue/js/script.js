@@ -214,3 +214,32 @@ const toggleMenuState = (parent, isOpen) => {
 
   subMenu.classList.toggle('open', isOpen);
 };
+
+
+//***************** button to go up **********************
+
+const btn = document.querySelector('.btn-arrowup');
+
+btn.addEventListener('click', scrollToTop);
+btn.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollToTop();
+      btn.blur();
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+  });
+  btn.blur();
+}
+
+
+
+document.getElementById("modal1").addEventListener("shown.bs.modal", function () {
+  document.querySelector(".modal__gallery-img").focus();
+});

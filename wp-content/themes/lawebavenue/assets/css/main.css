@@ -58,8 +58,6 @@ body{
   font-size: var(--font-size-main);
 }
 
-
-
 a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige{
   display: flex; 
   align-items: center; 
@@ -184,6 +182,28 @@ ul, li , a{
   padding: 15px 11px 15px 15px;
   font-weight: 400;
   color: var(--color-p-light);
+}
+
+.btn-arrowup {
+  position: fixed;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  bottom: 20px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 100%;
+  border: none;
+}
+
+.btn-arrowup:focus {
+  outline: 3px solid #007BFF; /* Ajoute un contour visible */
+}
+
+.icone-arrowup {
+  width: 30px;
 }
 
 

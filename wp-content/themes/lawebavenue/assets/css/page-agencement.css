@@ -1,5 +1,6 @@
 main.arrange{
     margin: 120px auto 0px auto;
+    max-width: 1420px;
 }
 
 /* Main */
@@ -331,15 +332,6 @@ section.arrange__laundry{
 
 
 @media(min-width: 768px){
-    .section-title{
-        font-size: var(--font-size-title-inspiration);
-        letter-spacing: var(--letter-spacing-title-inspiration);
-    }
-
-    .arrange-shelf__img{
-        width: 100%;
-    }
-
     .arrange__header,
     .arrange-shelf__p,
     .arrange__room-txt,
@@ -347,6 +339,21 @@ section.arrange__laundry{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .arrange__header {
+        width: 70%;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .section-title{
+        font-size: var(--font-size-title-inspiration);
+        letter-spacing: var(--letter-spacing-title-inspiration);
+    }
+
+    .arrange-shelf__img{
+        width: 100%;
     }
 
     .arrange-shelf__title {
@@ -511,6 +518,11 @@ section.arrange__laundry{
 
 @media(min-width: 1420px){
 
+    .arrange__header {
+        width: 50%;
+        margin-bottom: 300px;
+    }
+
     .arrange section.arrange-shelf,
     .arrange section.arrange__laundry{
         margin-top: 200px;
@@ -559,6 +571,10 @@ section.arrange__laundry{
         margin: 50px auto 50px auto;
         background-color: var(--color-decorative);
         transform: rotate(90deg);
+    }
+
+    .arrange-combined__banner {
+        margin-left: -20px;
     }
 
     .arrange__room{
