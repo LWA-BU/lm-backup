@@ -4,7 +4,7 @@ Template Name: Page Prestations
 */
 
 get_header(); ?>
-    <main class="prestations">
+    <main id="prestations"  class="prestations">
         <section class="section-prestation">
 
             <div class="section-prestation__content">

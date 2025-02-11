@@ -33,7 +33,7 @@
                     dans le respect des matériaux et des finitions. Notre expertise  nous permet de répondre à vos besoins spécifiques, 
                     alliant esthétisme, fonctionnalité et durabilité pour des espaces optimisés et harmonieux. »
                 </p>
-                <a class="section-interiorDesign__link btn-transparent-beige"  href="votre-lien.html" aria-label="Voir nos prestations">
+                <a class="section-interiorDesign__link btn-transparent-beige"  href="<?php echo site_url('/prestations/#prestations'); ?>" aria-label="Voir nos prestations">
                     <span>voir nos prestations</span>
                     <span class="icone" aria-hidden="true"></span>
                 </a>

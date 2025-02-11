@@ -5,7 +5,7 @@
 
     <div class="modal__content">
       <button class="close-modal modal__btn" tabindex="0" aria-label="Fermer la modale" >
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icones/cross.svg"  alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icones/cross.svg"  alt="Fermer la modale">
       </button>
       <p class="modal__subtitle">Conception, réalisation, pose</p>
       <h1 id="modal1-title" class="modal__title section-title">Agencement intérieur</h1>
@@ -15,7 +15,7 @@
           Nous allions esthétisme et fonctionnalité pour un aménagement harmonieux.
       </p>
 
-      <div class="modal__gallery">
+      <div class="modal__gallery" tabindex="-1">
 
         <div class="modal__gallery-item" tabindex="0">
           <div class="modal__gallery-img-wrapper">
@@ -61,14 +61,14 @@
 
         <div class="modal__gallery-item" tabindex="0">
           <div class="modal__gallery-img-wrapper">
-            <img class="modal__gallery-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-meubleTV.jpg" alt="Meuble TV intégré avec espaces de rangement"tabindex="0">
+            <img class="modal__gallery-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-meubleTV.jpg" alt="Meuble TV intégré avec espaces de rangement">
           </div>
           <h2 class="modal__gallery-title">Ensembles intégrés <br>Meuble TV</h2>
         </div>
 
         <div class="modal__gallery-item" tabindex="0">
           <div class="modal__gallery-img-wrapper">
-            <img class="modal__gallery-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-tablette-fenetre.jpg"  alt="Tablette de fenêtre anthracite élégante" tabindex="0">
+            <img class="modal__gallery-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/prestations/agencement-tablette-fenetre.jpg"  alt="Tablette de fenêtre anthracite élégante">
           </div>
           <h2 class="modal__gallery-title">Tablette de fenêtre</h2>
         </div>
@@ -92,7 +92,7 @@
           donneront un côté sophistiqué. Grâce à notre expertise, profitez d'un parquet parfaitement ajusté. La qualité de nos matériaux donnera du cachet à votre intérieur. 
       </p>
 
-      <div class="modal__gallery">
+      <div class="modal__gallery" tabindex="-1">
 
         <div class="modal__gallery-item" tabindex="0">
           <div class="modal__gallery-img-wrapper">
@@ -143,7 +143,7 @@
         des matériaux de qualité et des finitions soignées pour qu'elles s'intègrent harmonieusement à votre intérieur. 
       </p>
 
-      <div class="modal__gallery">
+      <div class="modal__gallery" tabindex="-1">
 
         <div class="modal__gallery-item" tabindex="0">
           <div class="modal__gallery-img-wrapper">
@@ -206,7 +206,7 @@
         Nous créons des claustras ou cloisons amovibles sur mesure pour séparer vos espaces.
       </p>
 
-      <div class="modal__gallery">
+      <div class="modal__gallery" tabindex="-1">
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper" tabindex="0">
@@ -247,7 +247,7 @@
         durable et élégante. 
       </p>
 
-      <div class="modal__gallery">
+      <div class="modal__gallery" tabindex="-1">
 
         <div class="modal__gallery-item">
           <div class="modal__gallery-img-wrapper" tabindex="0">
