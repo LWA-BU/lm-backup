@@ -66,11 +66,11 @@ get_header(); ?>
                 <h1 class="section-project__title section-title">Vous manquez d’inspiration pour votre intérieur ?</h1>
                 <p class="section-project__p paragraphe">
                     Vous avez un projet d’aménagement mais vous ne savez pas quel style adopter  ? <br>
-                    N’hésitez pas à consulter notre page d’inspiration qui pourra vous orienter. 
-                    Vous y trouverez différents styles, du moderne au contemporain, différents coloris et différentes textures.  
+                    N’hésitez pas à consulter nos pages d’inspiration qui pourront vous orienter. 
+                    Vous y trouverez les cuisines, salles de bains, dressings ou agencements intérieurs de différents styles, allant du moderne au contemporain, différents coloris et différentes textures.  
                 </p>
-                <a class="section-project__button btn-transparent-black"  href="votre-lien.html" aria-label="Voir nos inspirations">
-                    <span>voir nos inspirations</span>
+                <a class="section-project__button btn-beige"  href="agencement-interieur/" aria-label="Voir nos inspirations d'agencements intérieurs">
+                    <span class="button-txt">voir nos inspirations d'agencements intérieurs</span>
                     <span class="section-project__button-section-prestation__list-icon icone" aria-hidden="true"></span>
                 </a>
             </div>

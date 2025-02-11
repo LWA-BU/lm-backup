@@ -240,6 +240,18 @@ function scrollToTop() {
 
 
 
-document.getElementById("modal1").addEventListener("shown.bs.modal", function () {
-  document.querySelector(".modal__gallery-img").focus();
+//***************** button to go up ********************** 
+// document.getElementById("modal1").addEventListener("shown.bs.modal", function () {
+//   document.querySelector(".modal__gallery-img").focus();
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const closeButton = document.querySelector(".close-modal");
+  const firstImage = document.querySelector(".modal__gallery-item");
+
+  closeButton.addEventListener("click", function () {
+      if (firstImage) {
+          firstImage.focus();
+      }
+  });
 });

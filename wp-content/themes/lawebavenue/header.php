@@ -42,18 +42,18 @@
                 <?php get_template_part('parts/contact_banner'); ?>
 
                 <div class="header__cta">
-                    <a class="header__cta-link header__cta-link-cuisines btn-transparent"  href="votre-lien.html" aria-label="Voir nos cuisines">
-                        <span>Cuisines</span>
+                    <a class="header__cta-link header__cta-link-cuisines btn-transparent"  href="cuisines/" aria-label="Voir nos cuisines">
+                        <span class="header__cta-title">Cuisines</span>
                         <span class="icone"></span>
                     </a>
 
-                    <a class="header__cta-link header__cta-link-sdb btn-transparent" href="votre-lien.html" aria-label="Voir nos salles de bain">
-                        <span>Salles de bain</span>
+                    <a class="header__cta-link header__cta-link-sdb btn-transparent" href="salles-de-bains/" aria-label="Voir nos salles de bain">
+                        <span class="header__cta-title">Salles de bain</span>
                         <span class="icone"></span>
                     </a>
 
-                    <a class="header__cta-link header__cta-link-dressings btn-transparent" href="votre-lien.html" aria-label="Voir nos dressings">
-                        <span>Dressings</span>
+                    <a class="header__cta-link header__cta-link-dressings btn-transparent" href="dressings/" aria-label="Voir nos dressings">
+                        <span class="header__cta-title">Dressings</span>
                         <span class="icone" >
                     </a>
                 </div>     

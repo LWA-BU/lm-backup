@@ -236,6 +236,10 @@ ul.section-concept__list li.list-measure::before{
   .section-concept{
     padding-bottom: 120px
   }
+
+  a.section-concept__button.btn-beige {
+    width: 460px;
+  }
 }
 
 

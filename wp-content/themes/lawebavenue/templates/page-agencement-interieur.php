@@ -52,10 +52,10 @@ get_header(); ?>
         </section>
 
         <div class="arrange__icones">
-            <span class="arrange__icones-kitchen icone"></span>
-            <span class="arrange__icones-bathroom icone"></span>
-            <span class="arrange__icones-dressing icone"></span>
-            <span class="arrange__icones-library icone"></span>
+            <span class="arrange__icones-kitchen icone" aria-hidden="true"></span>
+            <span class="arrange__icones-bathroom icone" aria-hidden="true"></span>
+            <span class="arrange__icones-dressing icone" aria-hidden="true"></span>
+            <span class="arrange__icones-library icone" aria-hidden="true"></span>
         </div>
 
         <section class="arrange__combined">
@@ -64,14 +64,12 @@ get_header(); ?>
                 <div class="arrange__combined-img-rect">
                     <picture class="arrange__combined-img-small">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white-480.jpg" media="(max-width: 480px)" type="image/jpg">
-                        <!-- <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white-768.jpg" media="(max-width: 960px)" type="image/jpg"> -->
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/TV-cabinet-white.jpg" alt="Meuble télé combiné avec meuble surélevé en pin foncé" width="700" 
                         height="526">
                     </picture>    
 
                     <picture class="arrange__combined-img-square">
                         <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet-480.jpg" media="(max-width: 480px)" type="image/jpg">
-                        <!-- <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet-768.jpg" media="(max-width: 960px)" type="image/jpg"> -->
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/tv-cabinet.jpg" alt="Meuble télé blanc combiné avec bibliothèque intégrée surélevée mélaminé et bois foncé" width="700" 
                         height="477">
                     </picture>    
@@ -79,7 +77,6 @@ get_header(); ?>
 
                 <picture class="arrange__combined-img-tall">
                     <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv-480.jpg" media="(max-width: 767px)" type="image/jpg">
-                    <!-- <source  srcset="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv-768.jpg" media="(max-width: 960px)" type="image/jpg"> -->
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrange/combined-tv.jpg" alt="Meuble télé blanc avec structure en bois qui relie les deux modules" width="500" 
                     height="750">
                 </picture>  
@@ -108,7 +105,7 @@ get_header(); ?>
                 N’hésitez pas à contacter LM Menuisier pour étudier votre projet. 
             </p>
 
-            <a class="arrange__contact-btn btn-transparent-black"  href="votre-lien.html" aria-label="Contactez-nous">
+            <a class="arrange__contact-btn btn-beige"  href="votre-lien.html" aria-label="Contactez-nous">
                 <span>contactez-nous</span>
                 <span class="section-concept__button-icon icone" aria-hidden="true"></span>
             </a>

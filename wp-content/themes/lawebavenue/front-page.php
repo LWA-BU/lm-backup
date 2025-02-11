@@ -82,9 +82,9 @@
                     <li class="section-concept__list-item list-finition">Montage et finitions</li>
                 </ul>
 
-                <a class="section-concept__button btn-transparent-black"  href="votre-lien.html" aria-label="Voir nos inspirations">
-                    <span>voir nos inspirations</span>
-                    <span class="section-concept__button-icon icone" aria-hidden="true"></span>
+                <a class="section-concept__button btn-beige"  href="agencement-interieur/" aria-label="Voir nos idées d'agencements intérieurs">
+                    <span class="button-txt">voir nos idées d'agencements intérieurs</span>
+                    <span class="section-project__button-section-prestation__list-icon icone" aria-hidden="true"></span>
                 </a>
 
             </div>

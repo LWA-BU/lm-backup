@@ -58,16 +58,16 @@ body{
   font-size: var(--font-size-main);
 }
 
-a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige{
+a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige, a.btn-beige{
   display: flex; 
   align-items: center; 
   justify-content: space-between;
   align-content: center;
   gap: 10px; 
-  width: 186px;
-  height: 44px;
+  width: 190px;
+  height: 45px;
   padding: 10px 20px;
-  font-size: 0.95rem; 
+  font-size: 1rem; 
   letter-spacing: 0.13rem;
   text-transform: uppercase;
   border-radius: 30px; 
@@ -75,7 +75,7 @@ a.header__cta-link, a.btn-transparent-black, a.btn-transparent-beige{
 }
 
 a.btn-transparent-black, a.btn-transparent-beige{
-  width: 270px;
+  width: 280px;
   margin: 30px auto 0px auto;
 }
 
@@ -84,10 +84,10 @@ a.header__cta-link{
   padding: 8px 20px 10px 15px;
 }
 
-
 a.header__cta-link span.icone,
 a.btn-transparent-beige span.icone,
-a.btn-transparent-black span.icone {
+a.btn-transparent-black span.icone,
+a.btn-beige span.icone {
   display: block;
   width: 32px;
   height: 32px;
@@ -97,13 +97,22 @@ a.btn-transparent-black span.icone {
   background-repeat: no-repeat;
 }
 
-a.btn-transparent-black{
+/* a.btn-transparent-black{
   color: var(--bg-color-light);
   background-color: var(--bg-button);
+} */
+
+a.btn-beige {
+  width: 345px;
+  margin: 30px auto 0px auto;
+  background-color: var(--color-decorative, #965634);
+  color: var(--bg-color-light, #FFF);
 }
 
-a.btn-transparent-black span.icone{
+a.btn-beige span.icone{
   background-image: url('./../img/arrow-right.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 a.btn-transparent-beige{
@@ -111,11 +120,12 @@ a.btn-transparent-beige{
   border: 1.5px solid var(--bg-border, #C7714A); 
 }
 
-a.btn-transparent-beige span.icone{
+a.btn-transparent-beige span.icone{ 
   background-image: url('./../img/arrow-right-beige.svg');
 }
 
-a.btn-transparent-black:hover{
+a.btn-beige:hover,
+section#section-projet a.btn-beige:hover{
   background-color: var(--bg-border, #965634);
 }
 
@@ -127,6 +137,23 @@ a.btn-transparent-beige:hover {
 a.header__cta-link:hover span{
   font-weight: 500;
 }
+
+.button-txt{
+  line-height: 1.2rem;
+  width: 278px;
+}
+
+/* a.btn-beige span.icone{
+  width: 50px;
+} */
+
+/* a.btn-beige {
+  width: 345px;
+  margin: 30px 20px 0px auto;
+  background-color: var(--color-decorative, #965634);
+  color: var(--bg-color-light);
+}
+       */
 
 .sr-only, .visuallyhidden{
   position: absolute;
@@ -512,8 +539,9 @@ a.header__cta-link{
   color: var(--color-h2);
 }
 
-.header__cta-link span{
+.header__cta-title{
   text-transform: capitalize;
+  margin-top : 2px;
 }
 
 .headerPrestations__banner{
@@ -749,7 +777,7 @@ span.trait{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
   }
 
     /****************** Header contact ******************/
@@ -792,6 +820,10 @@ span.trait{
     background: url('./../img/prestations/meuble-m.jpg');
     background-position: left; 
     background-repeat: no-repeat; 
+  }
+
+  .button-txt{
+    width: 100%;
   }
 }
 
