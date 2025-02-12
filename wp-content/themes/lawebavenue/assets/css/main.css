@@ -782,7 +782,7 @@ span.trait{
 /* Mentions légales  */
 .no-break {
   overflow-wrap: break-word;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .legal a {
@@ -810,15 +810,19 @@ span.trait{
 }
 
 .legal-subtitle{
-  margin-bottom: 15px;
+  margin-bottom: 1px;
   text-transform: uppercase;
   font-size: 1rem;
+  margin: 20px auto 10px auto;
 }
 
 
-.legal p, .editor{
-  width: 90%;
+.editor{
   margin: 50px auto;
+}
+
+.legal p{
+  margin: 10px auto 40px auto;
 }
 
 .legal-bold{
@@ -1070,6 +1074,10 @@ span.trait{
   ul#sub-menu-128.sub-menu.open {
     min-width: 200px;
   }
+
+  .legal{
+    width: 80%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1083,6 +1091,8 @@ span.trait{
     background-size: cover; 
     background-repeat: no-repeat; 
   }
+
+
 }
 
 @media (min-width: 1440px) {
