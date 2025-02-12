@@ -74,8 +74,8 @@ get_header(); ?>
             <h2 class="legal-subtitle"> Conditions d’utilisation :</h2>
 
             <p class="paragraphe">
-                Nous mettons en œuvre tous les moyens dont nous disposons, pour assurer une information fiable et une mise à jour fiable de ses sites internet. Toutefois, des erreurs ou omissions peuvent survenir. L'internaute devra donc s'assurer de l'exactitude des informations auprès de  <a href="https://lm-menuisier.com" class="link no-break" aria-label="Aller sur lm menuisier.com">
-                www.lm-menuisier.com</a> n'est en aucun cas responsable de l'utilisation faite de ces informations, et de tout préjudice direct ou indirect pouvant en découler.
+                Nous mettons en œuvre tous les moyens dont nous disposons, pour assurer une information et une mise à jour fiables de notre site internet. Toutefois, des erreurs ou omissions peuvent survenir. L'internaute devra donc s'assurer de l'exactitude des informations auprès de  <a href="https://lm-menuisier.com" class="link no-break" aria-label="Aller sur lm menuisier.com">
+                www.lm-menuisier.com</a> qui n'est en aucun cas responsable de l'utilisation faite de ces informations, et de tout préjudice direct ou indirect pouvant en découler.
             </p>
 
             
@@ -87,7 +87,9 @@ get_header(); ?>
 
             <h2 class="legal-subtitle"> Liens hypertextes :</h2>
             <p class="paragraphe">
-                Les sites internet de peuvent offrir des liens vers d’autres sites internet ou d’autres ressources disponibles sur Internet. Nous ne disposons d'aucun moyen pour contrôler les sites en connexion avec ses sites internet. Nous ne répondons pas de la disponibilité de tels sites et sources externes, ni ne la garantissons. Nous ne pouvons être tenus pour responsable de tout dommage, de quelque nature que ce soit, résultant du contenu de ces sites ou sources externes, et notamment des informations, produits ou services qu’ils proposent, ou de tout usage qui peut être fait de ces éléments. Les risques liés à cette utilisation incombent pleinement à l'internaute, qui doit se conformer à leurs conditions d'utilisation. Les utilisateurs, les abonnés et les visiteurs des sites internet de ne peuvent mettre en place un hyperlien en direction de ce site sans l'autorisation expresse et préalable de <a href="https://lm-menuisier.com" class="link no-break" aria-label="Aller sur lm menuisier.com">
+                Les sites internet de peuvent offrir des liens vers d’autres sites internet ou d’autres ressources disponibles sur Internet. Nous ne disposons d'aucun moyen pour contrôler les sites en connexion avec ces sites internet. Nous ne répondons pas de la disponibilité de tels sites et sources externes, ni ne la garantissons. 
+                Nous ne pouvons être tenus pour responsable de tout dommage, de quelque nature que ce soit, résultant du contenu de ces sites ou sources externes, et notamment des informations, produits ou services qu’ils proposent, ou de tout usage qui peut être fait de ces éléments. 
+                Les risques liés à cette utilisation incombent pleinement à l'internaute, qui doit se conformer à leurs conditions d'utilisation. Les utilisateurs, les abonnés et les visiteurs des sites internet ne peuvent mettre en place un hyperlien en direction de ce site sans l'autorisation expresse et préalable de <a href="https://lm-menuisier.com" class="link no-break" aria-label="Aller sur lm menuisier.com">
                 www.lm-menuisier.com</a>. Dans l'hypothèse où un utilisateur ou visiteur souhaiterait mettre en place un hyperlien il devra nous adresser un email afin de formuler sa demande de mise en place. <a href="https://lm-menuisier.com" class="link no-break" aria-label="Aller sur lm menuisier.com">
                 www.lm-menuisier.com</a> se réserve le droit d’accepter ou refuser sans avoir à en justifier sa décision.
             </p>
