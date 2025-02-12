@@ -17,7 +17,7 @@
         <div class="error-container__content">
             <h1>Oups ! Page non trouvée (404)</h1>
             <p>Désolé, la page que vous recherchez semble introuvable.</p>
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="home-link" role="button" aria-label="Retourner à la page d'accueil">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="home-link" role="button" aria-label="Retourner sur la page d'accueil">
                 Retour à l'accueil
             </a>
         </div>

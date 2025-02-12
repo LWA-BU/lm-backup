@@ -68,7 +68,7 @@
             <div class="footer__legalNotices">
                 <div class="legalNotices">
                     <a href="https://lawebavenue.fr/" class="legalNotice-creator">© 2025 - Création La Web Avenue -</a>
-                    <a href="" class="legalNotice-Mentions">Mentions légales & politique de confidentialité</a>
+                    <a href="politique-de-confidentialite/" class="legalNotice-Mentions">Mentions légales & politique de confidentialité</a>
                     <img class="legalNotice-iconeLux" src="<?php echo get_template_directory_uri(); ?>/assets/img/embleme_lux.webp" alt=""/>
                 </div>
             </div>
