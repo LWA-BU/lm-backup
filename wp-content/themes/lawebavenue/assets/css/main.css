@@ -97,7 +97,7 @@ a.btn-beige span.icone {
   background-repeat: no-repeat;
 }
 
-a.btn-beige {
+a.btn-beige,  input.wpcf7-submit {
   width: 345px;
   margin: 30px auto 0px auto;
   background-color: var(--color-decorative, #965634);
@@ -209,7 +209,7 @@ ul, li , a{
 }
 
 .btn-arrowup:focus {
-  outline: 3px solid #007BFF; /* Ajoute un contour visible */
+  outline: 3px solid #007BFF; 
 }
 
 .icone-arrowup {
@@ -268,7 +268,7 @@ ul, li , a{
 }
 
 .home-link:focus {
-  outline: 3px solid #ffcc00; /* Ajout d’un focus bien visible */
+  outline: 3px solid #ffcc00;
 }
 
 .error-container .footer__img-deco{
@@ -524,10 +524,6 @@ li#menu-item-128{
   margin: 0px 5px -3px 10px;
 }
 
-
- /***
-  Header banner 
- ***/
 .header__banner{
   position: relative;
   width: 100%;
@@ -754,7 +750,7 @@ span.trait{
   padding-top: 25px;
 }
 
- .footer__legalNotices a{
+.footer__legalNotices a{
   display: block;
   width: 340px;
   color: var(--color-text);
@@ -780,7 +776,7 @@ span.trait{
 
 /***
  Mentions légales  
- ***/
+***/
 .no-break {
   overflow-wrap: break-word;
   word-break: break-word;
@@ -807,7 +803,6 @@ span.trait{
   margin: 150px auto 50px auto;
   text-align: center;
   line-height: 2.5rem;
-
 }
 
 .legal-subtitle{
@@ -816,7 +811,6 @@ span.trait{
   font-size: 1rem;
   margin: 20px auto 10px auto;
 }
-
 
 .editor{
   margin: 50px auto;
@@ -830,6 +824,183 @@ span.trait{
   font-weight: 600;
 }
 
+
+/***
+ Page contact 
+***/
+
+.contact{
+  width: 100%;
+  margin: 150px auto;
+}
+
+.contact__title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.contact__title::before {
+  display: block;
+  content: '';
+  width: 64px;
+  height: 64px;
+  background-image: url('./../img/icones/contact.png');
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+}
+
+.contact__p{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto 120px auto;
+  text-align: center;
+}
+
+.contact__message-list{
+  margin: 70px 0;
+}
+
+.contact__message-list,
+.contact__message-list li,
+.contact__message-list-txt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contact__message-list li,
+.contact__message-list-txt{
+  gap: 10px;
+}
+
+.contact__message-list li {
+  width: 230px;
+  height: 142px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.contact__message-list-title{
+  font-family: var(--font-main);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contact__message-list-txt {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+}
+
+.contact__message-list-txt:hover{
+  color: var(--color-decorative, #965634);
+}
+
+
+
+.contact__form,
+.wpcf7-form-control{
+  background-color:var(--bg-color-grey);
+}
+
+.contact__form{
+   padding: 250px 0 150px 0;
+   border-radius: 10px;
+   margin-top: -180px
+}
+
+.contact__form-content{
+  width: 90%;
+  margin:auto;
+}
+
+.contact__form-p{
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.wpcf7-not-valid-tip {
+  width: 40%;
+  margin-top: -25px;
+  padding: 10px 0px 10px 10px;
+  color: #a51c1c;
+  background-color: #D2D2D2;
+  border-radius: 10px;
+}
+
+.wpcf7-form-control{
+  width: 100%;
+  border:none;
+  border-bottom: solid 1px rgb(112,112,112, 25%);
+  margin-bottom: 35px;
+}
+
+.wpcf7-textarea{
+  border: 1px solid #d2d2d2;
+  margin-top: 10px;
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+.wpcf7-acceptance,
+.wpcf7-checkbox{
+  display: inline-block;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.label__text{
+  display: block;
+  margin-bottom: -28px;
+}
+
+.contact__form-acceptance{
+  margin-top: 50px;
+  /* margin-left: 25px; */
+}
+
+.wpcf7-list-item {
+  margin: 0;
+}
+
+.contact__accept, 
+input[type="checkbox"]{
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+.contact .legalNotice-Mentions{
+  font-weight: 600;
+}
+
+.contact .legalNotice-Mentions:hover{
+  color: var(--bg-border, #C7714A);
+}
+
+input.wpcf7-submit {
+  display: block;
+  width: 250px;
+  margin: 30px auto 0px auto;
+  padding: 12px 0px;
+  border-radius: 30px;
+  font-size: 1.125rem;
+  background-color: var(--color-decorative, #965634);
+  color: var(--bg-color-light, #FFF);
+}
+
+input.wpcf7-submit:hover {
+  background-color: var(--bg-border, #C7714A);
+}
 
 /* 
   ******************
@@ -847,11 +1018,9 @@ span.trait{
 
 @media (min-width: 768px) {
 
-  /* ============================================
-                    Header
-  ============================================ */
-
-  /****************** Header banner ******************/
+  /***
+   Header banner 
+  ***/
 
   .header__banner{
     height:579px;
@@ -873,8 +1042,6 @@ span.trait{
     justify-content: center;
     gap: 70px;
   }
-
-    /****************** Header contact ******************/
 
   .header__contact{
     display: flex;
@@ -919,6 +1086,11 @@ span.trait{
   .button-txt{
     width: 100%;
   }
+
+  .contact__message-list{
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -935,9 +1107,9 @@ span.trait{
     padding: 250px 25% 250px 25%;
   }
 
-  /* ============================================
-                    Header
-  ============================================ */
+ /***
+  Header 
+ ***/
 
   .header__link{
     margin-left: auto;
@@ -990,7 +1162,6 @@ span.trait{
     display: none;
   }
 
-    /****************** Header banner ******************/
   .header__banner{
     height: 655px;
     background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_m.jpg');
@@ -1009,11 +1180,9 @@ span.trait{
   }
 
 
-  /* ============================================
-                    Footer
-  ============================================ */
-
-  /********** contact **********/
+/*** 
+  Footer 
+***/
 
   .footer__contact{
     height: 90px;
@@ -1038,8 +1207,6 @@ span.trait{
     background-color: var(--bg-color-beige);
     transform: rotate(90deg);
   }
-
-  /********** Main **********/
 
   .footer__main{
     flex-direction: row;
@@ -1079,6 +1246,31 @@ span.trait{
   .legal{
     width: 80%;
   }
+
+  /***
+    Form 
+  ***/
+  .contact{
+    width: 90%;
+  }
+
+  .contact__p{
+    width: 70%;
+  }
+
+  .contact__form{
+    padding: 200px 120px;
+  }
+ 
+  .contact__form-content{
+    width: 80%;
+  }
+
+  .contact__message-list{
+    flex-direction: row;
+    gap: 50px;
+  }
+  
 }
 
 @media (min-width: 1200px) {
@@ -1098,11 +1290,9 @@ span.trait{
 
 @media (min-width: 1440px) {
 
-  /* ============================================
-                    Header
-  ============================================ */
-
-    /****************** nav menu ******************/
+/*** 
+  Header 
+***/
 
   #menu-main-menu{
     gap: 120px;
@@ -1128,7 +1318,6 @@ span.trait{
     margin-left: -60px;
   }
 
-    /****************** Header banner ******************/
   .header__banner{
     height:695px;
     background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_l.jpg');
@@ -1144,45 +1333,63 @@ span.trait{
     background-repeat: no-repeat; 
   }
 
-  /* ============================================
-                    Footer
-  ============================================ */
+  /***
+    Footer
+  ***/
 
   span.trait{
     margin: auto 70px;
+  }
+
+  /*** 
+    Form 
+  ***/
+
+  .contact {
+    width: 80%;
+  }
+
+  .contact__message-list li{
+    width: 280px;
+    height: 173px;
+  }
+
+  .contact__message-list-txt{
+    font-size: 1.125rem;
+    letter-spacing: 0.062rem;
   }
 }
 
 @media (min-width: 1668px) {
 
-  /* ============================================
-                    Header
-  ============================================ */
-    /****************** Header banner ******************/
-    .header__banner{
-      height:797px;
-      background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_xl.jpg');
-      background-size: cover; 
-      background-position: center; 
-      background-repeat: no-repeat; 
-    }
+ /***
+   Header
+ ***/
+  .header__banner{
+    height:797px;
+    background: var(--bg-linear-gradient), url('./../img/accueil/menuisier_artisan_createur_xl.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
 
-  /* ============================================
-                    Footer
-  ============================================ */
-
+ /***
+   Footer
+ ***/
   span.trait{
     margin: auto 90px;
   }
+
+
+  
 }
 
 
 @media (min-width: 1920px) {
 
-  /* ============================================
-                    Header
-  ============================================ */
-    /****************** Header banner ******************/
+ /***
+   Header
+ ***/
     .header__banner{
       height:837px;
     }
